@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<element name="Omega Warlock" type="Source" source="Omega Warlock" id="ID_SWECKY_SOURCE_OMEGA_WARLOCK">
+		<description>
+			<![CDATA[<p> A warlock revision focused on the importance of pacts and a new system for all Chain warlocks. </p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">SWECKY</set>
+			<set name="url">https://www.reddit.com/user/SwEcky/submitted/</set>
+			<set name="image">https://styles.redditmedia.com/t5_drhrd/styles/profileIcon_k7c7jlvs9ps01.jpg</set>
+			<set name="author" abbreviation="SWECKY" url="https://www.reddit.com/user/SwEcky/submitted/">SwEcky</set>
+			<set name="official">false</set>
+			<set name="supplement">false</set>
+            <set name="homebrew">true</set>
+			<set name="release">20180422</set>
+		</setters>
+	</element>
+	<element name="SwEcky's " type="Source" source="SwEcky's " id="ID_SWECKY_SOURCE_">
+		<description>
+			<![CDATA[<p> details </p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">SWECKY</set>
+			<set name="url">https://www.reddit.com/user/SwEcky/submitted/</set>
+			<set name="image">https://styles.redditmedia.com/t5_drhrd/styles/profileIcon_k7c7jlvs9ps01.jpg</set>
+			<set name="author" abbreviation="SWECKY" url="https://www.reddit.com/user/SwEcky/submitted/">SwEcky</set>
+			<set name="official">false</set>
+			<set name="supplement">false</set>
+            <set name="homebrew">true</set>
+			<set name="release">20180422</set>
+		</setters>
+	</element>
+</elements>
