@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>LaserLlama</name>
+		<description>The content from SwEcky on reddit.</description>
+		<author url="https://www.reddit.com/user/SwEcky">SwEcky</author>
+		<update version="0.0.7">
+			<file name="swecky.index" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-SwEcky/main/swecky.index" />
+		</update>
+	</info>
+	<files>
+		<file name="source.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-SwEcky/main/source.xml" />
+    
+		<!-- classes -->
+		<file name="class-warlock.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-SwEcky/main/class-warlock.xml" />
+    
+	</files>
+</index>
