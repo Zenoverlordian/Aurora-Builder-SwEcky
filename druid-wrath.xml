@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    
+    <element name="Circle of Wrath" type="Archetype" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_ALPHA_DRUID_WRATH">
+        <supports>Alpha Druid Circle</supports>
+        <description>
+            <p>Most druids strives toward protecting nature and its balance by indirect means, but there are a few which have taken a to arms to solve the problems in a more immediate way. These druids have seen the hardships and death brought by oppressors and tyrants, and have taken upon themselves to crush any who threaten the innocent. Some creatures will never see the fault in taking what they can and must be removed from the scales to reattain balance.</p>
+            <p class="indent">Some see this violence as a last resort, while others believe that everyone that stands idly by have chosen a side. A few spill the blood of their enemies to sate the spirits of the old world.</p>
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_WRATH_SPELLS" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_WRATH_IRE_OF_THE_OPPRESSED" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_WRATH_PROTECTIVE_MARKINGS" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_WRATH_EXTRA_ATTACK" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_WRATH_ELEMENTALLY_IMBUED_WEAPONS" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_WRATH_WRATHFUL_STEPS" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_WRATH_FURY_OF_THE_WORLD" />
+        </description>
+        <sheet display="false">
+            <description>Druids of the Circle of Spores find beauty in decay. They see within mold and other fungi the ability to transform lifeless material into abundant, albeit somewhat strange, life.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_WRATH_SPELLS" level="2" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_WRATH_IRE_OF_THE_OPPRESSED" level="2" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_WRATH_PROTECTIVE_MARKINGS" level="2" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_WRATH_EXTRA_ATTACK" level="6" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_WRATH_ELEMENTALLY_IMBUED_WEAPONS" level="10" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_WRATH_WRATHFUL_STEPS" level="14" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_WRATH_FURY_OF_THE_WORLD" level="18" />
+        </rules>
+    </element>
+
+    <element name="Circle Spells" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_WRATH_SPELLS">
+        <description>
+            <p>You gain circle spells at the druid levels listed.</p>
+            <h5>CIRCLE OF WRATH SPELLS</h5>
+            <table>
+                <thead>
+                    <tr><td>Druid Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>2nd</td><td>absorb elements, zephyr strike</td></tr>
+                <tr><td>3rd</td><td>corrode metal, skyward rise</td></tr>
+                <tr><td>5th</td><td>blink, grasp of the wind</td></tr>
+                <tr><td>7th</td><td>avenger's wrath, steel wind strike</td></tr>
+                <tr><td>9th</td><td>nemesis, shard storm</td></tr>
+            </table>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Spell" id="ID_XGTE_SPELL_ABSORB_ELEMENTS" level="2" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_XGTE_SPELL_ZEPHYR_STRIKE" level="2" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_SWECKY_SPELL_CORRODE_METAL" level="3" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_SWECKY_SPELL_SKYWARD_RISE" level="3" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_BLINK" level="5" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_SWECKY_SPELL_GRASP_OF_THE_WIND" level="5" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_SWECKY_SPELL_AVENGERS_WRATH" level="7" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_XGTE_SPELL_STEEL_WIND_STRIKE" level="7" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_SWECKY_SPELL_NEMESIS" level="9" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_SWECKY_SPELL_SHARD_STORM" level="9" spellcasting="Druid (Alpha)" prepared="true" />
+        </rules>
+    </element>
+
+    <element name="Ire of the Oppressed" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_WRATH_IRE_OF_THE_OPPRESSED">
+        <description>
+            <p>At 2nd level, you have begun taking your first steps towards protecting nature against those who mean it harm. You gain proficiency in martial melee weapons and Intimidation.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+        </rules>
+    </element>
+
+    <element name="Protective Markings" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_WRATH_PROTECTIVE_MARKINGS">
+        <description>
+            <p>Also at 2nd level, whenever you reduce a creature to 0 hit points, you gain temporary hit points equal to your druid level + your Wisdom modifier.</p>
+        </description>
+        <sheet>
+            <description>Whenever you reduce a creature to 0 hit points, you gain {{protective:markings}} temporary hit points.</description>
+        </sheet>
+        <rules>
+            <stat name="protective:markings" value="level:druid (alpha)" />
+            <stat name="protective:markings" value="wisdom:modifier" />
+        </rules>
+    </element>
+
+    <element name="Extra Attack" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_WRATH_EXTRA_ATTACK">
+        <description>
+            <p>Beginning at 6th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="extra attack:count" value="2" level="6" bonus="extra attack" />
+        </rules>
+    </element>
+
+    <element name="Elementally Imbued Weapons" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_WRATH_ELEMENTALLY_IMBUED_WEAPONS">
+        <description>
+            <p>Starting at 10th level, the elements themselves have granted you their blessing. You can cast elemental weapon at its lowest level targeting your own weapons without expending a spell slot. When cast in this way, you don't need to concentrate on the spell and you can target weapons which are magical. The spell ends if you let go of the weapon.</p>
+        </description>
+        <sheet>
+            <description level="10">You can cast elemental weapon at its lowest level targeting your own weapons without expending a spell slot. When cast in this way, you don't need to concentrate on the spell and you can target weapons which are magical. The spell ends if you let go of the weapon.</description>
+            <description level="18">You can cast elemental weapon at 5th level targeting your own weapons without expending a spell slot. When cast in this way, you don't need to concentrate on the spell and you can target weapons which are magical. The spell ends if you let go of the weapon.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_ELEMENTAL_WEAPON" prepared="true" />
+        </rules>
+    </element>
+
+    <element name="Wrathful Steps" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_WRATH_WRATHFUL_STEPS">
+        <description>
+            <p>At 14th level, your unleashed fury carry you through combat. When you walk more than 10 feet during your turn, you can move vertically without falling down. If you are still in the air at the end of your turn, you fall down. If you travel through the air you gain resistance to nonmagical piercing, slashing and bludgeoning damage until the start of your next turn.</p>
+            <p class="indent">Finally, your movement speed increases by 10 feet.</p>
+        </description>
+        <sheet>
+            <description>When you walk more than 10 feet during your turn, you can move vertically without falling down. If you are still in the air at the end of your turn, you fall down. If you travel through the air you gain resistance to nonmagical piercing, slashing and bludgeoning damage until the start of your next turn.</description>
+        </sheet>
+        <rules>
+            <stat name="speed" value="10" />
+        </rules>
+    </element>
+
+    <element name="Fury of the World" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_WRATH_FURY_OF_THE_WORLD">
+        <description>
+            <p>Beginning at 18th level, you can use an action to unleash centuries of collected fury. You gain the effects of the haste spell, except you don't have to concentrate on it and you don't get stunned when the effect ends. Once you've done this, you can't do so again until you finish a short or long rest.</p>
+            <p class="indent">Additionally, when you enchant a weapon using Elementally Imbued Weapons, it is cast as a 5th-level spell.</p>
+        </description>
+        <sheet>
+            <description action="Action" usage="1/Short Rest">You can use an action to unleash centuries of collected fury. You gain the effects of the haste spell, except you don't have to concentrate on it and you don't get stunned when the effect ends. Once you've done this, you can't do so again until you finish a short or long rest.</description>
+        </sheet>
+    </element>
+
+    <element name="Corrode Metal" type="Spell" source="Alpha Druid" id="ID_SWECKY_SPELL_CORRODE_METAL">
+        <supports>Artificer, Druid, Wizard, KTHArtificer</supports>
+        <description>
+            <p>Choose a nonmagical metal object such as a stove, weapon, suit of armor, or shield that you can see within range. When you cast the spell and as a bonus action until the spell ends you cause the object to rust and corrode. The spell has different effects depending on your target.</p>
+            <p class="indent"><strong>Armor.</strong> The armor receives a -1 penalty to the AC it offers. A nonmagical armor reduced to an AC of 10 is destroyed.</p>
+            <p class="indent"><strong>Shield.</strong> The shield receives a -1 penalty to the AC it offers. A nonmagical shield that drops to a +0 bonus is destroyed.</p>
+            <p class="indent"><strong>Weapon.</strong> The weapon takes a -1 penalty to its attack and damage rolls. A nonmagical weapon that drops to -3 penalty is destroyed.</p>
+            <p class="indent"><strong>Other Object.</strong> An object takes 3 pounds of acid damage. An object that is reduced to 0 pounds is destroyed.</p>
+            <p class="indent">While an object is under the effect of the spell it is vulnerable to bludgeoning, piercing, and slashing damage.</p>
+            <p class="indent">The effect the spell has on an item is not removed after the spell ends but can be removed with mending or similar spell.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 3rd level or higher, you can target an additional object for each slot level above 2nd.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a vial of stomach acid</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Skyward Rise" type="Spell" source="Alpha Druid" id="ID_SWECKY_SPELL_SKYWARD_RISE">
+        <supports>Druid, Ranger</supports>
+        <description>
+            <p>You shout, calling the winds to bind a creature within range. The target must make a Strength saving throw. If it fails, it is suspended above the ground until the end of its next turn and is restrained. As a bonus action before the end of your current turn, you can make a melee weapon attack against the creature if it is within your reach, inflicting an additional 2d6 damage if you hit.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 damage for each slot level above 2nd.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">15 feet</set>
+            <set name="duration">1 round</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Grasp of the Wind" type="Spell" source="Alpha Druid" id="ID_SWECKY_SPELL_GRASP_OF_THE_WIND">
+        <supports>Druid, Ranger</supports>
+        <description>
+            <p>You call upon the wind to aid you, and let it guide your strikes. Each Large or smaller creature you choose within range and line of sight must make a Strength saving throw. On a failure, they are pushed as close to you as possible in a straight line towards you. When you cast this spell, you also take the Attack action after pushing your enemies closer. All melee attacks are made with advantage until the start of your next turn.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 4th level or higher, the range of the spell increases by 5 feet for each slot level above the third.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">Self (20-foot radius)</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a melee weapon</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Avenger's Wrath" type="Spell" source="Alpha Druid" id="ID_SWECKY_SPELL_AVENGERS_WRATH">
+        <supports>Paladin</supports>
+        <description>
+            <p>Your allies suffering triggers the divine wrath inside you. In response to an ally being damaged by a creature within 5 feet of you that you can see, you can make a melee weapon attack towards the creature which attacked your ally, on a hit you deal an additional 2d10 radiant damage.</p>
+            <p class="indent">If the damage made your ally unconscious the attack is made with advantage.</p>
+            <p class="indent">If the damage killed your ally the attack is a critical hit.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 5th level, increase the radiant damage by 1d10.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 reaction</set>
+            <set name="range">5 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Nemesis" type="Spell" source="Alpha Druid" id="ID_SWECKY_SPELL_NEMESIS">
+        <supports>Ranger</supports>
+        <description>
+            <p>You declare a challenge, and describe a creature that you have damaged or has damaged you within the past year. If that creature is on the same plane of existence that creature becomes marked by your magic, and it feels a sense of impending doom that grows the closer you get to it.</p>
+            <p class="indent">You become supernaturally alert towards any sign of your quarry or information that would aid your search, gaining advantage on all checks made to discern the target’s location or path of travel. The first time the target sees you, they must make a Wisdom saving throw. If they fail, they are frightened until the end of their next turn, and must attempt to flee via the safest route they are aware of during their next turn. Once the target has seen you, the spell ends.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">Divination</set>
+            <set name="time">1 minute</set>
+            <set name="range">Unlimited</set>
+            <set name="duration">8 hours</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a small trinket</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Shard Storm" type="Spell" source="Alpha Druid" id="ID_SWECKY_SPELL_SHARD_STORM">
+        <supports>Sorcerer, Warlock, Wizard</supports>
+        <description>
+            <p>You create a whirling maelstrom of invisible blades that fills a cylinder 30 feet tall and 30 feet across. Any creature that starts its turn in the area must make a Dexterity saving throw. On a failure, the creature takes 12d4 slashing damage. On a success, it only takes half damage.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 6th level or higher, increase the slashing damage by 2d4 for each slot level above 5th.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a shard of glass</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    
+</elements>

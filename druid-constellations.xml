@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    
+    <element name="Circle of the Constellations" type="Archetype" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_ALPHA_DRUID_CONSTELLATIONS">
+        <supports>Alpha Druid Circle</supports>
+        <description>
+            <p>One of the smallest circles, druids of the Circle of the Constellations are empowered by the power of the cosmos. Its legendary constellations have earned their place upon its black tapestry but still they yearn to do more.</p>
+            <p class="indent">There are many different reasons why they seek the darkness. Some venture there to show that even the darkest places are not without light. Others to create new legends that will last for eternities for all to see. A few even seek to expand its reach, striving to keep the careful balance between light and dark.</p>
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_CONSTELLATIONS_SPELLS" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_CONSTELLATIONS_POWERFUL_FRAGMENTS" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_CONSTELLATIONS_WRITTEN_IN_THE_STARS" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_CONSTELLATIONS_COSMIC_TALES" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_CONSTELLATIONS_LIVING_CONSTELLATIONS" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_CONSTELLATIONS_HEARTH_MOON_STARS" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_CONSTELLATIONS_CELESTIAL_BODY" />
+        </description>
+        <sheet display="false">
+            <description>One of the smallest circles, druids of the Circle of the Constellations are empowered by the power of the cosmos. Its legendary constellations have earned their place upon its black tapestry but still they yearn to do more.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_CONSTELLATIONS_SPELLS" level="2" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_CONSTELLATIONS_POWERFUL_FRAGMENTS" level="2" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_CONSTELLATIONS_WRITTEN_IN_THE_STARS" level="2" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_CONSTELLATIONS_COSMIC_TALES" level="6" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_CONSTELLATIONS_LIVING_CONSTELLATIONS" level="10" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_CONSTELLATIONS_HEARTH_MOON_STARS" level="14" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_CONSTELLATIONS_CELESTIAL_BODY" level="18" />
+        </rules>
+    </element>
+
+    <element name="Circle Spells" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_CONSTELLATIONS_SPELLS">
+        <description>
+            <p>You gain circle spells at the druid levels listed.</p>
+            <h5>CIRCLE OF THE CONSTELLATIONS SPELLS</h5>
+            <table>
+                <thead>
+                    <tr><td>Druid Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>2nd</td><td>guiding bolt, magic missile</td></tr>
+                <tr><td>3rd</td><td>darkness, moonbeam</td></tr>
+                <tr><td>5th</td><td>crusader's mantle, fly</td></tr>
+                <tr><td>7th</td><td>divination, guardian of faith</td></tr>
+                <tr><td>9th</td><td>magic missile barrage, midnight</td></tr>
+            </table>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_GUIDING_BOLT" level="2" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_MAGIC_MISSILE" level="2" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_DARKNESS" level="3" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_MOONBEAM" level="3" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_CRUSADERS_MANTLE" level="5" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_FLY" level="5" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_DIVINATION" level="7" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_GUARDIAN_OF_FAITH" level="7" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_SWECKY_SPELL_MAGIC_MISSILE_BARRAGE" level="9" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_SWECKY_SPELL_MIDNIGHT" level="9" spellcasting="Druid (Alpha)" prepared="true" />
+        </rules>
+    </element>
+
+    <element name="Powerful Fragments" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_CONSTELLATIONS_POWERFUL_FRAGMENTS">
+        <description>
+            <p>At 2nd level, as you draw upon your power, you attract the power of the cosmos. Whenever you cast a druid spell of 1st level or higher, you gain a mote of starlight which drifts around you. You can have a maximum number of motes equal to your proficiency modifier at any one time. They last for 1 minute and the duration refreshes each time you gain one.</p>
+            <p class="indent">You can use an action to consume your motes, targeting a creature that you can see within 60 feet. For each mote consumed you can choose to either heal it for 1d4 + 1 or deal 1d4 + 1 radiant damage to it.</p>
+        </description>
+        <sheet>
+            <description action="Action" level="2">Whenever you cast a druid spell of 1st level or higher, you gain a mote of starlight which drifts around you. You can have a maximum of {{proficiency}} motes at any one time. They last for 1 minute and the duration refreshes each time you gain one. You can use an action to consume your motes, targeting a creature that you can see within 60 feet. For each mote consumed you can choose to either heal it for 1d4 + 1 or deal 1d4 + 1 radiant damage to it.</description>
+            <description action="Action" level="18">Whenever you cast a druid spell of 1st level or higher, you gain a mote of starlight which drifts around you. You can have a maximum of {{proficiency}} motes at any one time. They last for 1 minute and the duration refreshes each time you gain one. You can use an action to consume your motes, targeting a creature that you can see within 60 feet. For each mote consumed you can choose to either heal it for 1d8 + 1 or deal 1d8 + 1 radiant damage to it.</description>
+        </sheet>
+    </element>
+
+    <element name="Written in the Stars" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_CONSTELLATIONS_WRITTEN_IN_THE_STARS">
+        <description>
+            <p>At 2nd level, your presence has become the focus of one of the legendary constellations. Choose one of the following:</p>
+            <p><strong>The Anvil.</strong> Whenever you finish a short or long rest, you gain the benefits of mage armor.</p>
+            <p><strong>The Beast.</strong> You gain a natural weapon, such as a bite or claw attack, which you are proficient with. You use your Strength or Dexterity modifier for attack and damage rolls. It deals 1d8 bludgeoning, piercing, or slashing damage.</p>
+            <p><strong>The Chalice.</strong> You can cast bless once without expending a spell slot. You can’t do so again until you finish a long rest. When you cast it, you gain 1 mote of starlight.</p>
+            <p><strong>The Crown.</strong> You can cast command once without expending a spell slot. You can’t do so again until you finish a long rest. When you cast it, you gain 1 mote of starlight.</p>
+            <p><strong>The Galley.</strong> You gain a 30 feet swim speed.</p>
+            <p><strong>The Harp.</strong> You have advantage on saving throws made to avoid being frightened.</p>
+            <p><strong>The Jester</strong> Opportunity attacks made against you have disadvantage.</p>
+            <p><strong>The Lover.</strong> You can cast blindness/deafness once without expending a spell slot. You can’t do so again until you finish a long rest. When you cast it, you gain 1 mote of starlight.</p>
+            <p><strong>The Magus.</strong> You gain two cantrips from the Wizard spell list, they count as druid cantrips for you.</p>
+            <p><strong>The Serpent.</strong> Disguise self is added to your spell list.</p>
+            <p><strong>The Stranger.</strong> You can add your proficiency bonus to death saving throws.</p>
+            <p><strong>The Sword.</strong> You can consume your motes as part of making an attack roll.</p>
+            <p><strong>The Traveler.</strong> Your base walking speed increases by 10 feet.</p>
+            <p><strong>The Triplets.</strong> You can use a bonus action to gain a number of motes equal to your proficiency bonus. You can’t do so again until you finish a long rest.</p>
+            <p><strong>The Watcher.</strong> You can see normally in darkness, both magical and nonmagical, to a distance of 60 feet.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Archetype Feature" name="Constellation (Written in the Stars)" supports="Alpha Druid Constellation" level="2" />
+            <select type="Archetype Feature" name="Constellation (Cosmic Tales)" supports="Alpha Druid Constellation" level="6" />
+            <select type="Archetype Feature" name="Constellation (Living Constellations)" supports="Alpha Druid Constellation" level="10" />
+        </rules>
+    </element>
+    <element name="The Anvil" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_CONSTELLATIONS_ANVIL">
+        <supports>Alpha Druid Constellation</supports>
+        <description>
+            <p>Whenever you finish a short or long rest, you gain the benefits of mage armor.</p>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_MAGE_ARMOR" />
+            </div>
+        </description>
+        <sheet>
+            <description>Whenever you finish a short or long rest, you gain the benefits of mage armor.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_MAGE_ARMOR" />
+        </rules>
+    </element>
+    <element name="The Beast" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_CONSTELLATIONS_BEAST">
+        <supports>Alpha Druid Constellation</supports>
+        <description>
+            <p>You gain a natural weapon, such as a bite or claw attack, which you are proficient with. You use your Strength or Dexterity modifier for attack and damage rolls. It deals 1d8 bludgeoning, piercing, or slashing damage.</p>
+        </description>
+        <sheet>
+            <description>You gain a natural weapon, such as a bite or claw attack, which you are proficient with. You use your Strength or Dexterity modifier for attack and damage rolls. It deals 1d8 bludgeoning, piercing, or slashing damage.</description>
+        </sheet>
+    </element>
+    <element name="The Chalice" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_CONSTELLATIONS_CHALICE">
+        <supports>Alpha Druid Constellation</supports>
+        <description>
+            <p>You can cast bless once without expending a spell slot. You can’t do so again until you finish a long rest. When you cast it, you gain 1 mote of starlight.</p>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_BLESS" />
+            </div>
+        </description>
+        <sheet>
+            <description usage="1/Long Rest">You can cast bless once without expending a spell slot. When you cast it, you gain 1 mote of starlight.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_BLESS" />
+        </rules>
+    </element>
+    <element name="The Crown" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_CONSTELLATIONS_CROWN">
+        <supports>Alpha Druid Constellation</supports>
+        <description>
+            <p>You can cast command once without expending a spell slot. You can’t do so again until you finish a long rest. When you cast it, you gain 1 mote of starlight.</p>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_COMMAND" />
+            </div>
+        </description>
+        <sheet>
+            <description usage="1/Long Rest">You can cast command once without expending a spell slot. When you cast it, you gain 1 mote of starlight.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_COMMAND" />
+        </rules>
+    </element>
+    <element name="The Galley" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_CONSTELLATIONS_GALLEY">
+        <supports>Alpha Druid Constellation</supports>
+        <description>
+            <p>You gain a 30 feet swim speed.</p>
+        </description>
+        <sheet>
+            <description>You gain a 30 feet swim speed.</description>
+        </sheet>
+        <rules>
+            <stat name="speed:swim" value="30" bonus="base" />
+        </rules>
+    </element>
+    <element name="The Harp" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_CONSTELLATIONS_HARP">
+        <supports>Alpha Druid Constellation</supports>
+        <description>
+            <p>You have advantage on saving throws made to avoid being frightened.</p>
+        </description>
+        <sheet>
+            <description>You have advantage on saving throws made to avoid being frightened.</description>
+        </sheet>
+    </element>
+    <element name="The Jester" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_CONSTELLATIONS_JESTER">
+        <supports>Alpha Druid Constellation</supports>
+        <description>
+            <p>Opportunity attacks made against you have disadvantage.</p>
+        </description>
+        <sheet>
+            <description>Opportunity attacks made against you have disadvantage.</description>
+        </sheet>
+    </element>
+    <element name="The Lover" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_CONSTELLATIONS_LOVER">
+        <supports>Alpha Druid Constellation</supports>
+        <description>
+            <p>You can cast blindness/deafness once without expending a spell slot. You can’t do so again until you finish a long rest. When you cast it, you gain 1 mote of starlight.</p>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_BLINDNESS_DEAFNESS" />
+            </div>
+        </description>
+        <sheet>
+            <description usage="1/Long Rest">You can cast blindness/deafness once without expending a spell slot. When you cast it, you gain 1 mote of starlight.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_BLINDNESS_DEAFNESS" />
+        </rules>
+    </element>
+    <element name="The Magus" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_CONSTELLATIONS_MAGUS">
+        <supports>Alpha Druid Constellation</supports>
+        <description>
+            <p>You gain two cantrips from the Wizard spell list, they count as druid cantrips for you.</p>
+        </description>
+        <sheet>
+            <description>You gain two cantrips from the Wizard spell list, they count as druid cantrips for you.</description>
+        </sheet>
+        <rules>
+            <select type="Spell" name="The Magus" supports="0, Wizard" number="2" spellcasting="Druid (Alpha)" />
+        </rules>
+    </element>
+    <element name="The Serpent" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_CONSTELLATIONS_SERPENT">
+        <supports>Alpha Druid Constellation</supports>
+        <description>
+            <p>Disguise self is added to your spell list.</p>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_DISGUISE_SELF" />
+            </div>
+        </description>
+        <sheet>
+            <description>Disguise self is added to your spell list.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_DISGUISE_SELF" spellcasting="Druid (Alpha)" prepared="true" />
+        </rules>
+    </element>
+    <element name="The Stranger" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_CONSTELLATIONS_STRANGER">
+        <supports>Alpha Druid Constellation</supports>
+        <description>
+            <p>You can add your proficiency bonus to death saving throws.</p>
+        </description>
+        <sheet>
+            <description>You can add {{proficiency}} to death saving throws.</description>
+        </sheet>
+    </element>
+    <element name="The Sword" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_CONSTELLATIONS_SWORD">
+        <supports>Alpha Druid Constellation</supports>
+        <description>
+            <p>You can consume your motes as part of making an attack roll.</p>
+        </description>
+        <sheet>
+            <description>You can consume your motes as part of making an attack roll.</description>
+        </sheet>
+    </element>
+    <element name="The Traveler" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_CONSTELLATIONS_TRAVELER">
+        <supports>Alpha Druid Constellation</supports>
+        <description>
+            <p>Your base walking speed increases by 10 feet.</p>
+        </description>
+        <sheet>
+            <description>Your base walking speed increases by 10 feet.</description>
+        </sheet>
+        <rules>
+            <stat name="speed" value="10" />
+        </rules>
+    </element>
+    <element name="The Triplets" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_CONSTELLATIONS_TRIPLETS">
+        <supports>Alpha Druid Constellation</supports>
+        <description>
+            <p>You can use a bonus action to gain a number of motes equal to your proficiency bonus. You can’t do so again until you finish a long rest.</p>
+        </description>
+        <sheet>
+            <description action="Bonus Action" usage="1/Long Rest">You can use a bonus action to gain {{proficiency}} motes.</description>
+        </sheet>
+    </element>
+    <element name="The Watcher" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_CONSTELLATIONS_WATCHER">
+        <supports>Alpha Druid Constellation</supports>
+        <description>
+            <p>You can see normally in darkness, both magical and nonmagical, to a distance of 60 feet.</p>
+        </description>
+        <sheet>
+            <description>You can see normally in darkness, both magical and nonmagical, to a distance of 60 feet.</description>
+        </sheet>
+    </element>
+
+    <element name="Cosmic Tales" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_CONSTELLATIONS_COSMIC_TALES">
+        <description>
+            <p>At 6th level, you weave the motes you collect into to constellations of your own. You can consume your available motes to cast a druid spell of equal level to the number of motes consumed without expending a spell slot.</p>
+            <p class="indent">Once you've done this, you must finish a long rest before you can do so again.</p>
+            <p class="indent">Additionally, you can attune to a second constellation.</p>
+        </description>
+        <sheet>
+            <description usage="1/Long Rest">You can consume your available motes to cast a druid spell of equal level to the number of motes consumed without expending a spell slot.</description>
+        </sheet>
+    </element>
+
+    <element name="Living Constellations" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_CONSTELLATIONS_LIVING_CONSTELLATIONS">
+        <description>
+            <p>At 10th level, you power changes as the world turns to reveal new legends. After you finish a long rest, you can change which constellations you are attuned to.</p>
+            <p class="indent">Additionally, you can attune to a third constellation.</p>
+        </description>
+        <sheet>
+            <description level="6">After you finish a long rest, you can change which constellations you are attuned to.</description>
+            <description level="18">After you finish a short rest, you can change which constellations you are attuned to.</description>
+        </sheet>
+    </element>
+
+    <element name="Hearth of Moon and Stars" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_CONSTELLATIONS_HEARTH_MOON_STARS">
+        <description>
+            <p>Beginning at 14th level, the moon protects you wherever you are. During a short or long rest, you can invoke the power of the moon to guard your respite. At the start of the rest, you touch a point in space, and an invisible, 30-foot-radius sphere of magic appears, centered on that point. Total cover blocks the sphere.</p>
+            <p class="indent">While within the sphere, you and your allies gain a +5 bonus to Dexterity (Stealth) and Wisdom (Perception) checks, and any light from open flames or magic in the sphere (a campfire, dancing lights spell, torches, or the like) isn't visible outside it. The upper part of the sphere shows a replica of the night sky, even if the sky is otherwise hidden.</p>
+            <p class="indent">The sphere vanishes at the end of the rest or when you leave the sphere.</p>
+            <p class="indent">Additionally, as long as you are under the night sky, you can ignore the material cost of the divination spell.</p>
+        </description>
+        <sheet>
+            <description>At the start of a short or long rest, you touch a point in space, and an invisible, 30-foot-radius sphere of magic appears, centered on that point. Total cover blocks the sphere. While within the sphere, you and your allies gain a +5 bonus to Dexterity (Stealth) and Wisdom (Perception) checks, and any light from open flames or magic in the sphere isn't visible outside it. The upper part of the sphere shows a replica of the night sky, even if the sky is otherwise hidden. The sphere vanishes at the end of the rest or when you leave the sphere.
+            Additionally, as long as you are under the night sky, you can ignore the material cost of the divination spell.</description>
+        </sheet>
+    </element>
+
+    <element name="Celestial Body" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_CONSTELLATIONS_CELESTIAL_BODY">
+        <description>
+            <p>Beginning at 18th level, you have become a legend of your own and the cosmos has seen fit to immortalize you among the stars. You gain the following benefits:</p>
+            <ul>
+                <li>Your motes use d8's instead of d4's, and whenever you use a mote on a target other than yourself, you are healed for half the amount of damage dealt or healing given.</li>
+                <li>When you consume the motes, you can divide the damage and healing as you see fit. For example, with 6 motes you can heal a friendly creature for 4d8 while dealing 2d8 to an enemy creature.</li>
+                <li>When you roll for initiative, you gain 6 motes.</li>
+            </ul>
+            <p class="indent">Additionally, you can change your attuned constellations when you finish a short rest.</p>
+        </description>
+        <sheet>
+            <description>Whenever you use a mote on a target other than yourself, you are healed for half the amount of damage dealt or healing given. When you consume the motes, you can divide the damage and healing as you see fit. When you roll for initiative, you gain 6 motes.</description>
+        </sheet>
+    </element>
+
+    <element name="Magic Missile Barrage" type="Spell" source="Alpha Druid" id="ID_SWECKY_SPELL_MAGIC_MISSILE_BARRAGE">
+        <supports>Sorcerer, Wizard</supports>
+        <description>
+            <p>You call forth a swarm of magical darts of glowing force, which swirl around you as they move with you. Each time a creature that you can see ends its turn within range, you can have a single dart fly forth and unerringly strike them.</p>
+            <p class="indent">Additionally, as part of casting this spell and as an action on your turn you cause up to 6 darts to fly forth and strike a creature of your choice that you can see within range. A dart deals 1d4 + 1 force damage to its target and is considered a magic missile for effects such as the shield spell. The darts all strike simultaneously and you can direct them to hit one creature or several.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 6th level or higher, the spell creates one more dart for each slot above 5th each time you use an action on your turn to cause darts to fly forth.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Midnight" type="Spell" source="Alpha Druid" id="ID_SWECKY_SPELL_MIDNIGHT">
+        <description>
+            <p>A 60-foot-radius sphere of darkness spreads out from a point you choose within range. The sphere is magical darkness, which means that darkvision can't see through it.</p>
+            <p class="indent">If the point you choose is on an object you are holding or one that isn't being worn or carried, the darkness emanates from the object and moves with it. Completely covering the source of the darkness with an opaque object, such as a bowl or a helm, blocks the darkness.</p>
+            <p class="indent">If any of this spell's area overlaps with an area of light created by a spell of the same level or lower, the spell that created the light is dispelled.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 6th level or higher, the radius increases 5 feet for each slot level above 5th.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    
+</elements>

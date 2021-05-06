@@ -15,6 +15,27 @@
 			<set name="release">20180422</set>
 		</setters>
 	</element>
+	<element name="Alpha Druid" type="Source" source="Alpha Druid" id="ID_SWECKY_SOURCE_ALPHA_DRUID">
+		<description>
+			<![CDATA[<p> Since the release of 5e the druid class have always irked me. While the Ranger had it problems, it was still a class I would play. The druid was a class which was supposedly a hybrid class, but felt like it lost a lot of flavour it could have had for it. </p>
+			<p> A Little too Wild. A lot came down to having quite a large ability (Wild Shape) which would go largely unused or if the subclass focused on it, it felt extremely weirdly balanced; it went from overpowered to weak, back to overpowered and towards useless in the end. Any druid can still use polymorph to turn themselves into a scouting creature if that is what you want. Removing Wild Shape from the main class opens up a lot of design space for doing interesting things for the subclasses, something I hope you enjoy as much as I have. </p>
+			<p> A Part of History. "But it has been this way for a long time!" Some might say, and yes it has, but it severly limits its design space in my opinion and I'm pretty sure I'm not alone in feeling like I'm missing out when I want to play a non-shapeshifting druid. </p>
+			<p> Additional Spells? I really enjoyed the Circle of the Spore druid Wizards have created and how Circle spells can make it feel a lot more unique, I've added such to each Circle and made them play into how the subclass plays. The druid class have an unique spell list which sometimes feel a bit too niche, giving them some additional spells help reinforce the flavour of their subclass. </p>
+			<p> The Unlimited Elephant in the Room. I've also tried to rebalance the 20th level ability, an ability I've never liked as it was written. I'm still not totally satisfied with how it is and would love to hear how people envision a lvl 20 Archdruid ability would look and feel. </p>
+			<p> On the Horizon. I've got plans for more circles; Circle of the Sun (healer focused), Circle of the Swarm/Many (CC focused), Circle of Balance/Harmony (jack of all trades), Circle of the Ethereal (Find familiar and summon focused), Circle of the Courts (fey, illusion/deception focused). </p>
+			<p> Remember the Supplements. I've added 4 appendixes at the end of the document; A and B for creating the Circle of the Keeper Companion, Appendix C for Homebrew Spells which I use, and lastly Appendix D with all familiars for ease of access... and it might be important in the future. </p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">SWECKY</set>
+			<set name="url">https://www.reddit.com/user/SwEcky/submitted/</set>
+			<set name="image">https://styles.redditmedia.com/t5_drhrd/styles/profileIcon_k7c7jlvs9ps01.jpg</set>
+			<set name="author" abbreviation="SWECKY" url="https://www.reddit.com/user/SwEcky/submitted/">SwEcky</set>
+			<set name="official">false</set>
+			<set name="supplement">false</set>
+            <set name="homebrew">true</set>
+			<set name="release">20180422</set>
+		</setters>
+	</element>
 	<element name="SwEcky's " type="Source" source="SwEcky's " id="ID_SWECKY_SOURCE_">
 		<description>
 			<![CDATA[<p> details </p>]]>

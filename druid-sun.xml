@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    
+    <element name="Circle of the Sun" type="Archetype" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_ALPHA_DRUID_SUN">
+        <supports>Alpha Druid Circle</supports>
+        <description>
+            <p>Druids of this circle revere the sun, one of the most important astral bodies, as it is a wellspring of life. They draw upon its power to restore and repair those in need, as well as burn away those who spurn the living. There are many stories where these druids turn up and heal someone in need without asking for anything in return, other tales tell about how a king's request and gold was turned down.</p>
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_SUN_SPELLS" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_SUN_NURTURED_BY_THE_SUN" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_SUN_RADIANT_POWER" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_SUN_LIGHTS_EMBRACE" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_SUN_SUNS_GRACE" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_SUN_BLINDING_RADIANCE" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_SUN_LIGHTBRINGER" />
+        </description>
+        <sheet display="false">
+            <description>Druids of this circle revere the sun, one of the most important astral bodies, as it is a wellspring of life.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_SUN_SPELLS" level="2" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_SUN_NURTURED_BY_THE_SUN" level="2" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_SUN_RADIANT_POWER" level="2" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_SUN_LIGHTS_EMBRACE" level="6" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_SUN_SUNS_GRACE" level="10" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_SUN_BLINDING_RADIANCE" level="14" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_SUN_LIGHTBRINGER" level="18" />
+        </rules>
+    </element>
+
+    <element name="Circle Spells" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_SUN_SPELLS">
+        <description>
+            <p>You gain circle spells at the druid levels listed.</p>
+            <h5>CIRCLE OF THE SUN SPELLS</h5>
+            <table>
+                <thead>
+                    <tr><td>Druid Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>2nd</td><td>bless, healing word</td></tr>
+                <tr><td>3rd</td><td>guiding light, prayer of healing</td></tr>
+                <tr><td>5th</td><td>daylight, mass healing word</td></tr>
+                <tr><td>7th</td><td>aura of life, hammer of the gods</td></tr>
+                <tr><td>9th</td><td>dawn, mass cure wounds</td></tr>
+            </table>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_BLESS" level="2" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_HEALING_WORD" level="2" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_SWECKY_SPELL_GUIDING_LIGHT" level="3" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_PRAYER_OF_HEALING" level="3" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_DAYLIGHT" level="5" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_MASS_HEALING_WORD" level="5" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_AURA_OF_LIFE" level="7" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_SWECKY_SPELL_HAMMER_OF_THE_GODS" level="7" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_XGTE_SPELL_DAWN" level="9" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_MASS_CURE_WOUNDS" level="9" spellcasting="Druid (Alpha)" prepared="true" />
+        </rules>
+    </element>
+
+    <element name="Nurtured by the Sun" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_SUN_NURTURED_BY_THE_SUN">
+        <description>
+            <p>At 2nd level, the sun blesses you with its power, you gain the light and sacred flame cantrips.</p>
+            <p class="indent">Additionally, as long as you have spent 2 hours or more in the sun during the day, you don't need to eat, drink, or sleep for the next 24 hours.</p>
+        </description>
+        <sheet>
+            <description>As long as you have spent 2 hours or more in the sun during the day, you don't need to eat, drink, or sleep for the next 24 hours.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_LIGHT" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_SACRED_FLAME" spellcasting="Druid (Alpha)" prepared="true" />
+        </rules>
+    </element>
+
+    <element name="Radiant Power" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_SUN_RADIANT_POWER">
+        <description>
+            <p>Also at 2nd level, your powers scorches those who are careless. When you cast a spell to heal a creature you can use your reaction to damage another creature within 5 feet of it. The damage is radiant and equals half the amount for which you healed the creature.</p>
+            <p class="indent">Also, the dice you roll for healing spells increase by one dice size, for example cure wounds use d10's instead of d8's.</p>
+        </description>
+        <sheet>
+            <description action="Reaction">When you cast a spell to heal a creature you can use your reaction to damage another creature within 5 feet of it. The damage is radiant and equals half the amount for which you healed the creature. Also, the dice you roll for healing spells increase by one dice size.</description>
+        </sheet>
+    </element>
+
+    <element name="Light's Embrace" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_SUN_LIGHTS_EMBRACE">
+        <description>
+            <p>At 6th level, you further the reach of the sun's powers. As long as a you and a target share the same bright light of a spell you have created you can target it with a healing spell, disregarding its normal range.</p>
+            <p class="indent">Additionally, as long as an allied creature is in magical or non-magical bright light, you don't need line of sight to target it with a spell.</p>
+        </description>
+        <sheet>
+            <description>As long as a you and a target share the same bright light of a spell you have created, you can target it with a healing spell, disregarding its normal range. Additionally, as long as an allied creature is in magical or non-magical bright light, you don't need line of sight to target it with a spell.</description>
+        </sheet>
+    </element>
+
+    <element name="The Sun's Grace" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_SUN_SUNS_GRACE">
+        <description>
+            <p>At 10th level, your power which burns down evil can also restore those true of heart. When you cast a spell that deals radiant damage in an area, you can choose one creature within the area which is unaffected. This creature is healed for half the damage rolled.</p>
+        </description>
+        <sheet>
+            <description level="10">When you cast a spell that deals radiant damage in an area, you can choose one creature within the area which is unaffected. This creature is healed for half the damage rolled.</description>
+            <description level="18">When you cast a spell that deals radiant damage in an area, you can choose up to five creatures within the area which are unaffected. These creatures are healed for half the damage rolled.</description>
+        </sheet>
+    </element>
+
+    <element name="Blinding Radiance" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_SUN_BLINDING_RADIANCE">
+        <description>
+            <p>Beginning at 14th level, the light you bring can singe the eyes of those unpure. When you cast a spell that sheds bright light, each creature of your choice within the bright light must make a Constitution saving throw against your spell save DC. On a failure, the creature is blinded until the end of their next turn.</p>
+        </description>
+        <sheet>
+            <description>When you cast a spell that sheds bright light, each creature of your choice within the bright light must make a Constitution saving throw against your spell save DC. On a failure, the creature is blinded until the end of their next turn.</description>
+        </sheet>
+    </element>
+
+    <element name="Lightbringer" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_SUN_LIGHTBRINGER">
+        <description>
+            <p>At 18th level, you can control all of the sun's powers. When an allied creature within 50 feet of you is in within an magical light you created or sunlight, it is affected by the bless spell.</p>
+            <p class="indent">Also, the bright light of your spells count as sunlight.</p>
+            <p class="indent">Additionally, when you use The Sun's Grace, you can choose up to five creatures which are unaffected and healed.</p>
+            <p class="indent">Finally, you can cast light as a bonus action.</p>
+        </description>
+        <sheet>
+            <description>When an allied creature within 50 feet of you is in within an magical light you created or sunlight, it is affected by the bless spell. Also, the bright light of your spells count as sunlight. Finally, you can cast light as a bonus action.</description>
+        </sheet>
+    </element>
+
+    <element name="Guiding Light" type="Spell" source="Alpha Druid" id="ID_SWECKY_SPELL_GUIDING_LIGHT">
+        <supports>Cleric</supports>
+        <description>
+            <p>You release an orb of light from your palm. It travels in a line 5 feet wide 60 feet long in a direction you choose. Each creature in the line must make a Constitution saving throw. A creature takes 3d6 radiant damage on a failed save, or half as much damage on a successful one. Fiends and undead make the saving throw with disadvantage.</p>
+            <p class="indent">The area is illuminated by bright light until the end of your next turn, and the area within 5 feet of the spell is illuminated by dim light.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each slot level above 2nd.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Hammer of the Gods" type="Spell" source="Alpha Druid" id="ID_SWECKY_SPELL_HAMMER_OF_THE_GODS">
+        <supports>Cleric</supports>
+        <description>
+            <p>You summon a pillar of bright golden light that burns creatures in its area with its radiance. The spell affects a cylinder that is 40 feet high and has a 15-foot radius. All creatures in the area must make a Constitution saving throw, taking 6d8 radiant damage on a failed save, or half as much on a successful one. Fiends and undead makes this saving throw with disadvantage and are stunned on a failed save.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 5th level or higher, increase the radiant damage by 1d8 per slot level above 4th.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">120 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a tiny golden hammer worth at least 25 gold</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    
+</elements>

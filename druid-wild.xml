@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    
+    <element name="Circle of the Wild" type="Archetype" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_ALPHA_DRUID_WILD">
+        <supports>Alpha Druid Circle</supports>
+        <description>
+            <p>Druids of the Circle of the Wild are fierce guardians of the wilds. Their order gathers under the full moon to share news and trade warnings. They haunt the deepest parts of the wilderness, where they might go for weeks on end before crossing paths with another humanoid creature, let alone another druid.</p>
+            <p class="indent">Changeable as the weather, a druid of this circle might prowl as a great cat one night, soar over the treetops as an eagle the next day, and crash through the undergrowth as a bear to drive off a trespassing monster. The wild is in the druid’s blood.</p>
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_WILD_SPELLS" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_WILD_BEAST_SHAPE" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_WILD_PRIMAL_FORM" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_WILD_DIRE_FORMS" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_WILD_ONE_WITH_THE_WILD" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_WILD_WILD_SHAPE" />
+            <div element="ID_SWECKY_INFORMATION_ALPHA_DRUID_WILD_GUARDIAN" />
+            <div element="ID_SWECKY_INFORMATION_ALPHA_DRUID_WILD_PROWLER" />
+            <div element="ID_SWECKY_INFORMATION_ALPHA_DRUID_WILD_HUNTER" />
+            <div element="ID_SWECKY_INFORMATION_ALPHA_DRUID_WILD_SEEKER" />
+            <div element="ID_SWECKY_INFORMATION_ALPHA_DRUID_WILD_WATCHER" />
+        </description>
+        <sheet display="false">
+            <description>Changeable as the weather, a druid of this circle might prowl as a great cat one night, soar over the treetops as an eagle the next day, and crash through the undergrowth as a bear to drive off a trespassing monster.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_WILD_SPELLS" level="2" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_WILD_BEAST_SHAPE" level="2" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_WILD_PRIMAL_FORM" level="6" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_WILD_DIRE_FORMS" level="10" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_WILD_ONE_WITH_THE_WILD" level="14" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_WILD_WILD_SHAPE" level="18" />
+        </rules>
+    </element>
+
+    <element name="Circle Spells" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_WILD_SPELLS">
+        <description>
+            <p>You gain circle spells at the druid levels listed.</p>
+            <h5>CIRCLE OF THE WILD SPELLS</h5>
+            <table>
+                <thead>
+                    <tr><td>Druid Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>2nd</td><td>dark pounce, hunter's pace</td></tr>
+                <tr><td>3rd</td><td>blur, pass without trace</td></tr>
+                <tr><td>5th</td><td>serpent's bite, warrior's cry</td></tr>
+                <tr><td>7th</td><td>dominate beast, splitting shout</td></tr>
+                <tr><td>9th</td><td>pride of the wild, survival instincts</td></tr>
+            </table>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Spell" id="ID_SWECKY_SPELL_DARK_POUNCE" level="2" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_SWECKY_SPELL_HUNTERS_PACE" level="2" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_BLUR" level="3" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_PASS_WITHOUT_TRACE" level="3" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_SWECKY_SPELL_SERPENTS_BITE" level="5" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_SWECKY_SPELL_WARRIORS_CRY" level="5" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_DOMINATE_BEAST" level="7" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_SWECKY_SPELL_SPLITTING_SHOUT" level="7" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_SWECKY_SPELL_PRIDE_OF_THE_WILD" level="9" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_SWECKY_SPELL_SURVIVAL_INSTINCTS" level="9" spellcasting="Druid (Alpha)" prepared="true" />
+        </rules>
+    </element>
+
+    <element name="Beast Shpe" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_WILD_BEAST_SHAPE">
+        <description>
+            <p>Starting at 2nd level, you can use your bonus action to magically assume the shape of different beasts. You gain access to five different types of shapes, though you decide how they look visually. You can use this feature twice and regain expended uses when you finish a short or long rest.</p>
+            <p class="indent">You stay in a beast shape until you use a bonus action on your turn to revert to humanoid form. You automatically revert if you fall unconscious, drop to 0 hit points, or die. Whenever you gain an Ability Score Increase, you may add that to each form. While you are transformed, the following rules apply:</p>
+            <ul>
+                <li>Your game statistics are replaced by the statistics of a beast detailed on the next page, but you retain your alignment, personality, proficiency modifier (already added in the statblock for attacks, increase it with levels), skill proficiencies, saving throws, and Intelligence, Wisdom, and Charisma scores. You count as a shapeshifter.</li>
+                <li>When you transform, you assume the beast’s hit points. When you revert to your normal form, you return to the number of hit points you had before you transformed. However, if you revert as a result of dropping to 0 hit points, any excess damage carries over to your normal form. For example, if you take 10 damage in animal form and have only 1 hit point left, you revert and take 9 damage. As long as the excess damage doesn’t reduce your normal form to 0 hit points, you aren’t knocked unconscious.</li>
+                <li>You can’t cast spells, and your ability to speak or take any action that requires hands is limited to the capabilities of your beast form. Transforming doesn’t break your concentration on a spell you’ve already cast, however, or prevent you from taking actions that are part of a spell, such as call lightning, that you’ve already cast. You retain the benefit of any features from your class, race, or other source and can use them if the new form is physically capable of doing so. However, you can’t use any of your special senses, such as darkvision, unless your new form also has that sense.</li>
+                <li>Your equipment merges into your new form and has no effect until you leave the form. If you equip equipment in a Beast Shape and leave the form, the item will disappear and appear equipped when you re-enter the form.</li>
+                <li>While you are transformed by Beast Shape, you can use a bonus action to expend one spell slot to regain 1d8 hit points per level of the spell slot expended.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description action="Bonus Action" usage="2/Short Rest" level="2">You can use your bonus action to magically assume the shape of different beasts. You gain access to five different types of shapes, though you decide how they look visually. You can use this feature twice and regain expended uses when you finish a short or long rest. You stay in a beast shape until you use a bonus action on your turn to revert to humanoid form. You automatically revert if you fall unconscious, drop to 0 hit points, or die. Whenever you gain an Ability Score Increase, you may add that to each form. While you are transformed by Beast Shape, you can use a bonus action to expend one spell slot to regain 1d8 hit points per level of the spell slot expended.</description>
+            <description action="Bonus Action" usage="3/Short Rest" level="18">You can use your bonus action to magically assume the shape of different beasts. You gain access to five different types of shapes, though you decide how they look visually. You can use this feature twice and regain expended uses when you finish a short or long rest. You stay in a beast shape until you use a bonus action on your turn to revert to humanoid form. You automatically revert if you fall unconscious, drop to 0 hit points, or die. Whenever you gain an Ability Score Increase, you may add that to each form. While you are transformed by Beast Shape, you can use a bonus action to expend one spell slot to regain 1d8 hit points per level of the spell slot expended.</description>
+        </sheet>
+    </element>
+
+    <element name="Primal Form" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_WILD_PRIMAL_FORM">
+        <description>
+            <p>Starting at 6th level, while you are in Beast Shape you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+            <p class="indent">Also, you can cast your Circle Spells of 2nd level or lower when in Beast Shape. At 8th level you can cast spells of 3rd level, at 10th spells of 4th level, at 12th spell of 5th level.</p>
+            <p class="indent">Finally, your attacks in Beast Shape count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
+        </description>
+        <sheet>
+            <description level="6">While you are in Beast Shape you can attack twice, instead of once, whenever you take the Attack action on your turn. Also, you can cast your Circle Spells of 2nd level or lower when in Beast Shape. Finally, your attacks in Beast Shape count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</description>
+            <description level="8">While you are in Beast Shape you can attack twice, instead of once, whenever you take the Attack action on your turn. Also, you can cast your Circle Spells of 3rd level or lower when in Beast Shape. Finally, your attacks in Beast Shape count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</description>
+            <description level="10">While you are in Beast Shape you can attack twice, instead of once, whenever you take the Attack action on your turn. Also, you can cast your Circle Spells of 4th level or lower when in Beast Shape. Finally, your attacks in Beast Shape count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</description>
+            <description level="12">While you are in Beast Shape you can attack twice, instead of once, whenever you take the Attack action on your turn. Also, you can cast your Circle Spells of 5th level or lower when in Beast Shape. Finally, your attacks in Beast Shape count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</description>
+        </sheet>
+    </element>
+
+    <element name="Dire Forms" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_WILD_DIRE_FORMS">
+        <description>
+            <p>At 10th level, your shaping has become even more potent, the damage die size of your forms increases by one (for example d10 becomes d12) and each form can become one size larger. Additionally, each of your forms gain a new benefit:</p>
+            <p class="indent"><strong>Guardian.</strong> You can use your reaction to reduce one instance of incoming bludgeoning, piercing, or slashing damage by half and your Armor Class is equal to 16 + Dexterity modifier.</p>
+            <p class="indent"><strong>Hunter.</strong> While in Hunter form you can attack three times instead of twice, whenever you take the Attack action on your turn and you can take the Dash action as a bonus action.</p>
+            <p class="indent"><strong>Prowler.</strong> Your movement speed increases by 20 feet and you can take the Hide action as a bonus action.</p>
+            <p class="indent"><strong>Seeker.</strong> Your swim speed increases by 30 feet and your darkvision is increased by 60 feet.</p>
+            <p class="indent"><strong>Watcher.</strong> Your fly speed increases by 20 feet and your Armor Class is equal to 12 + Dexterity modifier.</p>
+        </description>
+        <sheet>
+            <description>Your shaping has become even more potent, the damage die size of your forms increases by one and each form can become one size larger. Additionally, each of your forms gains a new benefit (see long description).</description>
+        </sheet>
+    </element>
+
+    <element name="One with the Wild" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_WILD_ONE_WITH_THE_WILD">
+        <description>
+            <p>At 14th level, your beast shapes are one with the wild. You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1, for each beast form. Your maximum for Strength, Dexterity, and Constitution in Beast Shape is now 22.</p>
+            <p class="indent">Finally, you can cast any 5th level spells or lower that doesn't have a material cost in Beast Shape.</p>
+        </description>
+        <sheet>
+            <description>You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1, for each beast form. Your maximum for Strength, Dexterity, and Constitution in Beast Shape is now 22. Finally, you can cast any 5th level spells or lower that doesn't have a material cost in Beast Shape.</description>
+        </sheet>
+    </element>
+
+    <element name="Wild Shape" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_WILD_WILD_SHAPE">
+        <description>
+            <p>Beginning at 18th level, the skill at which you transform makes you able to combine the strengths of your forms. When you enter a beast form you can choose one of the other benefits gained by a different form at 10th level, and gain that benefit as well. For example, when you enter Guardian form you can choose to gain the benefits of the Dire Watcher form as well to gain a small flight speed while in Guardian form.</p>
+            <p class="indent">Also, you can use Beast Shape one additional time before you need to take a short or long rest. Finally, you gain 40 temporary hit points when you enter a beast form.</p>
+        </description>
+        <sheet>
+            <description>When you enter a beast form you can choose one of the other benefits gained by a different form at 10th level, and gain that benefit as well. You gain 40 temporary hit points when you enter a beast form.</description>
+        </sheet>
+    </element>
+
+    <element name="Guardian" type="Information" source="Alpha Druid" id="ID_SWECKY_INFORMATION_ALPHA_DRUID_WILD_GUARDIAN">
+		<description>
+			<p><em>Large beast</em></p>
+			<ul class="unstyled mb">
+			<li><strong>Armor Class</strong> 15</li>
+			<li><strong>Hit Points</strong> 13 (2d6+6)</li>
+			<li><strong>Speed</strong> 30 ft.</li>
+			</ul>
+			<table style="text-align:center">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td></tr></thead>
+				<tr><td>15 (+2)</td><td>13 (+1)</td><td>16 (+3)</td></tr>
+			</table>
+			<p><strong><em>Tough Hide.</em></strong> Your AC equals 14 + your Dexterity modifier and your Hit Points in this form increase by 1d6 + the form's Constitution modifier for each druid level above 2nd.</p>
+            <p><strong><em>Keen Smell.</em></strong> You have advantage on Wisdom (Perception) checks that rely on smell.</p>
+			<h5 class="caption">ACTIONS</h5>
+			<p><strong><em>Bite.</em></strong> <em>Melee Weapon Attack:</em> +4, reach 5 ft., one target. Hit: 1d8 + 2 piercing damage.</p>
+		</description>
+	</element>
+
+    <element name="Prowler" type="Information" source="Alpha Druid" id="ID_SWECKY_INFORMATION_ALPHA_DRUID_WILD_PROWLER">
+		<description>
+			<p><em>Small beast</em></p>
+			<ul class="unstyled mb">
+			<li><strong>Armor Class</strong> 14</li>
+			<li><strong>Hit Points</strong> 7 (2d4+2)</li>
+			<li><strong>Speed</strong> 45 ft.</li>
+			</ul>
+			<table style="text-align:center">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td></tr></thead>
+				<tr><td>13 (+1)</td><td>16 (+3)</td><td>13 (+1)</td></tr>
+			</table>
+			<ul class="unstyled mb">
+				<li><strong>Senses</strong> low-light vision 60 ft.</li>
+			</ul>
+			<p><strong><em>Hide.</em></strong> Your AC equals 11 + your Dexterity modifier and your Hit Points in this form increase by 1d6 + the form's Constitution modifier for each druid level above 2nd.</p>
+            <p><strong><em>Keen Smell.</em></strong> You have advantage on Wisdom (Perception) checks that rely on smell.</p>
+			<h5 class="caption">ACTIONS</h5>
+			<p><strong><em>Claw.</em></strong> <em>Melee Weapon Attack:</em> +3, reach 5 ft., one target. Hit: 1d6 + 1 slashing damage.</p>
+		</description>
+	</element>
+
+    <element name="Hunter" type="Information" source="Alpha Druid" id="ID_SWECKY_INFORMATION_ALPHA_DRUID_WILD_HUNTER">
+		<description>
+			<p><em>Medium beast</em></p>
+			<ul class="unstyled mb">
+			<li><strong>Armor Class</strong> 14</li>
+			<li><strong>Hit Points</strong> 9 (2d6+2)</li>
+			<li><strong>Speed</strong> 35 ft.</li>
+			</ul>
+			<table style="text-align:center">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td></tr></thead>
+				<tr><td>16 (+3)</td><td>15 (+2)</td><td>13 (+1)</td></tr>
+			</table>
+			<p><strong><em>Rough Hide.</em></strong> Your AC equals 12 + your Dexterity modifier and your Hit Points in this form increase by 1d6 + the form's Constitution modifier for each druid level above 2nd.</p>
+            <p><strong><em>Keen Smell.</em></strong> You have advantage on Wisdom (Perception) checks that rely on smell.</p>
+			<h5 class="caption">ACTIONS</h5>
+			<p><strong><em>Claw.</em></strong> <em>Melee Weapon Attack:</em> +5, reach 5 ft., one target. Hit: 1d10 + 3 slashing damage.</p>
+		</description>
+	</element>
+
+    <element name="Seeker" type="Information" source="Alpha Druid" id="ID_SWECKY_INFORMATION_ALPHA_DRUID_WILD_SEEKER">
+		<description>
+			<p><em>Medium beast</em></p>
+			<ul class="unstyled mb">
+			<li><strong>Armor Class</strong> 15</li>
+			<li><strong>Hit Points</strong> 11 (2d6+4)</li>
+			<li><strong>Speed</strong> 10 ft., swim 30 ft.</li>
+			</ul>
+			<table style="text-align:center">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td></tr></thead>
+				<tr><td>15 (+2)</td><td>15 (+2)</td><td>14 (+2)</td></tr>
+			</table>
+			<ul class="unstyled mb">
+				<li><strong>Senses</strong> darkvision 60 ft.</li>
+			</ul>
+			<p><strong><em>Scaled.</em></strong> Your AC equals 13 + your Dexterity modifier and your Hit Points in this form increase by 1d6 + the form's Constitution modifier for each druid level above 2nd.</p>
+            <p><strong><em>Water Breathing.</em></strong> You can breathe underwater.</p>
+			<h5 class="caption">ACTIONS</h5>
+			<p><strong><em>Slam.</em></strong> <em>Melee Weapon Attack:</em> +4, 5ft reach, one target. Hit: 1d8 + 2 piercing damage.</p>
+		</description>
+	</element>
+
+    <element name="Watcher" type="Information" source="Alpha Druid" id="ID_SWECKY_INFORMATION_ALPHA_DRUID_WILD_WATCHER">
+		<description>
+			<p><em>Tiny beast</em></p>
+			<ul class="unstyled mb">
+			<li><strong>Armor Class</strong> 14</li>
+			<li><strong>Hit Points</strong> 3 (2d4-2)</li>
+			<li><strong>Speed</strong> 10 ft., fly 30 ft.</li>
+			</ul>
+			<table style="text-align:center">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td></tr></thead>
+				<tr><td>8 (-1)</td><td>18 (+4)</td><td>8 (-1)</td></tr>
+			</table>
+			<p><strong><em>Feathered.</em></strong> Your AC equals 10 + your Dexterity modifier and your Hit Points in this form increase by 1d4 + the form's Constitution modifier for each druid level above 2nd.</p>
+            <p><strong><em>Keen Sight.</em></strong> You have advantage on Wisdom (Perception) checks that rely on sight.</p>
+			<h5 class="caption">ACTIONS</h5>
+			<p><strong><em>Peck.</em></strong> <em>Melee Weapon Attack:</em> +1, 5ft reach, one target. Hit: 1d4 - 1 piercing damage.</p>
+		</description>
+	</element>
+
+    <element name="Dark Pounce" type="Spell" source="Alpha Druid" id="ID_SWECKY_SPELL_DARK_POUNCE">
+        <supports>Warlock, Ranger</supports>
+        <description>
+            <p>The first time before the end of your next turn you make a running jump, you instead teleport to your landing location. If this jump would take you into a Large or smaller creature's space you appear in an unoccupied space in front of the creature (if there is none, the spell fails). The target must make a Strength saving throw. On a failure, the target falls prone and if you have a free hand, is grappled by you.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a 3rd level slot or higher, you can cast it with a bonus action.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">Self</set>
+            <set name="duration">1 round</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Hunter's Pace" type="Spell" source="Alpha Druid" id="ID_SWECKY_SPELL_HUNTERS_PACE">
+        <supports>Ranger</supports>
+        <description>
+            <p>You let out a hunting cry, empowering your body with speed and tirelessness. While you maintain concentration on this spell, you gain advantage on Athletics checks to jump, climb, swim, or move. You also gain advantage on saving throws against exhaustion and on checks to mitigate the effects of difficult terrain.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a slot of 2nd level or higher, your movement speed also increases by 5 feet per slot level above 1st.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration, up to 1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Serpent's Bite" type="Spell" source="Alpha Druid" id="ID_SWECKY_SPELL_SERPENTS_BITE">
+        <supports>Druid, Ranger</supports>
+        <description>
+            <p>Massive, venomous fangs spring from your mouth. Make a melee spell attack against a target within your reach. On a hit, the target takes 3d6 poison damage, and the target must make a Constitution saving throw. If they fail, they are poisoned until the start of your next turn. Until the spell ends, you can make the attack again on each of your turns as a bonus action.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 per slot level above 3rd.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Warrior's Cry" type="Spell" source="Alpha Druid" id="ID_SWECKY_SPELL_WARRIORS_CRY">
+        <supports>Bard, Paladin</supports>
+        <description>
+            <p>You unleash a mighty war cry, inspiring your allies and demoralizing your enemies. Each creature of your choice within the area that can hear you adds your spellcasting ability modifier to its next attack roll or ability check. All other creatures in the area that can hear you must make a Wisdom saving throw. On a failure, they apply your spellcasting ability modifier as a penalty to their next attack roll or ability check. Once a creature has applied the bonus (or penalty) the spell ends for that creature.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 6th level or higher, each affected creature applies the bonus or the penalty to the next two attack rolls or ability checks.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Enchantment</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">Self (25-foot radius)</set>
+            <set name="duration">1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Splitting Shout" type="Spell" source="Alpha Druid" id="ID_SWECKY_SPELL_SPLITTING_SHOUT">
+        <supports>Bard, Sorcerer, Warlock, Wizard</supports>
+        <description>
+            <p>You release a magically-enhanced ear-splitting cry, that deafens and damage creatures near you, and can be heard up to 1000 feet away. Each creature other than you within 30 feet of you must make a Constitution save, if a creature is within 10 feet, they make the saving throw with disadvantage. On a failure, it takes 10d6 thunder damage, and is deafened for 1 minute. On a success, it takes half the damage and is not deafened. A creature made of inorganic material such as stone, crystal, or metal has disadvantage on this saving throw.</p>
+            <p class="indent">A non magical object that isn't being worn or carried also takes the damage if it’s in the spell's area.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 5th level or higher, the thunder damage increases by 2d6 for each slot level above 4th.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">Self (30-foot radius)</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Pride of the Wild" type="Spell" source="Alpha Druid" id="ID_SWECKY_SPELL_PRIDE_OF_THE_WILD">
+        <supports>Ranger, Druid</supports>
+        <description>
+            <p>Up to 6 creatures of your choosing within range have their movement speed doubled for the duration. This effect is removed if a target takes a hostile action towards any creature.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">Enchantment</set>
+            <set name="time">1 minute</set>
+            <set name="range">5 feet</set>
+            <set name="duration">1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">the claw of a cheetah</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Survival Instincts" type="Spell" source="Alpha Druid" id="ID_SWECKY_SPELL_SURVIVAL_INSTINCTS">
+        <supports>Druid, Ranger</supports>
+        <description>
+            <p>You imbue yourself and up to 6 allies within range with improved reflexes. Affected creatures gain a bonus to Dexterity saves equal to your spellcasting ability modifier, and when they are subjected to an effect that allows them to make a Dexterity save for half damage, they instead take no damage on a success. On a failure, they only take half damage.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Concentration, up to 10 minutes</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a pinch of powdered emerald worth 100 gold, which the spell consumes</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    
+</elements>

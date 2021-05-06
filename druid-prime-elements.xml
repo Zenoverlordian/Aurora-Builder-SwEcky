@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    
+    <element name="Circle of the Prime Elements" type="Archetype" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_ALPHA_DRUID_PRIME">
+        <supports>Alpha Druid Circle</supports>
+        <description>
+            <p>The Circle of the Prime Elements is made up of wanderers and sages who keeps the connection between the elemental planes and the material plane safe and under control. These druids are often rumored to be destructive and dangerous, which is true, but only when they need to be.</p>
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_PRIME_ATTUNEMENT" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_PRIME_SPELLS" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_PRIME_ELEMENTAL_SHAPE" />
+            <div element="ID_SWECKY_INFORMATION_ALPHA_DRUID_ELEMENTAL_AIR" />
+            <div element="ID_SWECKY_INFORMATION_ALPHA_DRUID_ELEMENTAL_FIRE" />
+            <div element="ID_SWECKY_INFORMATION_ALPHA_DRUID_ELEMENTAL_EARTH" />
+            <div element="ID_SWECKY_INFORMATION_ALPHA_DRUID_ELEMENTAL_WATER" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_PRIME_PRIMORDIAL_CONNECTION" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_PRIME_ELEMENTAL_MASTERY" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_PRIME_ONE_WITH_THE_ELEMENTS" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_PRIME_PART_OF_THE_WHOLE" />
+        </description>
+        <sheet display="false">
+            <description>The Circle of the Prime Elements is made up of wanderers and sages who keeps the connection between the elemental planes and the material plane safe and under control.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_PRIME_SPELLS" level="2" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_PRIME_ATTUNEMENT" level="2" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_PRIME_ELEMENTAL_SHAPE" level="2" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_PRIME_PRIMORDIAL_CONNECTION" level="6" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_PRIME_ELEMENTAL_MASTERY" level="10" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_PRIME_ONE_WITH_THE_ELEMENTS" level="14" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_PRIME_PART_OF_THE_WHOLE" level="18" />
+        </rules>
+    </element>
+
+    <element name="Circle Spells" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_PRIME_SPELLS">
+        <description>
+            <p>You gain circle spells at the druid levels listed.</p>
+            <h5>AIR ATTUNEMENT SPELLS</h5>
+            <table>
+                <thead>
+                    <tr><td>Druid Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>2nd</td><td>thunderwave</td></tr>
+                <tr><td>3rd</td><td>gust of wind</td></tr>
+                <tr><td>5th</td><td>cyclone blast</td></tr>
+                <tr><td>7th</td><td>windblade</td></tr>
+                <tr><td>9th</td><td>control winds</td></tr>
+            </table>
+            <h5>EARTH ATTUNEMENT SPELLS</h5>
+            <table>
+                <thead>
+                    <tr><td>Druid Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>2nd</td><td>earth tremor</td></tr>
+                <tr><td>3rd</td><td>Maxmimilian's earthen grasp</td></tr>
+                <tr><td>5th</td><td>erupting earth</td></tr>
+                <tr><td>7th</td><td>stone shape</td></tr>
+                <tr><td>9th</td><td>transmute rock</td></tr>
+            </table>
+            <h5>FIRE ATTUNEMENT SPELLS</h5>
+            <table>
+                <thead>
+                    <tr><td>Druid Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>2nd</td><td>burning hands</td></tr>
+                <tr><td>3rd</td><td>Aganazzar's scorcher</td></tr>
+                <tr><td>5th</td><td>fireball</td></tr>
+                <tr><td>7th</td><td>fire shield</td></tr>
+                <tr><td>9th</td><td>immolation</td></tr>
+            </table>
+            <h5>WATER ATTUNEMENT SPELLS</h5>
+            <table>
+                <thead>
+                    <tr><td>Druid Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>2nd</td><td>ocean pulse</td></tr>
+                <tr><td>3rd</td><td>waterspout</td></tr>
+                <tr><td>5th</td><td>tidal wave</td></tr>
+                <tr><td>7th</td><td>control water</td></tr>
+                <tr><td>9th</td><td>maelstrom</td></tr>
+            </table>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_THUNDERWAVE" level="2" spellcasting="Druid (Alpha)" prepared="true" requirements="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_PRIME_ATTUNEMENT_A" />
+            <grant type="Spell" id="ID_PHB_SPELL_GUST_OF_WIND" level="3" spellcasting="Druid (Alpha)" prepared="true" requirements="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_PRIME_ATTUNEMENT_A" />
+            <grant type="Spell" id="ID_SWECKY_SPELL_CYCLONE_BLAST" level="5" spellcasting="Druid (Alpha)" prepared="true" requirements="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_PRIME_ATTUNEMENT_A" />
+            <grant type="Spell" id="ID_SWECKY_SPELL_WINDBLADE" level="7" spellcasting="Druid (Alpha)" prepared="true" requirements="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_PRIME_ATTUNEMENT_A" />
+            <grant type="Spell" id="ID_XGTE_SPELL_CONTROL_WINDS" level="9" spellcasting="Druid (Alpha)" prepared="true" requirements="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_PRIME_ATTUNEMENT_A" />
+            <grant type="Spell" id="ID_XGTE_SPELL_EARTH_TREMOR" level="2" spellcasting="Druid (Alpha)" prepared="true" requirements="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_PRIME_ATTUNEMENT_E" />
+            <grant type="Spell" id="ID_XGTE_SPELL_MAXIMILIANS_EARTHEN_GRASP" level="3" spellcasting="Druid (Alpha)" prepared="true" requirements="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_PRIME_ATTUNEMENT_E" />
+            <grant type="Spell" id="ID_XGTE_SPELL_ERUPTING_EARTH" level="5" spellcasting="Druid (Alpha)" prepared="true" requirements="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_PRIME_ATTUNEMENT_E" />
+            <grant type="Spell" id="ID_PHB_SPELL_STONE_SHAPE" level="7" spellcasting="Druid (Alpha)" prepared="true" requirements="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_PRIME_ATTUNEMENT_E" />
+            <grant type="Spell" id="ID_XGTE_SPELL_TRANSMUTE_ROCK" level="9" spellcasting="Druid (Alpha)" prepared="true" requirements="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_PRIME_ATTUNEMENT_E" />
+            <grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" level="2" spellcasting="Druid (Alpha)" prepared="true" requirements="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_PRIME_ATTUNEMENT_F" />
+            <grant type="Spell" id="ID_XGTE_SPELL_AGANAZZARS_SCORCHER" level="3" spellcasting="Druid (Alpha)" prepared="true" requirements="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_PRIME_ATTUNEMENT_F" />
+            <grant type="Spell" id="ID_PHB_SPELL_FIREBALL" level="5" spellcasting="Druid (Alpha)" prepared="true" requirements="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_PRIME_ATTUNEMENT_F" />
+            <grant type="Spell" id="ID_PHB_SPELL_FIRE_SHIELD" level="7" spellcasting="Druid (Alpha)" prepared="true" requirements="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_PRIME_ATTUNEMENT_F" />
+            <grant type="Spell" id="ID_XGTE_SPELL_IMMOLATION" level="9" spellcasting="Druid (Alpha)" prepared="true" requirements="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_PRIME_ATTUNEMENT_F" />
+            <grant type="Spell" id="ID_SWECKY_SPELL_OCEAN_PULSE" level="2" spellcasting="Druid (Alpha)" prepared="true" requirements="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_PRIME_ATTUNEMENT_W" />
+            <grant type="Spell" id="ID_SWECKY_SPELL_WATERSPOUT" level="3" spellcasting="Druid (Alpha)" prepared="true" requirements="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_PRIME_ATTUNEMENT_W" />
+            <grant type="Spell" id="ID_XGTE_SPELL_TIDAL_WAVE" level="5" spellcasting="Druid (Alpha)" prepared="true" requirements="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_PRIME_ATTUNEMENT_W" />
+            <grant type="Spell" id="ID_PHB_SPELL_CONTROL_WATER" level="7" spellcasting="Druid (Alpha)" prepared="true" requirements="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_PRIME_ATTUNEMENT_W" />
+            <grant type="Spell" id="ID_XGTE_SPELL_MAELSTROM" level="9" spellcasting="Druid (Alpha)" prepared="true" requirements="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_PRIME_ATTUNEMENT_W" />
+        </rules>
+    </element>
+
+    <element name="Elemental Attunement" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_PRIME_ATTUNEMENT">
+        <description>
+            <p>Starting at 2nd level, you have begun your journey to become one with the elements. Choose air, earth, fire, or water. This is the element you are attuned to; gaining you an Elemental Shape and Circle Spells associated with it. During a long rest, you can attune yourself to another of the four elements, but you can only be attuned to one element at a time.</p>
+            <p class="indent">Also, you can speak, read, and write Primordial.</p>
+        </description>
+        <sheet>
+            <description level="2">During a long rest, you can attune yourself to another of the four elements, but you can only be attuned to one element at a time.</description>
+            <description level="14">You may attune to all four elements.</description>
+        </sheet>
+        <rules>
+            <grant type="Language" id="ID_LANGUAGE_PRIMORDIAL" />
+            <select type="Archetype Feature" name="Elemental Attunement" supports="Alpha Druid EAttune" level="2" />
+            <select type="Archetype Feature" name="Elemental Attunement" supports="Alpha Druid EAttune" level="14" number="3" />
+        </rules>
+    </element>
+    <element name="Air" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_PRIME_ATTUNEMENT_A">
+        <supports>Alpha Druid EAttune</supports>
+        <description>
+            <p>You are attuned to the element of air.</p>
+            <div class="reference">
+                <div element="ID_SWECKY_INFORMATION_ALPHA_DRUID_ELEMENTAL_AIR" />
+            </div>
+        </description>
+        <sheet>
+            <description>You are attuned to the element of air.</description>
+        </sheet>
+    </element>
+    <element name="Earth" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_PRIME_ATTUNEMENT_E">
+        <supports>Alpha Druid EAttune</supports>
+        <description>
+            <p>You are attuned to the element of earth.</p>
+            <div class="reference">
+                <div element="ID_SWECKY_INFORMATION_ALPHA_DRUID_ELEMENTAL_EARTH" />
+            </div>
+        </description>
+        <sheet>
+            <description>You are attuned to the element of earth.</description>
+        </sheet>
+    </element>
+    <element name="Fire" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_PRIME_ATTUNEMENT_F">
+        <supports>Alpha Druid EAttune</supports>
+        <description>
+            <p>You are attuned to the element of fire.</p>
+            <div class="reference">
+                <div element="ID_SWECKY_INFORMATION_ALPHA_DRUID_ELEMENTAL_FIRE" />
+            </div>
+        </description>
+        <sheet>
+            <description>You are attuned to the element of fire.</description>
+        </sheet>
+    </element>
+    <element name="Water" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_PRIME_ATTUNEMENT_W">
+        <supports>Alpha Druid EAttune</supports>
+        <description>
+            <p>You are attuned to the element of water.</p>
+            <div class="reference">
+                <div element="ID_SWECKY_INFORMATION_ALPHA_DRUID_ELEMENTAL_WATER" />
+            </div>
+        </description>
+        <sheet>
+            <description>You are attuned to the element of water.</description>
+        </sheet>
+    </element>
+
+    <element name="Elemental Shape" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_PRIME_ELEMENTAL_SHAPE">
+        <description>
+            <p>Starting at 2nd level, you can use your bonus action to magically assume the shape of an elemental, all listed on the next page. You can use this feature twice and regain expended uses when you finish a short or long rest.</p>
+            <p class="indent">You can stay in an Elemental Shape for 1 minute. You then revert to your normal form unless you expend another use of this feature. You can revert to your normal form earlier by using a bonus action on your turn. You automatically revert if you fall unconscious, drop to 0 hit points, or die.</p>
+            <p class="indent">While you are transformed, the following rules apply:</p>
+            <ul>
+                <li>Your game statistics are replaced by the statistics of the elemental, but you retain your alignment, personality, proficiency modifier, skill proficiencies, saving throws, and Intelligence, Wisdom, and Charisma scores.</li>
+                <li>When you transform, you assume the elemental’s hit points and Hit Dice. When you revert to your normal form, you return to the number of hit points you had before you transformed. However, if you revert as a result of dropping to 0 hit points, any excess damage carries over to your normal form. For example, if you take 10 damage in animal form and have only 1 hit point left, you revert and take 9 damage. As long as the excess damage doesn’t reduce your normal form to 0 hit points, you aren’t knocked unconscious.</li>
+                <li>You can only cast the Circle Spells associated with the form, and you can only speak Primordial. Transforming doesn’t break your concentration on a spell you’ve already cast, however, or prevent you from taking actions that are part of a spell, such as call lightning, that you’ve already cast. You retain the benefit of any features from your class, race, or other source and can use them if the new form is physically capable of doing so. However, you can’t use any of your special senses, such as darkvision.</li>
+                <li>Your equipment merges into your new form and has no effect (unless stated otherwises) until you leave the form.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description usage="2/Short Rest">You can use your bonus action to magically assume the shape of an elemental, all listed on the next page. You can use this feature twice and regain expended uses when you finish a short or long rest. You can stay in an Elemental Shape for 1 minute. You then revert to your normal form unless you expend another use of this feature. You can revert to your normal form earlier by using a bonus action on your turn. You automatically revert if you fall unconscious, drop to 0 hit points, or die.</description>
+        </sheet>
+    </element>
+    <element name="Air Elemental" type="Information" source="Alpha Druid" id="ID_SWECKY_INFORMATION_ALPHA_DRUID_ELEMENTAL_AIR">
+		<description>
+			<p><em>Medium elemental</em></p>
+			<ul class="unstyled mb">
+			<li><strong>Armor Class</strong> 14</li>
+			<li><strong>Hit Points</strong> 7 (2d6)</li>
+			<li><strong>Speed</strong> fly 30 ft.</li>
+			</ul>
+			<table style="text-align:center">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td></tr></thead>
+				<tr><td>8 (-1)</td><td>18 (+4)</td><td>10 (0)</td></tr>
+			</table>
+			<p><strong><em>Gas Form.</em></strong> Your AC equals 10 + your Dexterity modifier and your Hit Points in this form increases by 4 (1d6) for each druid level above 2nd.</p>
+            <p><strong><em>One with the Wind.</em></strong> You can move through spaces as if you were one size smaller.</p>
+			<h5 class="caption">ACTIONS</h5>
+			<p><strong><em>Touch of Air.</em></strong> You can cast the shocking grasp and gust cantrips.</p>
+		</description>
+	</element>
+    <element name="Fire Elemental" type="Information" source="Alpha Druid" id="ID_SWECKY_INFORMATION_ALPHA_DRUID_ELEMENTAL_FIRE">
+		<description>
+			<p><em>Medium elemental</em></p>
+			<ul class="unstyled mb">
+			<li><strong>Armor Class</strong> 13</li>
+			<li><strong>Hit Points</strong> 9 (2d6+2)</li>
+			<li><strong>Speed</strong> 35 ft.</li>
+			</ul>
+			<table style="text-align:center">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td></tr></thead>
+				<tr><td>12 (+1)</td><td>16 (+3)</td><td>12 (+1)</td></tr>
+			</table>
+			<ul class="unstyled mb">
+				<li><strong>Damage Resistances</strong> fire</li>
+			</ul>
+			<p><strong><em>Fiery Form.</em></strong>  Your AC equals 10 + your Dexterity modifier and your Hit Points in this form increases by 5 (1d6+1) for each druid level above 2nd.</p>
+            <p><strong><em>Warmth of the World.</em></strong>  You shine bright light for 15 ft. and dim light for an additional 15 ft.</p>
+			<h5 class="caption">ACTIONS</h5>
+			<p><strong><em>Touch of Fire.</em></strong> You can cast the control fire and fire bolt cantrips</p>
+		</description>
+	</element>
+    <element name="Earth Elemental" type="Information" source="Alpha Druid" id="ID_SWECKY_INFORMATION_ALPHA_DRUID_ELEMENTAL_EARTH">
+		<description>
+			<p><em>Medium elemental</em></p>
+			<ul class="unstyled mb">
+			<li><strong>Armor Class</strong> 15 (rocky exterior)</li>
+			<li><strong>Hit Points</strong> 15 (2d10+4)</li>
+			<li><strong>Speed</strong> 20 ft.</li>
+			</ul>
+			<table style="text-align:center">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td></tr></thead>
+				<tr><td>18 (+4)</td><td>8 (-1)</td><td>14 (+2)</td></tr>
+			</table>
+			<ul class="unstyled mb">
+				<li><strong>Damage Vulnerabilities</strong> thunder</li>
+                <li><strong>Damage Resistances</strong> nonmagical bludgeoning, piercing, and slashing</li>
+			</ul>
+			<p><strong><em>Sturdy Form.</em></strong>  Your AC equals 16 + your Dexterity modifier and your Hit Points in this form increases by 8 (1d10+2) for each druid level above 2nd.</p>
+			<h5 class="caption">ACTIONS</h5>
+			<p><strong><em>Touch of Earth.</em></strong> You can cast the stonefist and mold earth cantrips</p>
+		</description>
+	</element>
+    <element name="Water Elemental" type="Information" source="Alpha Druid" id="ID_SWECKY_INFORMATION_ALPHA_DRUID_ELEMENTAL_WATER">
+		<description>
+			<p><em>Medium elemental</em></p>
+			<ul class="unstyled mb">
+			<li><strong>Armor Class</strong> 14</li>
+			<li><strong>Hit Points</strong> 13 (2d8+4)</li>
+			<li><strong>Speed</strong> 20 ft., swim 40 ft.</li>
+			</ul>
+			<table style="text-align:center">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td></tr></thead>
+				<tr><td>14 (+2)</td><td>16 (+3)</td><td>14 (+2)</td></tr>
+			</table>
+			<ul class="unstyled mb">
+				<li><strong>Damage Resistances</strong> acid</li>
+                <li><strong>Senses</strong> darkvision 60 ft.</li>
+			</ul>
+			<p><strong><em>Liquid Form.</em></strong>  Your AC equals 11 + your Dexterity modifier and your Hit Points in this form increases by 7 (1d8+2) for each druid level above 2nd.</p>
+            <p><strong><em>Flowing Existence.</em></strong> You can breathe underwater.</p>
+			<h5 class="caption">ACTIONS</h5>
+			<p><strong><em>Touch of Water.</em></strong>  You can cast the douse and shape water cantrips.</p>
+		</description>
+	</element>
+
+    <element name="Primordial Connection" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_PRIME_PRIMORDIAL_CONNECTION">
+        <description>
+            <p>Starting at 6th level, your connection to the elemental planes strengthens. You can add your Wisdom modifier to damage done by spells while in Elemental Shape.</p>
+        </description>
+        <sheet>
+            <description>You can add {{wisdom:modifier}} to damage done by spells while in Elemental Shape.</description>
+        </sheet>
+    </element>
+
+    <element name="Elemental Mastery" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_PRIME_ELEMENTAL_MASTERY">
+        <description>
+            <p>At 10th level, your mastery over the elements has increased significantly. Your Elemental Shapes lasts for 10 minutes and each form gains the following benefits:</p>
+            <p class="indent"><strong><em>Air.</em></strong> Your fly speed increases by 20 feet and you can choose to become a Small air elemental when transforming.</p>
+            <p class="indent"><strong><em>Earth.</em></strong> You can choose to become a Large earth elemental when transforming. Also, your movement speed increases by 10 feet and you gain a burrowing speed of 20 feet.</p>
+            <p class="indent"><strong><em>Fire.</em></strong> Your movement speed increases by 15 feet and after you are struck by a melee attack you can use your reaction to make the target suffer fire damage equal to 1d8 + your Wisdom modifier.</p>
+            <p class="indent"><strong><em>Water.</em></strong> Your swim speed increases by 20 feet and you can move through spaces as if you were one size smaller.</p>
+        </description>
+        <sheet>
+            <description>Your Elemental Shapes lasts for 10 minutes and each form gains the following benefits:
+            <strong><em>Air.</em></strong> Your fly speed increases by 20 feet and you can choose to become a Small air elemental when transforming.
+            <strong><em>Earth.</em></strong> You can choose to become a Large earth elemental when transforming. Also, your movement speed increases by 10 feet and you gain a burrowing speed of 20 feet.
+            <strong><em>Fire.</em></strong> Your movement speed increases by 15 feet and after you are struck by a melee attack you can use your reaction to make the target suffer fire damage equal to 1d8 + your Wisdom modifier.
+            <strong><em>Water.</em></strong> Your swim speed increases by 20 feet and you can move through spaces as if you were one size smaller.</description>
+        </sheet>
+    </element>
+
+    <element name="One with the Elements" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_PRIME_ONE_WITH_THE_ELEMENTS">
+        <description>
+            <p>At 14th level, you've become more attuned to the elements of the world. You no longer need to attune to an element each long rest, instead you have access to all Elemental Shapes and Circle Spells.</p>
+        </description>
+        <sheet display="false" />
+    </element>
+
+    <element name="Part of the Whole" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_PRIME_PART_OF_THE_WHOLE">
+        <description>
+            <p>At 18th level, your knowledge of the elements have shown you that everything -no matter how insignificant- is part of the whole. You can cast all spells while in Elemental Shape. While in Elemental Shape and the spell is on one of your Circle Spell lists you have advantage on the attack roll and the enemy has disadvantage on the saving throw.</p>
+            <p class="indent">Finally, each form can become one size larger.</p>
+        </description>
+        <sheet>
+            <description>You can cast all spells while in Elemental Shape. While in Elemental Shape and the spell is on one of your Circle Spell lists you have advantage on the attack roll and the enemy has disadvantage on the saving throw. Finally, each form can become one size larger.</description>
+        </sheet>
+    </element>
+
+    <element name="Cyclone Blast" type="Spell" source="Alpha Druid" id="ID_SWECKY_SPELL_CYCLONE_BLAST">
+        <supports>Druid, Sorcerer, Wizard</supports>
+        <description>
+            <p>You blast a creature with gale-force winds, dealing damage and knocking it down. One creature you can see within range is affected by the winds. It must make a Strength saving throw. On a failure, it takes 5d8 bludgeoning damage, is pushed up to 10 feet away from you, and is knocked prone. On a success, it takes half as much damage and is neither pushed or knocked down.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Windblade" type="Spell" source="Alpha Druid" id="ID_SWECKY_SPELL_WINDBLADE">
+        <supports>Druid, Sorcerer, Wizard</supports>
+        <description>
+            <p>With a sweeping gesture you unleash an invisible scythe of wind in a 30-foot cone, which cuts cleanly through trees and walls. Creatures within the area must make a Dexterity saving throw. If they fail, they take 8d8 slashing damage. On a success, a creature takes half the damage.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 5th level or higher, the slashing damage increases by 1d8 per slot level above 5th.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">Self (30-foot cone)</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Ocean Pulse" type="Spell" source="Alpha Druid" id="ID_SWECKY_SPELL_OCEAN_PULSE">
+        <supports>Druid, Sorcerer, Wizard</supports>
+        <description>
+            <p>You attempt to hit a creature within range with a blast of salty water, forcing them to make a Dexterity saving throw. On a failed save, the target takes 3d6 bludgeoning damage and is knocked prone. On a success, the target takes half damage and is not knocked prone. Creatures that is Large or larger is immune to the prone effect of the spell.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a seashell</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Waterspout" type="Spell" source="Alpha Druid" id="ID_SWECKY_SPELL_WATERSPOUT">
+        <supports>Druid, Sorcerer, Wizard</supports>
+        <description>
+            <p>You create a forceful stream of water that rushes out in a line 15 feet long and 5 feet wide. Each creature in the line must make a Strength saving throw. On a failure, the creature takes 3d6 bludgeoning damage and is pushed up to 15 feet away from you. If the creature succeeds on its saving throw, it takes half as much damage and is not pushed.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 3rd level or higher, increase the bludgeoning damage by 1d6 per slot level above 2nd.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">Self (15-foot line)</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a vial of water</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Douse" type="Spell" source="Alpha Druid" id="ID_SWECKY_SPELL_DOUSE">
+        <supports>Druid, Sorcerer, Warlock</supports>
+        <description>
+            <p>You gesture, summoning a splash of saltwater to fall upon a creature or object within range. Flames are instantly quenched, and objects targeted by this spell cannot be ignited for at least one minute. If you target a creature, you can choose to have the saltwater be bone-chillingly cold. The target must make a Constitution saving throw. If they fail, they take 1d10 cold damage.</p>
+            <p class="indent">This spell’s damage increases by 1d8 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">0</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Stonefist" type="Spell" source="Alpha Druid" id="ID_SWECKY_SPELL_STONEFIST">
+        <supports>Sorcerer, Druid</supports>
+        <description>
+            <p>You magically transform one of your hands into solid stone and strike your foe with it. Make a melee spell attack. On a hit, the target takes 1d12 bludgeoning damage. This spell deals double damage against objects.</p>
+            <p class="indent">This spell's damage increases by 1d12 when you reach 5th level (2d12), 11th level (3d12), and 17th level (4d12).</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">0</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">Touch</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    
+</elements>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    
+    <element name="Circle of Spores" type="Archetype" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_ALPHA_DRUID_SPORES">
+        <supports>Alpha Druid Circle</supports>
+        <description>
+            <p>Druids of the Circle of Spores find beauty in decay. They see within mold and other fungi the ability to transform lifeless material into abundant, albeit somewhat strange, life.</p>
+            <p class="indent">These druids believe that life and death are parts of a grand cycle, with one leading to the other and then back again. Death isn't the end of life, but instead a change of state that sees life shift into a new form.</p>
+            <p class="indent">Druids of this circle have a complex relationship with the undead. Unlike most other druids, they see nothing inherently wrong with undeath, which they consider to be a companion to life and death. But these druids believe that the natural cycle is healthiest when each segment of it is vibrant and changing. Undead that seek to replace all life with undeath, or that try to avoid passing to a final rest, violate the cycle and must be thwarted.</p>
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_SPORES_SPELLS" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_SPORES_HALO_OF_SPORES" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_SPORES_SYMBIOTIC_ENTITY" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_SPORES_FUNGAL_INFESTATION" />
+            <div element="ID_SWECKY_INFORMATION_ALPHA_DRUID_SPORES_INFESTED" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_SPORES_SPREADING_SPORES" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_SPORES_FUNGAL_BODY" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_SPORES_INVADING_SPORES" />
+        </description>
+        <sheet display="false">
+            <description>Druids of the Circle of Spores find beauty in decay. They see within mold and other fungi the ability to transform lifeless material into abundant, albeit somewhat strange, life.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_SPORES_SPELLS" level="2" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_SPORES_HALO_OF_SPORES" level="2" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_SPORES_SYMBIOTIC_ENTITY" level="2" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_SPORES_FUNGAL_INFESTATION" level="6" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_SPORES_SPREADING_SPORES" level="10" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_SPORES_FUNGAL_BODY" level="14" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_SPORES_INVADING_SPORES" level="18" />
+        </rules>
+    </element>
+
+    <element name="Circle Spells" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_SPORES_SPELLS">
+        <description>
+            <p>You gain circle spells at the druid levels listed.</p>
+            <h5>CIRCLE OF SPORES SPELLS</h5>
+            <table>
+                <thead>
+                    <tr><td>Druid Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>2nd</td><td>rapport spores, ray of sickness</td></tr>
+                <tr><td>3rd</td><td>blindness/deafness, gentle repose</td></tr>
+                <tr><td>5th</td><td>animate dead, gaseous form</td></tr>
+                <tr><td>7th</td><td>blight, confusion</td></tr>
+                <tr><td>9th</td><td>cloudkill, contagion</td></tr>
+            </table>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Spell" id="ID_SWECKY_SPELL_RAPPORT_SPORES" level="2" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_RAY_OF_SICKNESS" level="2" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_BLINDNESS_DEAFNESS" level="3" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_GENTLE_REPOSE" level="3" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_ANIMATE_DEAD" level="5" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_GASEOUS_FORM" level="5" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_BLIGHT" level="7" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_CONFUSION" level="7" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_CLOUDKILL" level="9" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_CONTAGION" level="9" spellcasting="Druid (Alpha)" prepared="true" />
+        </rules>
+    </element>
+
+    <element name="Halo of Spores" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_SPORES_HALO_OF_SPORES">
+        <description>
+            <p>Starting at 2nd level, you are surrounded by invisible necrotic spores that are harmless until you unleash them on a creature nearby. When a creature you can see moves into a space within 10 feet of you or starts its turn there, you can use your reaction to deal 1d4 poison damage to that creature unless it succeeds on a Constitution saving throw against your spell save DC. The poison damage increases to 1d6 at 6th level, 1d8 at 10th level, and 1d10 at 14th level.</p>
+            <p class="indent">Additionally, you learn the blightclaw cantrip.</p>
+        </description>
+        <sheet>
+            <description action="Reaction" level="2">When a creature you can see moves into a space within 10 feet of you or starts its turn there, you can use your reaction to deal 1d4 poison damage to that creature unless it succeeds on a Constitution saving throw against your spell save DC.</description>
+            <description action="Reaction" level="6">When a creature you can see moves into a space within 10 feet of you or starts its turn there, you can use your reaction to deal 1d6 poison damage to that creature unless it succeeds on a Constitution saving throw against your spell save DC.</description>
+            <description action="Reaction" level="10">When a creature you can see moves into a space within 10 feet of you or starts its turn there, you can use your reaction to deal 1d8 poison damage to that creature unless it succeeds on a Constitution saving throw against your spell save DC.</description>
+            <description action="Reaction" level="14">When a creature you can see moves into a space within 10 feet of you or starts its turn there, you can use your reaction to deal 1d10 poison damage to that creature unless it succeeds on a Constitution saving throw against your spell save DC.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_SWECKY_SPELL_BLIGHTCLAW" spellcasting="Druid (Alpha)" prepared="true" />
+        </rules>
+    </element>
+
+    <element name="Symbiotic Entity" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_SPORES_SYMBIOTIC_ENTITY">
+        <description>
+            <p>At 2nd level, you gain the ability to channel magic into your spores. At the start of your turn, you can awaken those spores and you gain 4 temporary hit points for each level you have in this class. While this feature is active, you gain the following benefits:</p>
+            <ul>
+                <li>When you deal your Halo of Spores damage, roll the damage die a second time and add it to the total.</li>
+                <li>Your melee attacks deal an extra 1d6 poison damage to any target they hit.</li>
+            </ul>
+            <p>These benefits last for 10 minutes, until you lose all these temporary hit points, or until you use this feature again.</p>
+            <p class="indent">You can do this twice before you have to finish a short or long rest.</p>
+        </description>
+        <sheet>
+            <description usage="2/Short Rest">At the start of your turn, you can awaken those spores and you gain 4 temporary hit points for each level you have in this class. While this feature is active, you gain the following benefits: When you deal your Halo of Spores damage, roll the damage die a second time and add it to the total. Your melee attacks deal an extra 1d6 poison damage to any target they hit.
+            These benefits last for 10 minutes, until you lose all these temporary hit points, or until you use this feature again.</description>
+        </sheet>
+    </element>
+
+    <element name="Fungal Infestation" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_SPORES_FUNGAL_INFESTATION">
+        <description>
+            <p>At 6th level, when you cast blightclaw you can cast it again as a bonus action and your poison damage and poisoned condition ignore resistance and immunity.</p>
+            <p class="indent">Also your spores gain the ability to infest a corpse and animate it. If a beast or a humanoid that is Small or Medium dies within 10 feet of you, you can use your reaction to animate it, causing it to stand up immediately as an infested. It remains animate for 1 hour, after which time it collapses and dies.</p>
+            <p class="indent">In combat, the infested's turn comes immediately after yours. It obeys your mental commands, and the only action it can take is the Attack action, making one melee attack.</p>
+            <p class="indent">You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses of it when you finish a long rest.</p>
+        </description>
+        <sheet>
+            <description usage="{{wisdom:modifier}}/Long Rest">When you cast blightclaw you can cast it again as a bonus action and your poison damage and poisoned condition ignore resistance and immunity.
+            Also your spores gain the ability to infest a corpse and animate it. If a beast or a humanoid that is Small or Medium dies within 10 feet of you, you can use your reaction to animate it, causing it to stand up immediately as an infested. It remains animate for 1 hour, after which time it collapses and dies. In combat, the infested's turn comes immediately after yours. It obeys your mental commands, and the only action it can take is the Attack action, making one melee attack. You can use this feature {{wisdom:modifier}} times (minimum of once), and you regain all expended uses of it when you finish a long rest.</description>
+        </sheet>
+    </element>
+    <element name="Infested" type="Information" source="Alpha Druid" id="ID_SWECKY_INFORMATION_ALPHA_DRUID_SPORES_INFESTED">
+		<description>
+			<p><em>Medium undead, neutral evil</em></p>
+			<ul class="unstyled mb">
+			<li><strong>Armor Class</strong> 8</li>
+			<li><strong>Hit Points</strong> 1</li>
+			<li><strong>Speed</strong> 20 ft.</li>
+			</ul>
+			<table style="text-align:center">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>13 (+1)</td><td>6 (-2)</td><td>16 (+3)</td><td>3 (-4)</td><td>6 (-2)</td><td>5 (-3)</td></tr>
+			</table>
+			<ul class="unstyled mb">
+				<li><strong>Saving Throws</strong> Wis +0</li>
+                <li><strong>Damage Immunities</strong> poison</li>
+                <li><strong>Condition Immunities</strong> poisoned</li>
+				<li><strong>Senses</strong> darkvision 60 ft., passive Perception 8</li>
+				<li><strong>Languages</strong> understands the druid but can't speak</li>
+				<li><strong>Challenge</strong> 1/4 (50 XP)</li>
+			</ul>
+			<p><strong><em>Undead Fortitude.</em></strong>  If damage reduces the infested to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the infested drops to 1 hit point instead.</p>
+			<h5 class="caption">ACTIONS</h5>
+			<p><strong><em>Slam.</em></strong> <em>Melee Weapon Attack:</em> +3 to hit, reach 5 ft., one target. Hit: 4 (1d6+1) bludgeoning damage.</p>
+		</description>
+	</element>
+
+    <element name="Spreading Spores" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_SPORES_SPREADING_SPORES">
+        <description>
+            <p>At 10th level, you gain the ability to seed an area with deadly spores. As a bonus action while your Symbiotic Entity feature is active, you can hurl spores up to 30 feet away. where they swirl in a 10-foot cube for 1 minute. The spores disappear early if you use this feature again, if you dismiss them as a bonus action, or if your Symbiotic Entity feature is no longer active.</p>
+            <p class="indent">Whenever a creature moves into the cube or starts its turn there, that creature takes your Halo of Spores damage, unless the creature succeeds on a Constitution saving throw against your spell save DC. A creature can take this damage no more than once per turn.</p>
+            <p class="indent">While the cube of spores persists, you can't use your Halo of Spores reaction.</p>
+        </description>
+        <sheet>
+            <description action="Bonus Action">As a bonus action while your Symbiotic Entity feature is active, you can hurl spores up to 30 feet away. where they swirl in a 10-foot cube for 1 minute. The spores disappear early if you use this feature again, if you dismiss them as a bonus action, or if your Symbiotic Entity feature is no longer active. Whenever a creature moves into the cube or starts its turn there, that creature takes your Halo of Spores damage, unless the creature succeeds on a Constitution saving throw against your spell save DC. A creature can take this damage no more than once per turn. While the cube of spores persists, you can't use your Halo of Spores reaction.</description>
+        </sheet>
+    </element>
+
+    <element name="Fungal Body" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_SPORES_FUNGAL_BODY">
+        <description>
+            <p>At 14th level, the fungal spores in your body alter you: you can't be blinded, deafened, or frightened, and any critical hit against you counts as a normal hit instead, unless you're incapacitated.</p>
+        </description>
+        <sheet>
+            <description>You can't be blinded, deafened, or frightened, and any critical hit against you counts as a normal hit instead, unless you're incapacitated.</description>
+        </sheet>
+    </element>
+
+    <element name="Invading Spores" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_SPORES_INVADING_SPORES">
+        <description>
+            <p>Beginning at 18th level, when an undead creature under your control dies, it explodes in a cloud of spores. Each creature of your choice within 10 feet must roll a Constitution saving throw against your spell save DC or take 5d6 poison damage and become poisoned for 1 minute. On a successful save, a creature takes half damage and is not poisoned.</p>
+        </description>
+        <sheet>
+            <description>When an undead creature under your control dies, it explodes in a cloud of spores. Each creature of your choice within 10 feet must roll a Constitution saving throw against your spell save DC or take 5d6 poison damage and become poisoned for 1 minute. On a successful save, a creature takes half damage and is not poisoned.</description>
+        </sheet>
+    </element>
+
+    <element name="Blightclaw" type="Spell" source="Alpha Druid" id="ID_SWECKY_SPELL_BLIGHTCLAW">
+        <supports>Sorcerer, Warlock</supports>
+        <description>
+            <p>You slash at a target with a claw of greenish-black energy at a target within range. Make a melee spell attack against the target. On a hit, the target takes 1d6 poison damage and is poisoned until the start of their next turn.</p>
+            <p class="indent">This spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">0</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 action</set>
+            <set name="range">Touch</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Rapport Spores" type="Spell" source="Alpha Druid" id="ID_SWECKY_SPELL_RAPPORT_SPORES">
+        <supports>Bard, Cleric, Druid, Sorcerer, Warlock, Wizard</supports>
+        <description>
+            <p>You conjure a 30-foot radius of spores extending from your position. These spores can go around corners and affect only creatures with an Intelligence of 2 or higher that aren't undead, constructs, or elementals. For the duration, affected creatures can communicate telepathically with one another while they are within 60 feet of each other.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">Self (30-foot radius)</set>
+            <set name="duration">1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a fungal spore</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    
+</elements>

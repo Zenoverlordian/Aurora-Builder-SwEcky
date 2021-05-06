@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    
+    <element name="Circle of Twilight" type="Archetype" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_ALPHA_DRUID_TWILIGHT">
+        <supports>Alpha Druid Circle</supports>
+        <description>
+            <p>The circle of twilight is compromised of druids who wish to be a part of not only the world they live in, but also the ethereal world that remains a mystery to so many. The members of this circle focus on making amends between spirits and the world. To be alone among spirits is extremely dangerous and this is why the members of this circle participate in many rituals to discover their personal spirit guide.</p>
+            <p class="indent">A spirit guide can take many shapes, sometimes as ethereal animals, others as incorporeal wisps, or simply as balls of light. These creatures guide the druids on their journey among the spirits of the deceased, however, they are not the only spirits which walk beside the druid.</p>
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_TWILIGHT_SPELLS" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_TWILIGHT_SPIRIT_GUIDE" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_TWILIGHT_SIXTH_SENSE" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_TWILIGHT_ENHANCED_SPIRITS" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_TWILIGHT_RITUALIST" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_TWILIGHT_VENGEFUL_SPIRITS" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_TWILIGHT_SPIRIT_WALKERS" />
+        </description>
+        <sheet display="false">
+            <description>The members of this circle focus on making amends between spirits and the world. To be alone among spirits is extremely dangerous and this is why the members of this circle participate in many rituals to discover their personal spirit guide.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_TWILIGHT_SPELLS" level="2" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_TWILIGHT_SPIRIT_GUIDE" level="2" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_TWILIGHT_SIXTH_SENSE" level="2" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_TWILIGHT_ENHANCED_SPIRITS" level="6" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_TWILIGHT_RITUALIST" level="10" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_TWILIGHT_VENGEFUL_SPIRITS" level="14" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_TWILIGHT_SPIRIT_WALKERS" level="18" />
+        </rules>
+    </element>
+
+    <element name="Circle Spells" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_TWILIGHT_SPELLS">
+        <description>
+            <p>You gain circle spells at the druid levels listed.</p>
+            <h5>CIRCLE OF TWILIGHT SPELLS</h5>
+            <table>
+                <thead>
+                    <tr><td>Druid Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>2nd</td><td>find familiar, unseen servant</td></tr>
+                <tr><td>3rd</td><td>augury, see invisibility</td></tr>
+                <tr><td>5th</td><td>conjure animals, gaseous form</td></tr>
+                <tr><td>7th</td><td>awareness, conjure woodland beings</td></tr>
+                <tr><td>9th</td><td>hallow, scrying</td></tr>
+            </table>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_FIND_FAMILIAR" level="2" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_UNSEEN_SERVANT" level="2" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_AUGURY" level="3" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_SEE_INVISIBILITY" level="3" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_CONJURE_ANIMALS" level="5" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_GASEOUS_FORM" level="5" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_SWECKY_SPELL_AWARENESS" level="7" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_CONJURE_WOODLAND_BEINGS" level="7" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_HALLOW" level="9" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_SCRYING" level="9" spellcasting="Druid (Alpha)" prepared="true" />
+        </rules>
+    </element>
+
+    <element name="Spirit Guide" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_TWILIGHT_SPIRIT_GUIDE">
+        <description>
+            <p>At 2nd level you gain a spirit sworn to serve alongside you. The familiar you summon using the find familiar spell is your Spirit Guide.</p>
+            <p class="indent">Your Spirit Guide is more durable than a standard familiar. It has maximum hit points equal to three times your druid level and has proficiency in the same saving throws that you do.</p>
+            <p class="indent">Your spirit animal also has inherent boons and magical effects. Select 1 lesser and 1 greater boon from the list of Spirit Boons. When you finish a long rest you can swap one boon you have for a new one of the same type.</p>
+        </description>
+        <sheet>
+            <description>The familiar you summon using the find familiar spell is your Spirit Guide. Your Spirit Guide is more durable than a standard familiar. It has {{spirit guide:hp}} maximum hit points and has proficiency in the same saving throws that you do. When you finish a long rest you can swap one boon you have for a new one of the same type.</description>
+        </sheet>
+        <rules>
+            <stat name="spirit guide:hp" value="level:druid (alpha)" />
+            <stat name="spirit guide:hp" value="level:druid (alpha)" />
+            <stat name="spirit guide:hp" value="level:druid (alpha)" />
+            <select type="Archetype Feature" name="Lesser Boon (Spirit Guide)" supports="Alpha Druid Lesser Boon" />
+            <select type="Archetype Feature" name="Greater Boon (Spirit Guide)" supports="Alpha Druid Greater Boon" />
+        </rules>
+    </element>
+
+    <element name="Sixth Sense" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_TWILIGHT_SIXTH_SENSE">
+        <description>
+            <p>Also at 2nd level, you can sense the auras of the recently dead. As an action, you become aware if any creatures have died in a 30 foot area around you in the last 24 hours. You do not know how they died, but you do know what type of creature they were (such as humanoid, beast or monstrosity).</p>
+            <p class="indent">This feature can be used a number of times per long rest equal to your Wisdom modifier (minimum 1).</p>
+            <p class="indent">Additionally, you have advantage on Charisma ability checks made to interact with spirits.</p>
+        </description>
+        <sheet>
+            <description action="Action" usage="{{wisdom:modifier}}/Long Rest">As an action, you become aware if any creatures have died in a 30 foot area around you in the last 24 hours. You do not know how they died, but you do know what type of creature they were. Additionally, you have advantage on Charisma ability checks made to interact with spirits.</description>
+        </sheet>
+    </element>
+
+    <element name="Enhanced Spirits" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_TWILIGHT_ENHANCED_SPIRITS">
+        <description>
+            <p>Starting at 6th level, beasts and fey that you conjure are more resilient than normal. Any beast or fey summoned or created by a spell that you cast gains the following benefits:</p>
+            <ul>
+                <li>The creature has temporary hit points equal to half your druid level.</li>
+                <li>The damage from its natural weapons is considered magical for the purpose of overcoming immunity and resistance to nonmagical attacks and damage.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Any beast or fey summoned or created by a spell that you cast gains the following benefits: The creature has {{level:druid (alpha):half}} temporary hit points. The damage from its natural weapons is considered magical for the purpose of overcoming immunity and resistance to nonmagical attacks and damage.</description>
+        </sheet>
+    </element>
+
+    <element name="Ritualist" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_TWILIGHT_RITUALIST">
+        <description>
+            <p>At 10th level, the spirits share their knowledge of ancient magics. You can cast all druid spells with the ritual tag as rituals without having them prepared. You can add any 2 ritual spells from any spell list to your spell list, they count as druid spells and you can only cast them as rituals.</p>
+            <p class="indent">Also, you can choose an additional lesser boon for your Spirit Guide when you finish a long rest.</p>
+        </description>
+        <sheet>
+            <description>You can cast all druid spells with the ritual tag as rituals without having them prepared. You can add any 2 ritual spells from any spell list to your spell list, they count as druid spells and you can only cast them as rituals.</description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" name="Lesser Boon (Ritualist)" supports="Alpha Druid Lesser Boon" />
+            <select type="Spell" name="Ritualist" supports="Ritual" spellcasting="Druid (Alpha)" prepared="true" number="2" />
+        </rules>
+    </element>
+
+    <element name="Vengeful Spirits" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_TWILIGHT_VENGEFUL_SPIRITS">
+        <description>
+            <p>At 14th level, the ferocity of beasts and fey that you conjure are increased. Any beast or fey summoned or created by a spell that you cast gains the following benefits:</p>
+            <ul>
+                <li>The creature can add your Wisdom modifier to its AC, saving throws, attack, and damage rolls.</li>
+                <li>The creatures movement speed is increase by 10 feet.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Any beast or fey summoned or created by a spell that you cast gains the following benefits: The creature can add {{wisdom:modifier}} to its AC, saving throws, attack, and damage rolls. The creatures movement speed is increase by 10 feet.</description>
+        </sheet>
+    </element>
+
+    <element name="Spirit Walkers" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_TWILIGHT_SPIRIT_WALKERS">
+        <description>
+            <p>At 18th level, the spirits you summon can shift between the realms at will. Any beast or fey summoned or created by a spell that you cast gains the following benefits:</p>
+            <ul>
+                <li>During the creature's turn it is ethereal; opportunity attacks against it are made with disadvantage and it can move through the space of any creature, though it cannot stop in a creature's space.</li>
+                <li>When you are going to take damage, if the creature is within 5 feet of you, it can use its reaction to take the damage instead. If it reduced to 0, you take any leftover damage.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Any beast or fey summoned or created by a spell that you cast gains the following benefits: During the creature's turn it is ethereal; opportunity attacks against it are made with disadvantage and it can move through the space of any creature, though it cannot stop in a creature's space. When you are going to take damage, if the creature is within 5 feet of you, it can use its reaction to take the damage instead. If it reduced to 0, you take any leftover damage.</description>
+        </sheet>
+    </element>
+
+    <!--LESSER BOON-->
+
+    <element name="Boon of Life" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_TWILIGHT_LBOON_LIFE">
+        <supports>Alpha Druid Lesser Boon</supports>
+        <description>
+            <p>Creatures of the druids choice within 5 feet of the Spirit Guide have advantage on death saving throws.</p>
+        </description>
+        <sheet>
+            <description>Creatures of the druids choice within 5 feet of the Spirit Guide have advantage on death saving throws.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon of Quickening" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_TWILIGHT_LBOON_QUICKENING">
+        <supports>Alpha Druid Lesser Boon</supports>
+        <description>
+            <p>While within 15 feet of the Spirit Guide, any ritual cast by the druid only takes half the listed time to cast.</p>
+        </description>
+        <sheet>
+            <description>While within 15 feet of the Spirit Guide, any ritual cast by the druid only takes half the listed time to cast.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon of Recovery" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_TWILIGHT_LBOON_RECOVERY">
+        <supports>Alpha Druid Lesser Boon</supports>
+        <description>
+            <p>Allies within 15 feet of the Spirit Guide may roll their Hit Die twice and use either total when recovering hit points during a short rest.</p>
+        </description>
+        <sheet>
+            <description>Allies within 15 feet of the Spirit Guide may roll their Hit Die twice and use either total when recovering hit points during a short rest.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon of Revelations" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_TWILIGHT_LBOON_REVELATION">
+        <supports>Alpha Druid Lesser Boon</supports>
+        <description>
+            <p>Enemies within 15 feet of the Spirit Guide don't benefit from half cover.</p>
+        </description>
+        <sheet>
+            <description>Enemies within 15 feet of the Spirit Guide don't benefit from half cover.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon of Sight" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_TWILIGHT_LBOON_SIGHT">
+        <supports>Alpha Druid Lesser Boon</supports>
+        <description>
+            <p>The druid can always perceive through the Spirit Guide's senses if they are on the same plane, regardless of distance.</p>
+        </description>
+        <sheet>
+            <description>The druid can always perceive through the Spirit Guide's senses if they are on the same plane, regardless of distance.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon of Vigilance" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_TWILIGHT_LBOON_VIGILANCE">
+        <supports>Alpha Druid Lesser Boon</supports>
+        <description>
+            <p>Allied creatures within 15 feet of the Spirit Guide cannot be surprised.</p>
+        </description>
+        <sheet>
+            <description>Allied creatures within 15 feet of the Spirit Guide cannot be surprised.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon of Visions" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_TWILIGHT_LBOON_VISIONS">
+        <supports>Alpha Druid Lesser Boon</supports>
+        <description>
+            <p>The Spirit Guide gains limited telepathy to communicate simple ideas, emotions and images to any creature within 100 feet of itself that it can see.</p>
+        </description>
+        <sheet>
+            <description>The Spirit Guide gains limited telepathy to communicate simple ideas, emotions and images to any creature within 100 feet of itself that it can see.</description>
+        </sheet>
+    </element>
+
+    <!--GREATER BOON-->
+
+    <element name="Boon of Guidance" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_TWILIGHT_GBOON_GUIDANCE">
+        <supports>Alpha Druid Greater Boon</supports>
+        <description>
+            <p>The Spirit Guide can grant the Help action from 15 feet away.</p>
+        </description>
+        <sheet>
+            <description>The Spirit Guide can grant the Help action from 15 feet away.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon of Interference" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_TWILIGHT_GBOON_INTERFERENCE">
+        <supports>Alpha Druid Greater Boon</supports>
+        <description>
+            <p>When a creature attacks a target within 5 feet of the Spirit Guide, it may use its reaction to impose disadvantage on the roll.</p>
+        </description>
+        <sheet>
+            <description>When a creature attacks a target within 5 feet of the Spirit Guide, it may use its reaction to impose disadvantage on the roll.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon of Mysticism" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_TWILIGHT_GBOON_MYSTICISM">
+        <supports>Alpha Druid Greater Boon</supports>
+        <description>
+            <p>While within 30 feet of the Spirit Guide, if the druid casts a spell the Spirit Guide may use its reaction to become the point of origin for that spell.</p>
+        </description>
+        <sheet>
+            <description>While within 30 feet of the Spirit Guide, if the druid casts a spell the Spirit Guide may use its reaction to become the point of origin for that spell.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon of Shifting" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_TWILIGHT_GBOON_SHIFTING">
+        <supports>Alpha Druid Greater Boon</supports>
+        <description>
+            <p>The Spirit Guide can use its action to target an ally within 5 feet. The target can immediately use its reaction to move 5 feet without provoking opportunity attacks.</p>
+        </description>
+        <sheet>
+            <description>The Spirit Guide can use its action to target an ally within 5 feet. The target can immediately use its reaction to move 5 feet without provoking opportunity attacks.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon of Warping" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_TWILIGHT_GBOON_WARPING">
+        <supports>Alpha Druid Greater Boon</supports>
+        <description>
+            <p>If a spell that would hit a creature within 5 feet of the Spirit Guide would deal acid, cold, fire, lightning, poison, or thunder damage, the spirit animal may use its reaction to change the type of damage to another type from that list.</p>
+        </description>
+        <sheet>
+            <description>If a spell that would hit a creature within 5 feet of the Spirit Guide would deal acid, cold, fire, lightning, poison, or thunder damage, the spirit animal may use its reaction to change the type of damage to another type from that list.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon of Vigor" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_TWILIGHT_GBOON_VIGOR">
+        <supports>Alpha Druid Greater Boon</supports>
+        <description>
+            <p>If the Spirit Guide takes any damage while within 15 feet of the druid, the druid may use their reaction to take the damage instead.</p>
+        </description>
+        <sheet>
+            <description>If the Spirit Guide takes any damage while within 15 feet of the druid, the druid may use their reaction to take the damage instead.</description>
+        </sheet>
+    </element>
+    
+    <element name="Awareness" type="Spell" source="Alpha Druid" id="ID_SWECKY_SPELL_AWARENESS">
+        <supports>Artificer, Druid, Ranger, Warlock, Wizard, Occultist, KTHArtificer</supports>
+        <description>
+            <p>You create an invisible magical sensor that floats just above your head and shares your space. You can see through the sensor in all directions. For the duration, no melee attack roll can have advantage against you, and you have advantage on Wisdom (Perception) and Intelligence (Investigation) checks that rely on sight.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Divination</set>
+            <set name="time">1 action</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration, up to 1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a glass eye</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    
+</elements>

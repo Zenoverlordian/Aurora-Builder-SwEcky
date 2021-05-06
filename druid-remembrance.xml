@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    
+    <element name="Circle of Remembrance" type="Archetype" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_ALPHA_DRUID_REMEMBRANCE">
+        <supports>Alpha Druid Circle</supports>
+        <description>
+            <p>The druids of the Circle of Remembrance believes that no living being deserves to be forgotten. They spend most of their lives living the past, walking the memories and tasting the emotions of creatures they never met. Some of the memories are from the long dead, but the intensity of their emotions are so powerful that they linger even after any other remnant of their being is long gone.</p>
+            <p class="indent">These memories can affect the druid deeply, often making them sullen and later alienated, as their mood changes harshly from day to day. Sometimes they are seen as judges, able to see past facades and see what is real and true.</p>
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_REMEMBRANCE_SPELLS" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_REMEMBRANCE_EMPATHIC_CHRONICLER" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_REMEMBRANCE_RESERVOIR_OF_MEMORIES" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_REMEMBRANCE_EMOTIONAL_RESONANCE" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_REMEMBRANCE_EMBOLDENED_MIND" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_REMEMBRANCE_CONSCIOUS_DUALITY" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_REMEMBRANCE_WORLDLY_ECHOES" />
+        </description>
+        <sheet display="false">
+            <description>The druids of the Circle of Remembrance believes that no living being deserves to be forgotten. They spend most of their lives living the past, walking the memories and tasting the emotions of creatures they never met.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_REMEMBRANCE_SPELLS" level="2" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_REMEMBRANCE_EMPATHIC_CHRONICLER" level="2" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_REMEMBRANCE_RESERVOIR_OF_MEMORIES" level="2" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_REMEMBRANCE_EMOTIONAL_RESONANCE" level="6" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_REMEMBRANCE_EMBOLDENED_MIND" level="10" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_REMEMBRANCE_CONSCIOUS_DUALITY" level="14" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_REMEMBRANCE_WORLDLY_ECHOES" level="18" />
+        </rules>
+    </element>
+
+    <element name="Circle Spells" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_REMEMBRANCE_SPELLS">
+        <description>
+            <p>You gain circle spells at the druid levels listed.</p>
+            <h5>CIRCLE OF REMEMBRANCE SPELLS</h5>
+            <table>
+                <thead>
+                    <tr><td>Druid Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>2nd</td><td>identify</td></tr>
+                <tr><td>3rd</td><td>detect thoughts</td></tr>
+                <tr><td>5th</td><td>speak with dead</td></tr>
+                <tr><td>7th</td><td>locate creature</td></tr>
+                <tr><td>9th</td><td>legend lore</td></tr>
+            </table>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_IDENTIFY" level="2" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_DETECT_THOUGHTS" level="3" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_DEAD" level="5" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_LOCATE_CREATURE" level="7" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_LEGEND_LORE" level="9" spellcasting="Druid (Alpha)" prepared="true" />
+        </rules>
+    </element>
+
+    <element name="Empathic Chronicler" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_REMEMBRANCE_EMPATHIC_CHRONICLER">
+        <description>
+            <p>Starting at 2nd level, you are starting to be able to see and feel the memories of the world as if they were your own. You gain the flash enchantment cantrip and proficiency in History. When you use flash enchantment it deals psychic damage instead of the original.</p>
+        </description>
+        <sheet>
+            <description>When you use flash enchantment it deals psychic damage.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
+            <grant type="Spell" id="ID_SWECKY_SPELL_FLASH_ENCHANTMENT" spellcasting="Druid (Alpha)" prepared="true" />
+        </rules>
+    </element>
+    
+    <element name="Reservoir of Memories" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_REMEMBRANCE_RESERVOIR_OF_MEMORIES">
+        <description>
+            <p>At 2nd level, you can manifest a memory, focusing the raw emotion into a semi-transparent totem. As an action you can choose; anguish, despair, or hope, and an unoccupied 5-foot square within 15 feet of you. A totem of the chosen memory appears within the area and you gain access to its memory spells. As past of manifesting the memory, you can cast one of the spells related to that particular memory.</p>
+            <p class="indent">When casting a memory spell, you can only cast it through the totem, as if you stood in its area. You can do so as long as you are within 15 feet of the it. If a spell has range of Touch, you can target any creature within 15 feet of the totem.</p>
+            <p class="indent">A totem is an object that fills a 5-foot square, it has an AC equal to 14 + your proficiency bonus, and hit points equal to 10 + twice your druid level, but it can't be affected by spells and abilities which targets an area of effect. If the totem is destroyed, any spell being cast through it immediately ends. It blocks the area but it cannot be climbed upon, since any creature which tries to enter its area are overwhelmed by emotions. After 1 minute, or if it is destroyed, it disappears into nothingness.</p>
+            <p class="indent">You can use this feature twice and regain expended uses when you finish a short or long rest but you can only have one memory manifested at any one time.</p>
+        </description>
+        <sheet>
+            <description usage="2/Short Rest" action="Action">As an action you can choose; anguish, despair, or hope, and an unoccupied 5-foot square within 15 feet of you. A totem of the chosen memory appears within the area and you gain access to its memory spells. As past of manifesting the memory, you can cast one of the spells related to that particular memory. When casting a memory spell, you can only cast it through the totem, as if you stood in its area. You can do so as long as you are within 15 feet of the it. If a spell has range of Touch, you can target any creature within 15 feet of the totem.
+            A totem is an object that fills a 5-foot square, it has an AC equal to 14 + your proficiency bonus, and hit points equal to 10 + twice your druid level, but it can't be affected by spells and abilities which targets an area of effect. If the totem is destroyed, any spell being cast through it immediately ends. It blocks the area but it cannot be climbed upon, since any creature which tries to enter its area are overwhelmed by emotions. After 1 minute, or if it is destroyed, it disappears into nothingness.
+            You can use this feature twice and regain expended uses when you finish a short or long rest but you can only have one memory manifested at any one time.</description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" name="Reservoir of Memories Reference" supports="Reservoir of Memories Ref" optional="true" />
+        </rules>
+    </element>
+    <element name="Anguish" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_REMEMBRANCE_RESERVOIR_OF_MEMORIES_ANGUISH">
+        <supports>Reservoir of Memories Ref</supports>
+        <description>
+            <h5>MEMORY OF ANGUISH SPELLS</h5>
+            <table>
+                <thead>
+                    <tr><td>Druid Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>2nd</td><td>inflict wounds</td></tr>
+                <tr><td>3rd</td><td>suffer</td></tr>
+                <tr><td>5th</td><td>slow</td></tr>
+                <tr><td>7th</td><td>phantasmal killer</td></tr>
+                <tr><td>9th</td><td>agonizing whip</td></tr>
+            </table>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_INFLICT_WOUNDS" level="2" prepared="true" />
+            <grant type="Spell" id="ID_SWECKY_SPELL_SUFFER" level="3" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_SLOW" level="5" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_PHANTASMAL_KILLER" level="7" prepared="true" />
+            <grant type="Spell" id="ID_SWECKY_SPELL_AGONIZING_WHIP" level="9" prepared="true" />
+        </rules>
+    </element>
+    <element name="Despair" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_REMEMBRANCE_RESERVOIR_OF_MEMORIES_DESPAIR">
+        <supports>Reservoir of Memories Ref</supports>
+        <description>
+            <h5>MEMORY OF DESPAIR SPELLS</h5>
+            <table>
+                <thead>
+                    <tr><td>Druid Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>2nd</td><td>bane</td></tr>
+                <tr><td>3rd</td><td>hold person</td></tr>
+                <tr><td>5th</td><td>fear</td></tr>
+                <tr><td>7th</td><td>banishment</td></tr>
+                <tr><td>9th</td><td>hold monster</td></tr>
+            </table>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_BANE" level="2" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_HOLD_PERSON" level="3" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_FEAR" level="5" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_BANISHMENT" level="7" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_HOLD_MONSTER" level="9" prepared="true" />
+        </rules>
+    </element>
+    <element name="Hope" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_REMEMBRANCE_RESERVOIR_OF_MEMORIES_HOPE">
+        <supports>Reservoir of Memories Ref</supports>
+        <description>
+            <h5>MEMORY OF HOPE SPELLS</h5>
+            <table>
+                <thead>
+                    <tr><td>Druid Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>2nd</td><td>heroism</td></tr>
+                <tr><td>3rd</td><td>lesser restoration</td></tr>
+                <tr><td>5th</td><td>beacon of hope</td></tr>
+                <tr><td>7th</td><td>freedom of movement</td></tr>
+                <tr><td>9th</td><td>circle of power</td></tr>
+            </table>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_HEROISM" level="2" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_LESSER_RESTORATION" level="3" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_BEACON_OF_HOPE" level="5" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" level="7" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_CIRCLE_OF_POWER" level="9" prepared="true" />
+        </rules>
+    </element>
+
+    <element name="Emotional Resonance" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_REMEMBRANCE_EMOTIONAL_RESONANCE">
+        <description>
+            <p>Beginning at 6th level, the minds of your enemies becomes unstable in the presence of your manifested memories. While you are concentrating on a spell through your totem, you can use your reaction when a creature within 15 feet of it takes damage to inflict an additional 1d6 psychic damage.</p>
+        </description>
+        <sheet>
+            <description action="Reaction">While you are concentrating on a spell through your totem, you can use your reaction when a creature within 15 feet of it takes damage to inflict an additional 1d6 psychic damage.</description>
+        </sheet>
+    </element>
+
+    <element name="Emboldened Mind" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_REMEMBRANCE_EMBOLDENED_MIND">
+        <description>
+            <p>At 10th level, you have begun to long for more powerful experiences. While within 15 feet of a totem, your Emotional Resonance ability is strengthened depending on the memory:</p>
+            <p><strong>Anguish.</strong> The target takes an additional 1d6 damage (2d6).</p>
+            <p><strong>Despair.</strong> You can target a creature within 30 feet.</p>
+            <p><strong>Hope.</strong> You are healed for the same amount.</p>
+        </description>
+        <sheet>
+            <description>While within 15 feet of a totem, your Emotional Resonance ability is strengthened depending on the memory: <strong>Anguish.</strong> The target takes an additional 1d6 damage (2d6). <strong>Despair.</strong> You can target a creature within 30 feet. <strong>Hope.</strong> You are healed for the same amount.</description>
+        </sheet>
+    </element>
+
+    <element name="Conscious Duality" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_REMEMBRANCE_CONSCIOUS_DUALITY">
+        <description>
+            <p>At 14th level, you have become powerful enough to maintain two different memories at the same time. You can have two different manifested memories at a time. You may only cast spells of the particular memory through its associated totem. For example, you can only channel memory of hope spells through the hope totem.</p>
+            <p class="indent">You can summon two additional totems before you must finish a short or long rest.</p>
+        </description>
+        <sheet>
+            <description usage="2/Short Rest">You can have two different manifested memories at a time. You may only cast spells of the particular memory through its associated totem.</description>
+        </sheet>
+    </element>
+
+    <element name="Worldly Echoes" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_REMEMBRANCE_WORLDLY_ECHOES">
+        <description>
+            <p>At 18th level, you've embraced the memories of the world, channeling their power without much thought. While you are concentrating on a memory spell, you can cast an additional memory spell of a different memory that requires concentration and choose to maintain concentration on both spells simultaneously. For example, you can cast hold person from your despair totem and beacon of hope from your hope totem, but you can't concentrate on two hold person spells.</p>
+            <p class="indent">If you fail a Constitution saving throw to maintain concentration, you lose concentration on both spells.</p>
+        </description>
+        <sheet>
+            <description>While you are concentrating on a memory spell, you can cast an additional memory spell of a different memory that requires concentration and choose to maintain concentration on both spells simultaneously. If you fail a Constitution saving throw to maintain concentration, you lose concentration on both spells.</description>
+        </sheet>
+    </element>
+
+    <element name="Flash Enchantment" type="Spell" source="Alpha Druid" id="ID_SWECKY_SPELL_FLASH_ENCHANTMENT">
+        <supports>Druid, Sorcerer, Warlock, Wizard</supports>
+        <description>
+            <p>Elemental energy billows from your fingers and wrap around a weapon held by an ally of your choice. Choose acid, cold, fire, or lightning damage, the next time the ally hits with a weapon attack using that weapon they deal an additional 1d8 of the chosen type and the weapon is considered to be magical for the purpose of overcoming resistances and immunities.</p>
+            <p class="indent">This spell's damage increases when you reach higher levels. At 5th level, the attack deals an extra 1d8 damage (2d8). This damage increase by 1d8 at 11th level (3d8) and 17th level (4d8).</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">0</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">1 round</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    
+    <element name="Suffer" type="Spell" source="Alpha Druid" id="ID_SWECKY_SPELL_SUFFER">
+        <supports>Bard, Cleric</supports>
+        <description>
+            <p>You point at a creature within range and speak a terrible word, commanding them to suffer. The target must make a Charisma saving throw. If they fail, they take 4d8 psychic damage and they have disadvantage on Strength and Dexterity ability checks until the end of their next turn. If they succeed, they take half as much damage and do not have disadvantage.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Enchantment</set>
+            <set name="time">1 action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Agonizing Whip" type="Spell" source="Alpha Druid" id="ID_SWECKY_SPELL_AGONIZING_WHIP">
+        <supports>Cleric, Sorcerer, Warlock</supports>
+        <description>
+            <p>You manifest a whip out of pure coalesced pain that hums with the faint screams of horrors inflicted past. When you cast this spell, you make 3 melee spell attacks at targets within range. You can lash out at one target or several. On a hit, the target takes 3d8 psychic damage.</p>
+            <p class="indent">If at least two of your attacks hit the same creature, the creature must make a Constitution saving throw or be incapacitated for the duration. If three hit, the creature is stunned for the same duration. At the end of each of its turns, it can make another Wisdom save. On a success, the spell ends.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 6th-level or higher, you make an additional attack for each slot level above 5th.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">20 feet</set>
+            <set name="duration">1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    
+</elements>

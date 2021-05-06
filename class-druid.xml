@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    
+    <!--VERSION 1.0.2-->
+
+    <element name="Druid (Alpha)" type="Class" source="Alpha Druid" id="ID_SWECKY_CLASS_ALPHA_DRUID">
+        <description>
+    <p>Holding high a gnarled staff wreathed with holly, an elf summons the fury of the storm and calls down explosive bolts of lightning to smite the torch-carrying orcs who threaten her forest.</p>
+    <p class="indent">Crouching out of sight on a high tree branch in the form of a leopard, a human peers out of the jungle at the strange construction of a temple of Evil Elemental Air, keeping a close eye on the cultists’ activities.</p>
+    <p class="indent">Swinging a blade formed of pure fire, a half-elf charges into a mass of skeletal soldiers, sundering the unnatural magic that gives the foul creatures the mocking semblance of life.</p>
+    <p class="indent">Whether calling on the elemental forces of nature or emulating the creatures of the animal world, druids are an embodiment of nature’s resilience, cunning, and fury. They claim no mastery over nature. Instead, they see themselves as extensions of nature’s indomitable will.</p>
+    <h4>POWER OF NATURE</h4>
+    <p>Druids revere nature above all, gaining their spells and other magical powers either from the force of nature itself or from a nature deity. Many druids pursue a mystic spirituality of transcendent union with nature rather than devotion to a divine entity, while others serve gods of wild nature, animals, or elemental forces. The ancient druidic traditions are sometimes called the Old Faith, in contrast to the worship of gods in temples and shrines.</p>
+    <p class="indent">Druid spells are oriented toward nature and animals—the power of tooth and claw, of sun and moon, of fire and storm. Some druids train to perfect their spellcasting, while others specialize in commanding the wilds, and a few can take different shapes to enhance their abilities. Each druid is unique but they all are part of nature and serves it first and foremost.</p>
+    <h4>PRESERVE THE BALANCE</h4>
+    <p>For druids, nature exists in a precarious balance. The four elements that make up a world—air, earth, fire, and water—must remain in equilibrium. If one element were to gain power over the others, the world could be destroyed, drawn into one of the elemental planes and broken apart into its component elements. Thus, druids oppose cults of Elemental Evil and others who promote one element to the exclusion of others.</p>
+    <p class="indent">Druids are also concerned with the delicate ecological balance that sustains plant and animal life, and the need for civilized folk to live in harmony with nature, not in opposition to it. Druids accept that which is cruel in nature, and they hate that which is unnatural, including aberrations (such as beholders and mind flayers) and undead (such as zombies and vampires). Druids sometimes lead raids against such creatures, especially when the monsters encroach on the druids’ territory.</p>
+    <p class="indent">Druids are often found guarding sacred sites or watching over regions of unspoiled nature. But when a significant danger arises, threatening nature’s balance or the lands they protect, druids take on a more active role in combating the threat, as adventurers.</p>
+    <h4>CREATING A DRUID</h4>
+    <p>When making a druid, consider why your character has such a close bond with nature. Perhaps your character lives in a society where the Old Faith still thrives, or was raised by a druid after being abandoned in the depths of a forest. Perhaps your character had a dramatic encounter with the spirits of nature, coming face to face with a giant eagle or dire wolf and surviving the experience. Maybe your character was born during an epic storm or a volcanic eruption, which was interpreted as a sign that becoming a druid was part of your character’s destiny.</p>
+    <p class="indent">Have you always been an adventurer as part of your druidic calling, or did you first spend time as a caretaker of a sacred grove or spring? Perhaps your homeland was befouled by evil, and you took up an adventuring life in hopes of finding a new home or purpose.</p>
+    <h5 class="caption">QUICK BUILD</h5>
+    <p>You can make a druid quickly by following these suggestions. First, Wisdom should be your highest ability score, followed by Constitution. Second, choose the hermit background.</p>
+    <h2>CLASS FEATURES</h2>
+    <p>As a druid, you gain the following class features.</p>
+    <h5 class="caption">HIT POINTS</h5>
+    <ul class="unstyled">
+        <li><strong>Hit Dice:</strong> 1d8 per druid level</li>
+        <li><strong>Hit Points at 1st Level:</strong> 8 + your Constitution modifier</li>
+        <li><strong>Hit Points at Higher Levels:</strong> 1d8 (or 5) + your Constitution modifier per druid level after 1st</li>
+    </ul>
+    <h5 class="caption">PROFICIENCIES</h5>
+    <ul class="unstyled mb">
+        <li><strong>Armor:</strong> Light armor, medium armor, shields</li>
+        <li><strong>Weapons:</strong> Clubs, daggers, darts, javelins, maces, quarterstaffs, scimitars, sickles, slings, spears</li>
+        <li><strong>Tools:</strong> Herbalism kit</li>
+    </ul>
+    <ul class="unstyled">
+        <li><strong>Saving Throws:</strong> Intelligence, Wisdom</li>
+        <li><strong>Skills:</strong> Choose two from Animal Handling, Arcana, Insight, Medicine, Nature, Perception, Religion, and Survival</li>
+    </ul>
+    <h5 class="caption">EQUIPMENT</h5>
+    <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+    <ul>
+        <li>(a) a shield or (b) any simple weapon</li>
+        <li>(a) a scimitar or (b) any simple melee weapon</li>
+        <li>Leather armor, an explorer’s pack, and a druidic focus</li>
+    </ul>
+    <h5 class="caption">THE DRUID</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="left">Features</td><td class="col-10">Cantrips Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td><td>5th</td><td>6th</td><td>7th</td><td>8th</td><td>9th</td></tr>
+				</thead>
+				<tr><td> 1st</td><td class="left">Druidic, Spellcasting</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 2nd</td><td class="left">Druid Circle</td><td>3</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 3rd</td><td class="left">Nature's Boon</td><td>3</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 4th</td><td class="left">Ability Score Improvement</td><td>4</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 5th</td><td class="left">—</td><td>4</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 6th</td><td class="left">Druid Circle feature</td><td>4</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 7th</td><td class="left">—</td><td>4</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 8th</td><td class="left">Ability Score Improvement</td><td>4</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 9th</td><td class="left">Nature's Ward</td><td>4</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>10th</td><td class="left">Druid Circle feature</td><td>5</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>11th</td><td class="left">—</td><td>5</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>12th</td><td class="left">Ability Score Improvement</td><td>5</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>13th</td><td class="left">—</td><td>5</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>—</td><td>—</td></tr>
+				<tr><td>14th</td><td class="left">Druid Circle feature</td><td>5</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>—</td><td>—</td></tr>
+				<tr><td>15th</td><td class="left">—</td><td>5</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>—</td></tr>
+				<tr><td>16th</td><td class="left">Ability Score Improvement</td><td>5</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>—</td></tr>
+				<tr><td>17th</td><td class="left">—</td><td>5</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+				<tr><td>18th</td><td class="left">Timeless Body, Druid Circle Feature</td><td>5</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+				<tr><td>19th</td><td class="left">Ability Score Improvement</td><td>5</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td></tr>
+				<tr><td>20th</td><td class="left">Archdruid</td><td>5</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>2</td><td>1</td><td>1</td></tr>
+			</table>
+            <div element="ID_SWECKY_CLASS_FEATURE_ALPHA_DRUID_DRUIDIC" />
+            <div element="ID_SWECKY_CLASS_FEATURE_ALPHA_DRUID_SPELLCASTING" />
+            <div element="ID_SWECKY_CLASS_FEATURE_ALPHA_DRUID_DRUID_CIRCLE" />
+            <div element="ID_SWECKY_CLASS_FEATURE_ALPHA_DRUID_NATURES_BOON" />
+            <div element="ID_SWECKY_CLASS_FEATURE_ALPHA_DRUID_ASI" />
+            <div element="ID_SWECKY_CLASS_FEATURE_ALPHA_DRUID_NATURES_WARD" />
+            <div element="ID_SWECKY_CLASS_FEATURE_ALPHA_DRUID_TIMELESS_BODY" />
+            <div element="ID_SWECKY_CLASS_FEATURE_ALPHA_DRUID_ARCHDRUID" />
+        </description>
+        <setters>
+            <set name="hd">d8</set>
+            <set name="short">A priest of the Old Faith, wielding the powers of nature: moonlight, animals, plant growth, fire and lightning.</set>
+        </setters>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_SWECKY_MULTICLASS_ALPHA_DRUID"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_SWECKY_MULTICLASS_ALPHA_DRUID"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" requirements="!ID_SWECKY_MULTICLASS_ALPHA_DRUID"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CLUB" requirements="!ID_SWECKY_MULTICLASS_ALPHA_DRUID"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER" requirements="!ID_SWECKY_MULTICLASS_ALPHA_DRUID"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_DART" requirements="!ID_SWECKY_MULTICLASS_ALPHA_DRUID"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_JAVELIN" requirements="!ID_SWECKY_MULTICLASS_ALPHA_DRUID"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MACE" requirements="!ID_SWECKY_MULTICLASS_ALPHA_DRUID"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_QUARTERSTAFF" requirements="!ID_SWECKY_MULTICLASS_ALPHA_DRUID"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SCIMITAR" requirements="!ID_SWECKY_MULTICLASS_ALPHA_DRUID"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SICKLE" requirements="!ID_SWECKY_MULTICLASS_ALPHA_DRUID"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SLING" requirements="!ID_SWECKY_MULTICLASS_ALPHA_DRUID"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SPEAR" requirements="!ID_SWECKY_MULTICLASS_ALPHA_DRUID"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" requirements="!ID_SWECKY_MULTICLASS_ALPHA_DRUID"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" requirements="!ID_SWECKY_MULTICLASS_ALPHA_DRUID"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" requirements="!ID_SWECKY_MULTICLASS_ALPHA_DRUID"/>
+            <select type="Proficiency" name="Skill Proficiency (Druid)" supports="Skill,Druid" number="2" requirements="!ID_SWECKY_MULTICLASS_ALPHA_DRUID"/>
+            <grant type="Class Feature" id="ID_SWECKY_CLASS_FEATURE_ALPHA_DRUID_DRUIDIC" level="1" />
+            <grant type="Class Feature" id="ID_SWECKY_CLASS_FEATURE_ALPHA_DRUID_SPELLCASTING" level="1" />
+            <grant type="Class Feature" id="ID_SWECKY_CLASS_FEATURE_ALPHA_DRUID_DRUID_CIRCLE" level="2" />
+            <grant type="Class Feature" id="ID_SWECKY_CLASS_FEATURE_ALPHA_DRUID_NATURES_BOON" level="3" />
+            <grant type="Class Feature" id="ID_SWECKY_CLASS_FEATURE_ALPHA_DRUID_ASI" level="4" />
+            <grant type="Class Feature" id="ID_SWECKY_CLASS_FEATURE_ALPHA_DRUID_NATURES_WARD" level="9" />
+            <grant type="Class Feature" id="ID_SWECKY_CLASS_FEATURE_ALPHA_DRUID_TIMELESS_BODY" level="18" />
+            <grant type="Class Feature" id="ID_SWECKY_CLASS_FEATURE_ALPHA_DRUID_ARCHDRUID" level="20" />
+        </rules>
+        <multiclass id="ID_SWECKY_MULTICLASS_ALPHA_DRUID">
+            <prerequisite>Wisdom 13</prerequisite>
+            <requirements>[wis:13]</requirements>
+            <setters>
+                <set name="multiclass proficiencies">Light armor, medium armor, shields</set>
+            </setters>
+            <rules>
+                <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+                <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+                <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+                <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+            </rules>
+        </multiclass>
+    </element>
+
+    <element name="Druidic" type="Class Feature" source="Alpha Druid" id="ID_SWECKY_CLASS_FEATURE_ALPHA_DRUID_DRUIDIC">
+        <description>
+            <p>You know Druidic, the secret language of druids. You can speak the language and use it to leave hidden messages. You and others who know this language automatically spot such a message. Others spot the message’s presence with a successful DC 15 Wisdom (Perception) check but can’t decipher it without magic.</p>
+        </description>
+        <sheet>
+            <description>You know Druidic, the secret language of druids. You can speak the language and use it to leave hidden messages. You and others who know this language automatically spot such a message. Others spot the message’s presence with a successful DC 15 Wisdom (Perception) check but can’t decipher it without magic.</description>
+        </sheet>
+    </element>
+    
+    <element name="Spellcasting" type="Class Feature" source="Alpha Druid" id="ID_SWECKY_CLASS_FEATURE_ALPHA_DRUID_SPELLCASTING">
+        <description>
+            <p>Drawing on the divine essence of nature itself, you can cast spells to shape that essence to your will. See Spells Rules for the general rules of spellcasting and the Spells Listing for the druid spell list.</p>
+			<h5>CANTRIPS</h5>
+			<p>At 1st level, you know three cantrips of your choice from the druid spell list. You learn additional druid cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Druid table.</p>
+			<h5>PREPARING AND CASTING SPELLS</h5>
+			<p>The Druid table shows how many spell slots you have to cast your druid spells of 1st level and higher. To cast one of these druid spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.</p>
+			<p class="indent">You prepare the list of druid spells that are available for you to cast, choosing from the druid spell list. When you do so, choose a number of druid spells equal to your Wisdom modifier + your druid level (minimum of one spell). The spells must be of a level for which you have spell slots.</p>
+			<p class="indent">For example, if you are a 3rd-level druid, you have four 1st-level and two 2nd-level spell slots. With a Wisdom of 16, your list of prepared spells can include six spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell cure wounds, you can cast it using a 1st-level or 2nd-level slot. Casting the spell doesn’t remove it from your list of prepared spells.</p>
+			<p class="indent">You can also change your list of prepared spells when you finish a long rest. Preparing a new list of druid spells requires time spent in prayer and meditation: at least 1 minute per spell level for each spell on your list.</p>
+			<h5>SPELLCASTING ABILITY</h5>
+			<p>Wisdom is your spellcasting ability for your druid spells, since your magic draws upon your devotion and attunement to nature. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a druid spell you cast and when making an attack roll with one.</p>
+			<center>
+				<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Wisdom modifier</p>
+				<p><strong>Spell attack modifier</strong> = your proficiency bonus + your Wisdom modifier</p>
+			</center>
+			<h5>RITUAL CASTING</h5>
+			<p>You can cast a druid spell as a ritual if that spell has the ritual tag and you have the spell prepared.</p>
+			<h5>SPELLCASTING FOCUS</h5>
+			<p>You can use a druidic focus as a spellcasting focus for your druid spells.</p>
+		</description>
+		<sheet>
+			<description>You can cast druid spells as rituals. You can prepare {{druid (alpha):spellcasting:prepare}} spells from the druid spell list. You can use a druidic focus as your spellcasting focus.</description>
+		</sheet>
+		<spellcasting name="Druid (Alpha)" ability="Wisdom" prepare="true">
+			<list known="true">Druid</list>
+		</spellcasting>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_FULL" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+			<grant type="Grants" id="ID_INTERNAL_RITUAL_CASTING" />
+			<stat name="druid (alpha):spellcasting:slots:1" value="2" level="1" />
+			<stat name="druid (alpha):spellcasting:slots:1" value="1" level="2" />
+			<stat name="druid (alpha):spellcasting:slots:1" value="1" level="3" />
+			<stat name="druid (alpha):spellcasting:slots:2" value="2" level="3" />
+			<stat name="druid (alpha):spellcasting:slots:2" value="1" level="4" />
+			<stat name="druid (alpha):spellcasting:slots:3" value="2" level="5" />
+			<stat name="druid (alpha):spellcasting:slots:3" value="1" level="6" />
+			<stat name="druid (alpha):spellcasting:slots:4" value="1" level="7" />
+			<stat name="druid (alpha):spellcasting:slots:4" value="1" level="8" />
+			<stat name="druid (alpha):spellcasting:slots:4" value="1" level="9" />
+			<stat name="druid (alpha):spellcasting:slots:5" value="1" level="9" />
+			<stat name="druid (alpha):spellcasting:slots:5" value="1" level="10" />
+			<stat name="druid (alpha):spellcasting:slots:5" value="1" level="18" />
+			<stat name="druid (alpha):spellcasting:slots:6" value="1" level="11" />
+			<stat name="druid (alpha):spellcasting:slots:6" value="1" level="19" />
+			<stat name="druid (alpha):spellcasting:slots:7" value="1" level="13" />
+			<stat name="druid (alpha):spellcasting:slots:7" value="1" level="20" />
+			<stat name="druid (alpha):spellcasting:slots:8" value="1" level="15" />
+			<stat name="druid (alpha):spellcasting:slots:9" value="1" level="17" />
+			<stat name="druid (alpha):spellcasting:prepare" value="wisdom:modifier" />
+			<stat name="druid (alpha):spellcasting:prepare" value="level:druid (alpha)" />
+			<select type="Spell" name="Cantrip (Druid)" supports="$(spellcasting:list), 0" level="1" number="3" spellcasting="Druid (Alpha)" />
+			<select type="Spell" name="Cantrip (Druid)" supports="$(spellcasting:list), 0" level="4" number="1" spellcasting="Druid (Alpha)" />
+			<select type="Spell" name="Cantrip (Druid)" supports="$(spellcasting:list), 0" level="10" number="1" spellcasting="Druid (Alpha)" />
+		</rules>
+    </element>
+
+    <element name="Druid Circle" type="Class Feature" source="Alpha Druid" id="ID_SWECKY_CLASS_FEATURE_ALPHA_DRUID_DRUID_CIRCLE">
+        <description>
+            <p>At 2nd level, you choose to identify with a circle of druids, all detailed at the end of the class description. Your choice grants you features at 2nd level and again at 6th, 10th, 14th and 18th level.</p>
+            <h5>Circle Spells</h5>
+            <p>Your mystical connection to the land infuses you with the ability to cast certain spells. At 2nd, 3rd, 5th, 7th, and 9th level you gain access to circle spells connected to your chosen Circle.</p>
+            <p class="indent">Once you gain access to a circle spell, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day. If you gain access to a spell that doesn’t appear on the druid spell list, the spell is nonetheless a druid spell for you.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Archetype" name="Druid Circle" supports="Alpha Druid Circle" />
+        </rules>
+    </element>
+
+    <element name="Nature's Boon" type="Class Feature" source="Alpha Druid" id="ID_SWECKY_CLASS_FEATURE_ALPHA_DRUID_NATURES_BOON">
+        <description>
+            <p>As you protect nature, nature protects you, leaving you untouched by natural hazards. Beginning at 3rd level, you're naturally acclimated to high altitude and adapted to warm and cold climates, as described in chapter 5 of the Dungeon Master's Guide (Pg. 110).</p>
+        </description>
+        <sheet>
+            <description>You're naturally acclimated to high altitude and adapted to warm and cold climates.</description>
+        </sheet>
+    </element>
+
+    <element name="Ability Score Improvement" type="Class Feature" source="Alpha Druid" id="ID_SWECKY_CLASS_FEATURE_ALPHA_DRUID_ASI">
+        <compendium display="false" />
+		<description>
+			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Druid 4)" supports="Improvement Option,Druid,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Druid 8)" supports="Improvement Option,Druid,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Druid 12)" supports="Improvement Option,Druid,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Druid 16)" supports="Improvement Option,Druid,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Druid 19)" supports="Improvement Option,Druid,19" level="19" />
+		</rules>
+    </element>
+
+    <element name="Nature's Ward" type="Class Feature" source="Alpha Druid" id="ID_SWECKY_CLASS_FEATURE_ALPHA_DRUID_NATURES_WARD">
+        <description>
+            <p>When you reach 9th level, you can’t be charmed or frightened by elementals or fey, and you are immune to poison and disease.</p>
+        </description>
+        <sheet>
+            <description>You can’t be charmed or frightened by elementals or fey, and you are immune to poison and disease.</description>
+        </sheet>
+    </element>
+
+    <element name="Timeless Body" type="Class Feature" source="Alpha Druid" id="ID_SWECKY_CLASS_FEATURE_ALPHA_DRUID_TIMELESS_BODY">
+        <description>
+            <p>Starting at 18th level, the primal magic that you wield causes you to age more slowly. For every 10 years that pass, your body ages only 1 year.</p>
+        </description>
+        <sheet>
+            <description>For every 10 years that pass, your body ages only 1 year.</description>
+        </sheet>
+    </element>
+
+    <element name="Archdruid" type="Class Feature" source="Alpha Druid" id="ID_SWECKY_CLASS_FEATURE_ALPHA_DRUID_ARCHDRUID">
+        <description>
+            <p>At 20th level, you and nature have become one, and you can draw upon its full power with a mere thought. As a bonus action you can enter a state of deep connection to the world which lasts for 1 minute. While in this state you may cast any spell from the druid spell list as if you had it prepared. You can enter this state again after you finish a long rest.</p>
+            <p class="indent">Additionally, you can ignore the verbal and somatic components of your druid spells, as well as any material components that lack a cost and aren’t consumed by a spell.</p>
+        </description>
+        <sheet>
+            <description action="Bonus Action" usage="1/Long Rest">As a bonus action you can enter a state of deep connection to the world which lasts for 1 minute. While in this state you may cast any spell from the druid spell list as if you had it prepared. You can enter this state again after you finish a long rest.
+            Additionally, you can ignore the verbal and somatic components of your druid spells, as well as any material components that lack a cost and aren’t consumed by a spell.</description>
+        </sheet>
+    </element>
+
+    <!--CIRCLE OF GROWTH-->
+
+    <element name="Circle of Growth" type="Archetype" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_ALPHA_DRUID_GROWTH">
+        <supports>Alpha Druid Circle</supports>
+        <description>
+            <p>Druids of the Circle of Growth delve more completely into the ancient rituals and hidden knowledge of nature. These druids draw upon the power of the forests they protect to heal, defend, or help others understand them. As a member of this circle, your magic allows you to be one with your surroundings, gaining control over the plants around you.</p>
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_GROWTH_SPELLS" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_GROWTH_PLANT_SHAPE" />
+            <div element="ID_SWECKY_INFORMATION_ALPHA_DRUID_ARBOREAL_PROTECTOR" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_GROWTH_WAY_NATURE" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_GROWTH_BLUDGEONING_LIMBS" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_GROWTH_TAKE_ROOT" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_GROWTH_GREAT_TREE" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_GROWTH_ROOTS_WORLD" />
+        </description>
+        <sheet display="false">
+            <description>Druids of the Circle of Growth delve more completely into the ancient rituals and hidden knowledge of nature.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_GROWTH_SPELLS" level="2" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_GROWTH_PLANT_SHAPE" level="2" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_GROWTH_WAY_NATURE" level="2" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_GROWTH_BLUDGEONING_LIMBS" level="6" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_GROWTH_TAKE_ROOT" level="10" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_GROWTH_GREAT_TREE" level="14" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_GROWTH_ROOTS_WORLD" level="18" />
+        </rules>
+    </element>
+
+    <element name="Circle Spells" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_GROWTH_SPELLS">
+        <description>
+            <p>You gain circle spells at the druid levels listed.</p>
+            <h5>CIRCLE OF GROWTH SPELLS</h5>
+            <table>
+                <thead>
+                    <tr><td>Druid Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>2nd</td><td>entangle, safety net</td></tr>
+                <tr><td>3rd</td><td>arm of the wild, spike growth</td></tr>
+                <tr><td>5th</td><td>skewering branch, spray of thorns</td></tr>
+                <tr><td>7th</td><td>grasping vine, tree strike</td></tr>
+                <tr><td>9th</td><td>tree stride, wrath of nature</td></tr>
+            </table>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_ENTANGLE" level="2" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_SWECKY_SPELL_SAFETY_NET" level="2" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_SWECKY_SPELL_ARM_OF_THE_WILD" level="3" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_SPIKE_GROWTH" level="3" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_SWECKY_SPELL_SKEWERING_BRANCH" level="5" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_SWECKY_SPELL_SPRAY_OF_THORNS" level="5" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_GRASPING_VINE" level="7" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_SWECKY_SPELL_TREE_STRIKE" level="7" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_TREE_STRIDE" level="9" spellcasting="Druid (Alpha)" prepared="true" />
+            <grant type="Spell" id="ID_XGTE_SPELL_WRATH_OF_NATURE" level="9" spellcasting="Druid (Alpha)" prepared="true" />
+        </rules>
+    </element>
+    
+    <element name="Plant Shape" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_GROWTH_PLANT_SHAPE">
+        <description>
+            <p>Starting at 2nd level, you can use your bonus action to magically assume the shape of an <strong>arboreal protector.</strong> You can use this feature twice and regain expended uses when you finish a short or long rest.</p>
+            <p class="indent">You can stay in this shape for up to 1 hour. You then revert to your normal form unless you expend another use of this feature. You can revert to your normal form earlier by using a bonus action on your turn. You automatically revert if you fall unconscious, drop to 0 hit points, or die.</p>
+            <p class="indent">While you are transformed, the following rules apply:</p>
+            <ul>
+                <li>Your game statistics are replaced by the statistics of the <strong>arboreal protector</strong>, but you retain your alignment, personality, proficiency modifier (already added in the statblock for attacks, increase it with levels), skill proficiencies, saving throws, and Intelligence, Wisdom, and Charisma scores.</li>
+                <li>When you transform, you assume the form’s hit points and Hit Dice. When you revert to your normal form, you return to the number of hit points you had before you transformed. However, if you revert as a result of dropping to 0 hit points, any excess damage carries over to your normal form and you must make a Constitution saving throw against the excess damage, gaining a level of exhaustion on a failure. For example, if you take 10 damage in plant form and have only 1 hit point left, you revert and take 9 damage and must make a DC 9 Constitution saving throw. As long as the excess damage doesn’t reduce your normal form to 0 hit points, you aren’t knocked unconscious.</li>
+                <li>You cannot cast any spells except spells on your Circle spell list. Transforming doesn’t break your concentration on a spell you’ve already cast or prevent you from taking actions that are part of a spell, such as call lightning, that you’ve already cast. You retain the benefit of any features from your class, race, or other source and can use them if the tree would be physically capable of doing so. However, you can’t use any of your special senses, such as darkvision.</li>
+                <li>Your equipment merges into your new form and has no effect (unless stated otherwises) until you leave the form.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description usage="2/Short Rest">You can use your bonus action to magically assume the shape of an arboreal protector. You can use this feature twice and regain expended uses when you finish a short or long rest. You can stay in this shape for up to 1 hour. You then revert to your normal form unless you expend another use of this feature. You can revert to your normal form earlier by using a bonus action on your turn. You automatically revert if you fall unconscious, drop to 0 hit points, or die.</description>
+        </sheet>
+    </element>
+    <element name="Arboreal Protector" type="Information" source="Alpha Druid" id="ID_SWECKY_INFORMATION_ALPHA_DRUID_ARBOREAL_PROTECTOR">
+		<description>
+			<p><em>Large plant</em></p>
+			<ul class="unstyled mb">
+				<li><strong>Armor Class</strong> 16 (thick bark)</li>
+				<li><strong>Hit Points</strong> 15 (2d6 + 8)</li>
+				<li><strong>Speed</strong> 15 ft.</li>
+			</ul>
+			<table style="text-align:center">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td></tr></thead>
+				<tr><td>18 (+4)</td><td>7 (-2)</td><td>18 (+4)</td></tr>
+			</table>
+			<ul class="unstyled mb">
+				<li><strong>Thick Bark.</strong>  Your AC is 16 and your Hit Points in this form increase by 8 (1d6 + 4) for each druid level above 2nd.</li>
+				<li><strong>Wooden Arms.</strong> When you try to a grapple a creature you have a reach of 10 feet. At the start of your turn you can pull a grappled creature 5 feet closer.</li>
+			</ul>
+			<h5 class="caption">ACTIONS</h5>
+			<p><strong><em>Slam.</em></strong> <em>Melee Attack:</em> +6 (proficiency bonus + Strength modifier), reach 10 ft., one target. Hit: 1d12 + 4 bludgeoning damage.</p>
+		</description>
+	</element>
+
+    <element name="The Way of Nature" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_GROWTH_WAY_NATURE">
+        <description>
+            <p>Starting at 2nd level, moving through nonmagical difficult terrain costs you no extra movement. You can also pass through plants without being slowed by them and without taking damage from them if they have thorns, spines, or a similar hazard.</p>
+            <p class="indent">In addition, you have advantage on saving throws against plants that are magically created or manipulated to impede movement, such those created by the entangle spell.</p>
+        </description>
+        <sheet>
+            <description>Moving through nonmagical difficult terrain costs you no extra movement. You can also pass through plants without being slowed by them and without taking damage from them if they have thorns, spines, or a similar hazard. In addition, you have advantage on saving throws against plants that are magically created or manipulated to impede movement, such those created by the entangle spell.</description>
+        </sheet>
+    </element>
+
+    <element name="Bludgeoning Limbs" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_GROWTH_BLUDGEONING_LIMBS">
+        <description>
+            <p>At 6th level, the strength of your tree limbs and plant magic increases. If you successfully grapple, attack, or deal damage to a creature with a Circle spell while in Plant Shape it takes an additional 1d8 bludgeoning damage. A creature also takes this damage if it is grappled or restrained by you or one of your Circle spells at the start of their turn. This damage increases by 1d8 at level 10 (2d8) and at level 14 (3d8).</p>
+            <p class="indent">Additionally, your attacks in tree form count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
+        </description>
+        <sheet>
+            <description level="6">If you successfully grapple, attack, or deal damage to a creature with a Circle spell while in Plant Shape it takes an additional 1d8 bludgeoning damage. A creature also takes this damage if it is grappled or restrained by you or one of your Circle spells at the start of their turn. Additionally, your attacks in tree form count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</description>
+            <description level="10">If you successfully grapple, attack, or deal damage to a creature with a Circle spell while in Plant Shape it takes an additional 2d8 bludgeoning damage. A creature also takes this damage if it is grappled or restrained by you or one of your Circle spells at the start of their turn. Additionally, your attacks in tree form count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</description>
+            <description level="14">If you successfully grapple, attack, or deal damage to a creature with a Circle spell while in Plant Shape it takes an additional 3d8 bludgeoning damage. A creature also takes this damage if it is grappled or restrained by you or one of your Circle spells at the start of their turn. Additionally, your attacks in tree form count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</description>
+        </sheet>
+    </element>
+
+    <element name="Take Root" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_GROWTH_TAKE_ROOT">
+        <description>
+            <p>Starting at 10th level, your connection to the natural world deepens. As an action you can root yourself to the ground while in your Plant Shape. You can end this effect by using a bonus action. While rooted you gain the following:</p>
+            <ul>
+                <li>Your movement speed is 0 and you have advantage on Strength (Athletics) checks.</li>
+                <li>You can use a bonus action to try and Grapple a creature within 15 feet.</li>
+                <li>Your AC increases to 20, unless already higher.</li>
+                <li>You have resistance to bludgeoning, piercing, and slashing damage.</li>
+                <li>You have advantage on Strength and Constitution saving throws, but disadvantage on Dexterity saving throw.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description action="Action">As an action you can root yourself to the ground while in your Plant Shape. You can end this effect by using a bonus action. While rooted you gain the following: Your movement speed is 0 and you have advantage on Strength (Athletics) checks. You can use a bonus action to try and Grapple a creature within 15 feet. Your AC increases to 20, unless already higher. You have resistance to bludgeoning, piercing, and slashing damage. You have advantage on Strength and Constitution saving throws, but disadvantage on Dexterity saving throw.</description>
+        </sheet>
+    </element>
+
+    <element name="Great Tree" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_GROWTH_GREAT_TREE">
+        <description>
+            <p>Starting at 14th level, while in Plant Shape your movement speed is now 30 feet and you gain an additional arm making you able to grapple an additional creature, as well as attack while grappling two creatures.</p>
+            <p class="indent">Also, while rooted you can make two Grapple attempts using a bonus action.</p>
+        </description>
+        <sheet>
+            <description>While in Plant Shape your movement speed is now 30 feet and you gain an additional arm making you able to grapple an additional creature, as well as attack while grappling two creatures. Also, while rooted you can make two Grapple attempts using a bonus action.</description>
+        </sheet>
+    </element>
+
+    <element name="Roots of the World" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_GROWTH_ROOTS_WORLD">
+        <description>
+            <p>At 18th level, you can stay in Plant Shape for an unlimited amount of time and you can choose to become Huge when transforming. Also, while rooted, you can cast any spells you have prepared. Finally, you are always under the effect of the speak with plants spell.</p>
+        </description>
+        <sheet>
+            <description>You can stay in Plant Shape for an unlimited amount of time and you can choose to become Huge when transforming. Also, while rooted, you can cast any spells you have prepared. Finally, you are always under the effect of the speak with plants spell.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_PLANTS" spellcasting="Druid (Alpha)" prepared="true" />
+        </rules>
+    </element>
+
+    <!--SPELLS-->
+
+    <!--1ST LEVEL-->
+    
+    <element name="Safety Net" type="Spell" source="Alpha Druid" id="ID_SWECKY_SPELL_SAFETY_NET">
+        <supports>Druid, Ranger</supports>
+        <description>
+            <p>When you are forced to move in any direction and within 10 feet of solid ground, you can use your reaction call forth vines from the ground. They wrap around your body to keep you in place and remain until the started of your next turn.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 reaction</set>
+            <set name="range">Self</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <!--2ND LEVEL-->
+
+    <element name="Arm of the Wild" type="Spell" source="Alpha Druid" id="ID_SWECKY_SPELL_ARM_OF_THE_WILD">
+        <supports>Druid, Ranger</supports>
+        <description>
+            <p>You transform one of your arms into an extendable vine whose end sticks to any surface that it touches. The arm cannot be used to wield any objects or weapons. On every turn within the duration, including the turn that you cast the spell, you can make either of the following actions:</p>
+            <p class="indent"><strong><em>Grab Creature.</em></strong>  As a bonus action, you extend your vine arm forward, attempting to pull one creature you choose within 20 feet of you. The target must succeed on a Dexterity saving throw or be pulled 10 feet directly towards you.</p>
+            <p class="indent"><strong><em>Grab Surface.</em></strong> As a bonus action, you extend your vine arm forward, pulling yourself to a hard surface such as a wall or ceiling within 20 feet of you. If this movement would cause you to be suspended off the ground, you remain so until you take an action or the concentration ends.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <!--3RD LEVEL-->
+
+    <element name="Skewering Branch" type="Spell" source="Alpha Druid" id="ID_SWECKY_SPELL_SKEWERING_BRANCH">
+        <supports>Druid, Ranger</supports>
+        <description>
+            <p>You cause a thick branch to shoot out of the ground along a line 5 feet wide and 30 feet long. Each creature in the line must succeed on a Dexterity saving throw or be pushed along the length of the branch as it grows in a direction of your choice. If the branch impacts a hard surface, such as a wall, it immediately stops and skewers all creatures that were pushed against that wall. Each creature takes 3d4 piercing damage and is restrained, skewered to the surface. If a creature can't be pushed against the wall, as other creatures are taking up the space, it is moved as close as possible to the wall.</p>
+            <p class="indent">A restrained creature can use an action to make a Strength or Dexterity check (the creature’s choice) against the spell’s save DC, ending the effect on a success. On a failed check, a creature takes an additional 3d4 piercing damage.</p>
+            <p class="indent">When the spell ends, the conjured branch breaks and wilts away.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 4th level or higher, both instances of damage increases by 1d4 for each slot level above 3rd.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Spray of Thorns" type="Spell" source="Alpha Druid" id="ID_SWECKY_SPELL_SPRAY_OF_THORNS">
+        <supports>Druid, Ranger</supports>
+        <description>
+            <p>You shoot forth a burst of thorns from your hands which pierce through your enemy’s defenses, making them vulnerable to attacks. Each creature in a 20-foot cone must make a Dexterity saving throw. On a failed save, a creature takes 8d4 piercing damage, and until the start of your next turn they take an additional 1d4 piercing damage whenever they are hit by a weapon attack. On a successful save, a creature takes half damage and suffers no other effect.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 4th level or higher, the initial damage increases by 2d4 for each slot level above 3rd.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">20-foot cone</set>
+            <set name="duration">1 round</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a rose thorn</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <!--4TH LEVEL-->
+
+    <element name="Tree Strike" type="Spell" source="Alpha Druid" id="ID_SWECKY_SPELL_TREE_STRIKE">
+        <supports>Druid, Ranger</supports>
+        <description>
+            <p>You cause a tree to grasp at a creature within 10 feet of it with its branches, pulling and constricting that creature. The target must succeed on a Dexterity saving throw or take 6d8 bludgeoning damage, be pulled to the tree, and become restrained. At the start of each of its turns, the restrained creature takes 2d8 bludgeoning damage. A restrained creature can use an action to make a Strength or Dexterity check (the creature’s choice) against the spell’s saving throw DC. On a success, the creature is no longer restrained.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a small twig</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <!--5TH LEVEL-->
+    
+</elements>
