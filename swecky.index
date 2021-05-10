@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<update version="0.0.1">
+			<file name="swecky.index" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-SwEcky/main/swecky.index" />
+		</update>
+	</info>
+	<files>
+      <file name="class-druid.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-SwEcky/main/class-druid.xml" />
+      <file name="source.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-SwEcky/main/source.xml" />
+      <file name="druid-wrath.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-SwEcky/main/druid-wrath.xml" />
+      <file name="druid-wild.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-SwEcky/main/druid-wild.xml" />
+      <file name="druid-twilight.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-SwEcky/main/druid-twilight.xml" />
+      <file name="druid-sun.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-SwEcky/main/druid-sun.xml" />
+      <file name="druid-spores.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-SwEcky/main/druid-spores.xml" />
+      <file name="druid-remembrance.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-SwEcky/main/druid-remembrance.xml" />
+      <file name="druid-prime-elements.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-SwEcky/main/druid-prime-elements.xml" />
+      <file name="druid-forgotten.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-SwEcky/main/druid-forgotten.xml" />
+      <file name="druid-courts.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-SwEcky/main/druid-courts.xml" />
+      <file name="druid-constellations.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-SwEcky/main/druid-constellations.xml" />
+      <file name="class-warlock.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-SwEcky/main/class-warlock.xml" />
+	</files>
+</index>
