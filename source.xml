@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
+	<info>
+		<name></name>
+		<update version="1.0.0">
+			<file name="source.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-SwEcky/main/source.xml" />
+		</update>
+	</info>
+
 	<element name="Omega Warlock" type="Source" source="Omega Warlock" id="ID_SWECKY_SOURCE_OMEGA_WARLOCK">
 		<description>
 			<![CDATA[<p> A warlock revision focused on the importance of pacts and a new system for all Chain warlocks. </p>]]>

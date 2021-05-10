@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<!--Version 0.2-->
-
 <elements>
+	<info>
+		<name></name>
+		<update version="0.2.0">
+			<file name="class-warlock.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-SwEcky/main/class-warlock.xml" />
+		</update>
+	</info>
+
     <element name="Warlock" type="Class" source="Omega Warlock" id="ID_SWECKY_CLASS_OMEGA_WARLOCK">
         <description>
     <p>With a quasit sitting on his shoulder, a young elf in golden robes smiles warmly, weaving a magical charm into his honeyed words and bending the palace sentinel to his will.</p>

@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
+	<info>
+		<name></name>
+		<update version="1.0.2">
+			<file name="druid-sun.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-SwEcky/main/druid-sun.xml" />
+		</update>
+	</info>
     
     <element name="Circle of the Sun" type="Archetype" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_ALPHA_DRUID_SUN">
         <supports>Alpha Druid Circle</supports>

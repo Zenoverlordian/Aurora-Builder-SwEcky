@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
+	<info>
+		<name></name>
+		<update version="1.0.2">
+			<file name="druid-prime-elements.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-SwEcky/main/druid-prime-elements.xml" />
+		</update>
+	</info>
     
     <element name="Circle of the Prime Elements" type="Archetype" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_ALPHA_DRUID_PRIME">
         <supports>Alpha Druid Circle</supports>
