@@ -2,12 +2,12 @@
 <elements>
 	<info>
 		<name></name>
-		<update version="0.2.0">
+		<update version="0.2.1">
 			<file name="class-warlock.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-SwEcky/main/class-warlock.xml" />
 		</update>
 	</info>
 
-    <element name="Warlock" type="Class" source="Omega Warlock" id="ID_SWECKY_CLASS_OMEGA_WARLOCK">
+    <element name="Omega Warlock" type="Class" source="Omega Warlock" id="ID_SWECKY_CLASS_OMEGA_WARLOCK">
         <description>
     <p>With a quasit sitting on his shoulder, a young elf in golden robes smiles warmly, weaving a magical charm into his honeyed words and bending the palace sentinel to his will.</p>
     <p class="indent">As flames spring to life in her hands, a wizened human whispers the secret name of her demonic patron, infusing her spell with abyssal powers.</p>
@@ -641,7 +641,7 @@
             <p class="indent">Addtionally, when a creature under the effect of your Hex is reduced to 0 hit points, you can use your reaction to regain hit points equal to your warlock level.</p>
         </description>
         <sheet>
-            <description>When a creature under the effect of your Hex is reduced to 0 hit points, you can use your reaction to regain {{level:warlock}} hit points.</description>
+            <description>When a creature under the effect of your Hex is reduced to 0 hit points, you can use your reaction to regain {{level:omega warlock}} hit points.</description>
         </sheet>
     </element>
     <element name="Eldritch Frenzy" type="Archetype Feature" source="Omega Warlock" id="ID_SWECKY_ARCHETYPE_FEATURE_OMEGA_WARLOCK_UNLEASHED_ELDRITCH_FRENZY">
@@ -970,7 +970,7 @@
         </sheet>
         <rules>
             <stat name="divine light:pool" value="1" />
-            <stat name="divine light:pool" value="level:warlock" />
+            <stat name="divine light:pool" value="level:omega warlock" />
             <grant type="Spell" id="ID_PHB_SPELL_SACRED_FLAME" spellcasting="Warlock" />
         </rules>
     </element>
@@ -995,7 +995,7 @@
             <description>You gain {{celestial resilience:hp}} temporary hit points whenever you finish a short or long rest. Additionally, choose up to five creatures you can see at the end of the rest. Those creatures each gain {{intelligence:modifier}} temporary hit points.</description>
         </sheet>
         <rules>
-            <stat name="celestial resilience:hp" value="level:warlock:half" />
+            <stat name="celestial resilience:hp" value="level:omega warlock:half" />
             <stat name="celestial resilience:hp" value="intelligence:modifier" />
         </rules>
     </element>
@@ -1068,7 +1068,7 @@
             <description>When you reduce a hostile creature to 0 hit points, you gain {{consume power:hp}} temporary hit points.</description>
         </sheet>
         <rules>
-            <stat name="consume power:hp" value="level:warlock" />
+            <stat name="consume power:hp" value="level:omega warlock" />
             <stat name="consume power:hp" value="intelligence:modifier" bonus="minone" />
             <stat name="consume power:hp" value="0" bonus="minone" />
         </rules>
@@ -1346,7 +1346,7 @@
             <p class="indent">Once you use this feature, you can't use it again until you finish a short or long rest.</p>
         </description>
         <sheet>
-            <description action="Reaction" usage="1/Short Rest">When a creature within 60 feet damages you, you can use your reaction to force the creature to make an Intelligence saving throw against your warlock spell save DC. On a failed save, the creature takes psychic damage equal to 1d10 + {{level:warlock:half}} and is frightened for 1 minute. A frightened creature can repeat the saving throw at the end of each of its turns, ending the effect on a success. On a successful save, the creature takes half as much damage and isn't frightened.</description>
+            <description action="Reaction" usage="1/Short Rest">When a creature within 60 feet damages you, you can use your reaction to force the creature to make an Intelligence saving throw against your warlock spell save DC. On a failed save, the creature takes psychic damage equal to 1d10 + {{level:omega warlock:half}} and is frightened for 1 minute. A frightened creature can repeat the saving throw at the end of each of its turns, ending the effect on a success. On a successful save, the creature takes half as much damage and isn't frightened.</description>
         </sheet>
     </element>
     <element name="Labarinthine Conundrum" type="Archetype Feature" source="Omega Warlock" id="ID_SWECKY_ARCHETYPE_FEATURE_OMEGA_WARLOCK_GOO_LABARINTHINE_CONUNDRUM">
@@ -1737,7 +1737,7 @@
             <p class="indent">Once you use this feature, you can't use it again until you finish a short or long rest.</p>
         </description>
         <sheet>
-            <description action="Action" usage="1/Short Rest">You can use an action to force any number of creatures you choose within your aura to make a Strength saving throw. On a failed save they take cold damage equal to 1d6 + {{level:warlock:half}} and are pushed to the closest available space outside of your aura and they cannot enter your aura again until the start of your next turn.</description>
+            <description action="Action" usage="1/Short Rest">You can use an action to force any number of creatures you choose within your aura to make a Strength saving throw. On a failed save they take cold damage equal to 1d6 + {{level:omega warlock:half}} and are pushed to the closest available space outside of your aura and they cannot enter your aura again until the start of your next turn.</description>
         </sheet>
     </element>
     <element name="Spectral Shroud" type="Archetype Feature" source="Omega Warlock" id="ID_SWECKY_ARCHETYPE_FEATURE_OMEGA_WARLOCK_LEGION_SPECTRAL_SHROUD">
@@ -1758,7 +1758,7 @@
             <p class="indent">Once you use this feature, you can't use it again until you finish a long rest.</p>
         </description>
         <sheet>
-            <description action="Action" usage="1/Long Rest">You can use an action to call forth your legion to stand at your side in battle. Your aura now extends out to 30 feet for 1 minute, and you can choose up to six creatures that are within your aura. Those creatures gain {{level:warlock}} temporary hit points. If a creature is unconscious, it is restored to consciousness with 1 hit point. The temporary hit points lasts for 1 minute.</description>
+            <description action="Action" usage="1/Long Rest">You can use an action to call forth your legion to stand at your side in battle. Your aura now extends out to 30 feet for 1 minute, and you can choose up to six creatures that are within your aura. Those creatures gain {{level:omega warlock}} temporary hit points. If a creature is unconscious, it is restored to consciousness with 1 hit point. The temporary hit points lasts for 1 minute.</description>
         </sheet>
     </element>
 
@@ -1822,7 +1822,7 @@
             <description action="Bonus Action" usage="1/Short Rest">As a bonus action, you create a whirling aurora of brilliant energy that swirls around you. Until the end of your next turn, you gain resistance to all damage, and if a hostile creature ends its turn within 10 feet of you, it takes {{shielding aurora:dmg}} radiant damage.</description>
         </sheet>
         <rules>
-            <stat name="shielding aurora:dmg" value="level:warlock" />
+            <stat name="shielding aurora:dmg" value="level:omega warlock" />
             <stat name="shielding aurora:dmg" value="intelligence:modifier" />
         </rules>
     </element>
@@ -2021,7 +2021,7 @@
             <p>You can transform a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a long rest.</p>
         </description>
         <sheet>
-            <description usage="{{intelligence:modifier}}/Long Rest">As a bonus action, you transform for 1 minute. You gain the following benefits while transformed: You gain 1d10 + {{level:warlock}} temporary hit points. Once during each of your turns, when you hit a creature with an attack, you can force it to make a Wisdom saving throw, and if the saving throw fails, the target is frightened of you until the end of your next turn. You are immune to the frightened condition.</description>
+            <description usage="{{intelligence:modifier}}/Long Rest">As a bonus action, you transform for 1 minute. You gain the following benefits while transformed: You gain 1d10 + {{level:omega warlock}} temporary hit points. Once during each of your turns, when you hit a creature with an attack, you can force it to make a Wisdom saving throw, and if the saving throw fails, the target is frightened of you until the end of your next turn. You are immune to the frightened condition.</description>
         </sheet>
     </element>
     <element name="Undying Nature" type="Archetype Feature" source="Omega Warlock" id="ID_SWECKY_ARCHETYPE_FEATURE_OMEGA_WARLOCK_UNDYING_UNDYING_NATURE">
@@ -2471,16 +2471,16 @@
             <description usage="1/Short Rest" action="Reaction">As a reaction when you take damage, you can entomb yourself in ice, which melts away at the end of your next turn. You gain {{frozen tomb:hp}} temporary hit points per warlock level, which take as much of the triggering damage as possible. You also gain vulnerability to fire damage, your speed drops to 0, and you are incapacitated. All of these effects end when the ice melts.</description>
         </sheet>
         <rules>
-            <stat name="frozen tomb:hp" value="level:warlock" />
-            <stat name="frozen tomb:hp" value="level:warlock" />
-            <stat name="frozen tomb:hp" value="level:warlock" />
-            <stat name="frozen tomb:hp" value="level:warlock" />
-            <stat name="frozen tomb:hp" value="level:warlock" />
-            <stat name="frozen tomb:hp" value="level:warlock" />
-            <stat name="frozen tomb:hp" value="level:warlock" />
-            <stat name="frozen tomb:hp" value="level:warlock" />
-            <stat name="frozen tomb:hp" value="level:warlock" />
-            <stat name="frozen tomb:hp" value="level:warlock" />
+            <stat name="frozen tomb:hp" value="level:omega warlock" />
+            <stat name="frozen tomb:hp" value="level:omega warlock" />
+            <stat name="frozen tomb:hp" value="level:omega warlock" />
+            <stat name="frozen tomb:hp" value="level:omega warlock" />
+            <stat name="frozen tomb:hp" value="level:omega warlock" />
+            <stat name="frozen tomb:hp" value="level:omega warlock" />
+            <stat name="frozen tomb:hp" value="level:omega warlock" />
+            <stat name="frozen tomb:hp" value="level:omega warlock" />
+            <stat name="frozen tomb:hp" value="level:omega warlock" />
+            <stat name="frozen tomb:hp" value="level:omega warlock" />
         </rules>
     </element>
 

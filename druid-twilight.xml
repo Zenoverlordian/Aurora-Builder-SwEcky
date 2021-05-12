@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name></name>
-		<update version="1.0.2">
+		<update version="1.0.3">
 			<file name="druid-twilight.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-SwEcky/main/druid-twilight.xml" />
 		</update>
 	</info>
@@ -74,9 +74,9 @@
             <description>The familiar you summon using the find familiar spell is your Spirit Guide. Your Spirit Guide is more durable than a standard familiar. It has {{spirit guide:hp}} maximum hit points and has proficiency in the same saving throws that you do. When you finish a long rest you can swap one boon you have for a new one of the same type.</description>
         </sheet>
         <rules>
-            <stat name="spirit guide:hp" value="level:druid (alpha)" />
-            <stat name="spirit guide:hp" value="level:druid (alpha)" />
-            <stat name="spirit guide:hp" value="level:druid (alpha)" />
+            <stat name="spirit guide:hp" value="level:alpha druid" />
+            <stat name="spirit guide:hp" value="level:alpha druid" />
+            <stat name="spirit guide:hp" value="level:alpha druid" />
             <select type="Archetype Feature" name="Lesser Boon (Spirit Guide)" supports="Alpha Druid Lesser Boon" />
             <select type="Archetype Feature" name="Greater Boon (Spirit Guide)" supports="Alpha Druid Greater Boon" />
         </rules>
@@ -102,7 +102,7 @@
             </ul>
         </description>
         <sheet>
-            <description>Any beast or fey summoned or created by a spell that you cast gains the following benefits: The creature has {{level:druid (alpha):half}} temporary hit points. The damage from its natural weapons is considered magical for the purpose of overcoming immunity and resistance to nonmagical attacks and damage.</description>
+            <description>Any beast or fey summoned or created by a spell that you cast gains the following benefits: The creature has {{level:alpha druid:half}} temporary hit points. The damage from its natural weapons is considered magical for the purpose of overcoming immunity and resistance to nonmagical attacks and damage.</description>
         </sheet>
     </element>
 

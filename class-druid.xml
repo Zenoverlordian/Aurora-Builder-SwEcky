@@ -2,14 +2,14 @@
 <elements>
 	<info>
 		<name></name>
-		<update version="1.0.2">
+		<update version="1.0.3">
 			<file name="class-druid.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-SwEcky/main/class-druid.xml" />
 		</update>
 	</info>
     
     <!--VERSION 1.0.2-->
 
-    <element name="Druid (Alpha)" type="Class" source="Alpha Druid" id="ID_SWECKY_CLASS_ALPHA_DRUID">
+    <element name="Alpha Druid" type="Class" source="Alpha Druid" id="ID_SWECKY_CLASS_ALPHA_DRUID">
         <description>
     <p>Holding high a gnarled staff wreathed with holly, an elf summons the fury of the storm and calls down explosive bolts of lightning to smite the torch-carrying orcs who threaten her forest.</p>
     <p class="indent">Crouching out of sight on a high tree branch in the form of a leopard, a human peers out of the jungle at the strange construction of a temple of Evil Elemental Air, keeping a close eye on the cultists’ activities.</p>
@@ -193,7 +193,7 @@
 			<stat name="druid (alpha):spellcasting:slots:8" value="1" level="15" />
 			<stat name="druid (alpha):spellcasting:slots:9" value="1" level="17" />
 			<stat name="druid (alpha):spellcasting:prepare" value="wisdom:modifier" />
-			<stat name="druid (alpha):spellcasting:prepare" value="level:druid (alpha)" />
+			<stat name="druid (alpha):spellcasting:prepare" value="level:alpha druid" />
 			<select type="Spell" name="Cantrip (Druid)" supports="$(spellcasting:list), 0" level="1" number="3" spellcasting="Druid (Alpha)" />
 			<select type="Spell" name="Cantrip (Druid)" supports="$(spellcasting:list), 0" level="4" number="1" spellcasting="Druid (Alpha)" />
 			<select type="Spell" name="Cantrip (Druid)" supports="$(spellcasting:list), 0" level="10" number="1" spellcasting="Druid (Alpha)" />

@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name></name>
-		<update version="1.0.2">
+		<update version="1.0.3">
 			<file name="druid-wrath.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-SwEcky/main/druid-wrath.xml" />
 		</update>
 	</info>
@@ -83,7 +83,7 @@
             <description>Whenever you reduce a creature to 0 hit points, you gain {{protective:markings}} temporary hit points.</description>
         </sheet>
         <rules>
-            <stat name="protective:markings" value="level:druid (alpha)" />
+            <stat name="protective:markings" value="level:alpha druid" />
             <stat name="protective:markings" value="wisdom:modifier" />
         </rules>
     </element>
