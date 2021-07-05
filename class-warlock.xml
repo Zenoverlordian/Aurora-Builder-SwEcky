@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name></name>
-		<update version="0.2.2">
+		<update version="0.2.3">
 			<file name="class-warlock.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-SwEcky/main/class-warlock.xml" />
 		</update>
 	</info>
@@ -220,9 +220,10 @@
     <element name="Bestowed Spell Conversion" type="Class Feature" source="Omega Warlock" id="ID_SWECKY_CLASS_FEATURE_OMEGA_WARLOCK_BESTOWED_CONVERSION">
         <description>
             <p>You may learn additional spells at certain levels. The spells selected must be granted by the <em>Expanded Spell List</em> feature of your patron.</p>
+            <p class="indent">Additionally, you may use your intelligence modifier in place of your charisma modifier for any abilities gained through your patron.</p>
         </description>
         <sheet>
-            <description>You may learn additional spells at certain levels. The spells selected must be granted by the <em>Expanded Spell List</em> feature of your patron.</description>
+            <description>You may learn additional spells at certain levels. The spells selected must be granted by the <em>Expanded Spell List</em> feature of your patron. Additionally, you may use your intelligence modifier in place of your charisma modifier for any abilities gained through your patron.</description>
         </sheet>
         <rules>
             <select type="Spell" name="Bestowed Spell Conversion (1)" supports="$(spellcasting:list),1" number="2" spellcasting="Warlock" level="1" />
