@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name></name>
-		<update version="0.2.1">
+		<update version="0.2.2">
 			<file name="class-warlock.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-SwEcky/main/class-warlock.xml" />
 		</update>
 	</info>
@@ -108,6 +108,7 @@
             <grant type="Class Feature" id="ID_SWECKY_CLASS_FEATURE_OMEGA_WARLOCK_MYSTIC_ARCANUM" level="11" />
             <grant type="Class Feature" id="ID_SWECKY_CLASS_FEATURE_OMEGA_WARLOCK_ELDRITCH_MASTER" level="20" />
             <grant type="Class Feature" id="ID_SWECKY_CLASS_FEATURE_OMEGA_WARLOCK_BLAST_HEX" level="1" />
+            <grant type="Class Feature" id="ID_SWECKY_CLASS_FEATURE_OMEGA_WARLOCK_BESTOWED_CONVERSION" level="1" requirements="![swecky:patron:1]" />
         </rules>
         <multiclass id="ID_SWECKY_MULTICLASSCLASS_OMEGA_WARLOCK">
             <prerequisite>Intelligence 13</prerequisite>
@@ -131,7 +132,7 @@
         </description>
         <sheet display="false" />
         <rules>
-            <select type="Archetype" name="Otherworldly Patron" supports="Omega Otherworldly Patron" />
+            <select type="Archetype" name="Otherworldly Patron" supports="Omega Otherworldly Patron||Otherworldly Patron" />
         </rules>
     </element>
     <element name="Pact Boon" type="Class Feature" source="Omega Warlock" id="ID_SWECKY_CLASS_FEATURE_OMEGA_WARLOCK_PACT_BOON">
@@ -215,6 +216,21 @@
 			<select type="Spell" name="Spellcasting (Warlock)" supports="$(spellcasting:list),$(spellcasting:slots)" level="17" spellcasting="Warlock"/>
 			<select type="Spell" name="Spellcasting (Warlock)" supports="$(spellcasting:list),$(spellcasting:slots)" level="19" spellcasting="Warlock"/>
 		</rules>
+    </element>
+    <element name="Bestowed Spell Conversion" type="Class Feature" source="Omega Warlock" id="ID_SWECKY_CLASS_FEATURE_OMEGA_WARLOCK_BESTOWED_CONVERSION">
+        <description>
+            <p>You may learn additional spells at certain levels. The spells selected must be granted by the <em>Expanded Spell List</em> feature of your patron.</p>
+        </description>
+        <sheet>
+            <description>You may learn additional spells at certain levels. The spells selected must be granted by the <em>Expanded Spell List</em> feature of your patron.</description>
+        </sheet>
+        <rules>
+            <select type="Spell" name="Bestowed Spell Conversion (1)" supports="$(spellcasting:list),1" number="2" spellcasting="Warlock" level="1" />
+            <select type="Spell" name="Bestowed Spell Conversion (3)" supports="$(spellcasting:list),2" number="2" spellcasting="Warlock" level="3" />
+            <select type="Spell" name="Bestowed Spell Conversion (5)" supports="$(spellcasting:list),3" number="2" spellcasting="Warlock" level="5" />
+            <select type="Spell" name="Bestowed Spell Conversion (7)" supports="$(spellcasting:list),4" number="2" spellcasting="Warlock" level="7" />
+            <select type="Spell" name="Bestowed Spell Conversion (9)" supports="$(spellcasting:list),5" number="2" spellcasting="Warlock" level="9" />
+        </rules>
     </element>
     <element name="Eldritch Invocations" type="Class Feature" source="Omega Warlock" id="ID_SWECKY_CLASS_FEATURE_OMEGA_WARLOCK_ELDRITCH_INVOCATIONS">
         <description>
@@ -754,6 +770,7 @@
             <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_OMEGA_WARLOCK_ARCHDEVIL_INFERNAL_LUCK" level="6" />
             <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_OMEGA_WARLOCK_ARCHDEVIL_FIENDISH_RESILIENCE" level="10" />
             <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_OMEGA_WARLOCK_ARCHDEVIL_HURL_THROUGH_HELL" level="14" />
+            <stat name="swecky:patron" value="1" />
         </rules>
     </element>
     <element name="Bestowed Spells" type="Archetype Feature" source="Omega Warlock" id="ID_SWECKY_ARCHETYPE_FEATURE_OMEGA_WARLOCK_ARCHDEVIL_SPELLS">
@@ -840,6 +857,7 @@
             <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_OMEGA_WARLOCK_ARCHFEY_MISTY_ESCAPE" level="6" />
             <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_OMEGA_WARLOCK_ARCHFEY_BEGUILING_DEFENSES" level="10" />
             <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_OMEGA_WARLOCK_ARCHFEY_DARK_DELIRIUM" level="14" />
+            <stat name="swecky:patron" value="1" />
         </rules>
     </element>
     <element name="Bestowed Spells" type="Archetype Feature" source="Omega Warlock" id="ID_SWECKY_ARCHETYPE_FEATURE_OMEGA_WARLOCK_ARCHFEY_SPELLS">
@@ -928,6 +946,7 @@
             <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_OMEGA_WARLOCK_CELESTIAL_RADIANT_PROJECTION" level="6" />
             <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_OMEGA_WARLOCK_CELESTIAL_RESILIENCE" level="10" />
             <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_OMEGA_WARLOCK_CELESTIAL_SEARING_VENGEANCE" level="14" />
+            <stat name="swecky:patron" value="1" />
         </rules>
     </element>
     <element name="Bestowed Spells" type="Archetype Feature" source="Omega Warlock" id="ID_SWECKY_ARCHETYPE_FEATURE_OMEGA_WARLOCK_CELESTIAL_SPELLS">
@@ -1029,6 +1048,7 @@
             <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_OMEGA_WARLOCK_DEMON_REACH_OF_THE_ABYSS" level="6" />
             <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_OMEGA_WARLOCK_DEMON_FIENDISH_RESILIENCE" level="10" />
             <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_OMEGA_WARLOCK_DEMON_EMBRACE_OF_THE_VOID" level="14" />
+            <stat name="swecky:patron" value="1" />
         </rules>
     </element>
     <element name="Bestowed Spells" type="Archetype Feature" source="Omega Warlock" id="ID_SWECKY_ARCHETYPE_FEATURE_OMEGA_WARLOCK_DEMON_SPELLS">
@@ -1121,6 +1141,7 @@
             <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_OMEGA_WARLOCK_DARKNESS_CRIPPLING_ISOLATION" level="6" />
             <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_OMEGA_WARLOCK_DARKNESS_UNSEEN_SHADOW" level="10" />
             <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_OMEGA_WARLOCK_DARKNESS_WANDERING_DARKNESS" level="14" />
+            <stat name="swecky:patron" value="1" />
         </rules>
     </element>
     <element name="Bestowed Spells" type="Archetype Feature" source="Omega Warlock" id="ID_SWECKY_ARCHETYPE_FEATURE_OMEGA_WARLOCK_DARKNESS_SPELLS">
@@ -1211,6 +1232,7 @@
             <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_OMEGA_WARLOCK_GRANDMAESTER_TEARING_THE_WEAVE" level="6" />
             <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_OMEGA_WARLOCK_GRANDMAESTER_ARCANE_NATURE" level="10" />
             <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_OMEGA_WARLOCK_GRANDMAESTER_MAESTERS_FOCUS" level="14" />
+            <stat name="swecky:patron" value="1" />
         </rules>
     </element>
     <element name="Bestowed Spells" type="Archetype Feature" source="Omega Warlock" id="ID_SWECKY_ARCHETYPE_FEATURE_OMEGA_WARLOCK_GRANDMAESTER_SPELLS">
@@ -1301,6 +1323,7 @@
             <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_OMEGA_WARLOCK_GOO_VISIONS_OF_HORROR" level="6" />
             <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_OMEGA_WARLOCK_GOO_LABARINTHINE_CONUNDRUM" level="10" />
             <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_OMEGA_WARLOCK_GOO_CREATE_THRALL" level="14" />
+            <stat name="swecky:patron" value="1" />
         </rules>
     </element>
     <element name="Bestowed Spells" type="Archetype Feature" source="Omega Warlock" id="ID_SWECKY_ARCHETYPE_FEATURE_OMEGA_WARLOCK_GOO_SPELLS">
@@ -1387,6 +1410,7 @@
             <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_OMEGA_WARLOCK_WYRM_ENERGY_ATTUNEMENT" level="6" />
             <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_OMEGA_WARLOCK_WYRM_DRACONIC_SOUL" level="10" />
             <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_OMEGA_WARLOCK_WYRM_ROAR_OF_THE_ANCIENTS" level="14" />
+            <stat name="swecky:patron" value="1" />
         </rules>
     </element>
     <element name="Bestowed Spells" type="Archetype Feature" source="Omega Warlock" id="ID_SWECKY_ARCHETYPE_FEATURE_OMEGA_WARLOCK_WYRM_SPELLS">
@@ -1597,6 +1621,7 @@
             <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_OMEGA_WARLOCK_HUNTSMAN_SUDDEN_STORM" level="6" />
             <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_OMEGA_WARLOCK_HUNTSMAN_FROZEN_CONSTITUTION" level="10" />
             <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_OMEGA_WARLOCK_HUNTSMAN_INEVITABLE_END" level="14" />
+            <stat name="swecky:patron" value="1" />
         </rules>
     </element>
     <element name="Bestowed Spells" type="Archetype Feature" source="Omega Warlock" id="ID_SWECKY_ARCHETYPE_FEATURE_OMEGA_WARLOCK_HUNTSMAN_SPELLS">
@@ -1687,6 +1712,7 @@
             <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_OMEGA_WARLOCK_LEGION_COURT_OF_SOULS" level="6" />
             <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_OMEGA_WARLOCK_LEGION_SPECTRAL_SHROUD" level="10" />
             <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_OMEGA_WARLOCK_LEGION_LEGIONS_RALLY" level="14" />
+            <stat name="swecky:patron" value="1" />
         </rules>
     </element>
     <element name="Bestowed Spells" type="Archetype Feature" source="Omega Warlock" id="ID_SWECKY_ARCHETYPE_FEATURE_OMEGA_WARLOCK_LEGION_SPELLS">
@@ -1782,6 +1808,7 @@
             <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_OMEGA_WARLOCK_SEEKER_ASTRAL_REFUGE" level="6" />
             <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_OMEGA_WARLOCK_SEEKER_FAR_WANDERER" level="10" />
             <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_OMEGA_WARLOCK_SEEKER_ASTRAL_SEQUESTRATION" level="14" />
+            <stat name="swecky:patron" value="1" />
         </rules>
     </element>
     <element name="Bestowed Spells" type="Archetype Feature" source="Omega Warlock" id="ID_SWECKY_ARCHETYPE_FEATURE_OMEGA_WARLOCK_SEEKER_SPELLS">
@@ -1878,6 +1905,7 @@
             <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_OMEGA_WARLOCK_SPHINX_CHRONIC_SLIP" level="6" />
             <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_OMEGA_WARLOCK_SPHINX_INSCRUTABLE_DEFENSE" level="10" />
             <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_OMEGA_WARLOCK_SPHINX_ROAR_OF_CENSURE" level="14" />
+            <stat name="swecky:patron" value="1" />
         </rules>
     </element>
     <element name="Bestowed Spells" type="Archetype Feature" source="Omega Warlock" id="ID_SWECKY_ARCHETYPE_FEATURE_OMEGA_WARLOCK_SPHINX_SPELLS">
@@ -1970,6 +1998,7 @@
             <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_OMEGA_WARLOCK_UNDYING_FORM_OF_DREAD" level="6" />
             <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_OMEGA_WARLOCK_UNDYING_UNDYING_NATURE" level="10" />
             <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_OMEGA_WARLOCK_UNDYING_INDESTRUCTABLE_LIFE" level="14" />
+            <stat name="swecky:patron" value="1" />
         </rules>
     </element>
     <element name="Bestowed Spells" type="Archetype Feature" source="Omega Warlock" id="ID_SWECKY_ARCHETYPE_FEATURE_OMEGA_WARLOCK_UNDYING_SPELLS">
