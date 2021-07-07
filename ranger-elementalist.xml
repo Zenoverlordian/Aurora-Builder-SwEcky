@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name></name>
+        <update version="0.0.1">
+            <file name="ranger-elementalist.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-SwEcky/main/ranger-elementalist.xml" />
+        </update>
+    </info>
+    
+    <element name="Elementalist Conclave" type="Archetype" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_DELTA_RANGER_ELEMENTALIST">
+        <supports>Delta Ranger Conclave</supports>
+        <description>
+            <p>Cults are often tricked by the incredible powers of the elemental princes, and with the cult on their side, the balance of the world can easily tilt and put everything at the brink of annihilation. This is why the Elementalist conclave is needed, they are focused around protecting the peculiar balance of the elements, both within and outside the Material plane.</p>
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_ELEMENTALIST_SPELLS" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_ELEMENTALIST_PRIMAL_POWERS" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_ELEMENTALIST_CONDUIT" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_ELEMENTALIST_BLESSING_OF_THE_ELEMENTS" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_ELEMENTALIST_FLUX" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_ELEMENTALIST_UNBRIDLED_POWER" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_ELEMENTALIST_ANCIENT_ADVISORS" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_ELEMENTALIST_PRIMAL_FORM" />
+        </description>
+        <sheet display="false">
+            <description>They are focused around protecting the peculiar balance of the elements, both within and outside the Material plane.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_ELEMENTALIST_SPELLS" level="3" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_ELEMENTALIST_PRIMAL_POWERS" level="3" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_ELEMENTALIST_CONDUIT" level="3" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_ELEMENTALIST_BLESSING_OF_THE_ELEMENTS" level="5" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_ELEMENTALIST_FLUX" level="7" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_ELEMENTALIST_UNBRIDLED_POWER" level="11" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_ELEMENTALIST_ANCIENT_ADVISORS" level="15" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_ELEMENTALIST_PRIMAL_FORM" level="20" />
+        </rules>
+    </element>
+
+    <element name="Conclave Spells" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_ELEMENTALIST_SPELLS">
+        <description>
+            <p>You gain conclave spells at the ranger levels listed.</p>
+            <h5>ELEMENTALIST SPELLS</h5>
+            <table>
+                <thead>
+                    <tr><td>Ranger Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>3rd</td><td>absorb elements</td></tr>
+                <tr><td>5th</td><td>dragon's breath</td></tr>
+                <tr><td>9th</td><td>elemental rift</td></tr>
+                <tr><td>13th</td><td>elemental bane</td></tr>
+                <tr><td>17th</td><td>conjure elemental</td></tr>
+            </table>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Spell" id="ID_XGTE_SPELL_ABSORB_ELEMENTS" spellcasting="Delta Ranger" prepared="true" level="3" />
+            <grant type="Spell" id="ID_XGTE_SPELL_DRAGONS_BREATH" spellcasting="Delta Ranger" prepared="true" level="5" />
+            <grant type="Spell" id="ID_SWECKY_SPELL_DELTA_RANGER_ELEMENTAL_RIFT" spellcasting="Delta Ranger" prepared="true" level="9" />
+            <grant type="Spell" id="ID_XGTE_SPELL_ELEMENTAL_BANE" spellcasting="Delta Ranger" prepared="true" level="13" />
+            <grant type="Spell" id="ID_PHB_SPELL_CONJURE_ELEMENTAL" spellcasting="Delta Ranger" prepared="true" level="17" />
+        </rules>
+    </element>
+
+    <element name="Primal Powers" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_ELEMENTALIST_PRIMAL_POWERS">
+        <description>
+            <p>Starting at 3rd level, you begun to learn the ancient ways of the elements. When you prepare spells, you can choose spells from druid spell list in addition to the spells on the ranger spell list and they count as ranger spells for you.</p>
+            <p class="indent">Additionally, you gain three of the following cantrips: acid splash, control flames, douse, earth blast, frostbite, gust, mold earth, produce flame, shape water, shocking grasp, and stonefist. You can choose an additional cantrip when you reach 5th (4), 9th (5), 13th (6), and 17th level (7) in this class.</p>
+        </description>
+        <sheet display="false" />
+        <spellcasting name="Delta Ranger" extend="true">
+            <extend>Druid</extend>
+        </spellcasting>
+        <rules>
+            <select type="Spell" name="Primal Powers (3)" supports="ID_PHB_SPELL_ACID_SPLASH|ID_XGTE_SPELL_CONTROL_FLAMES|ID_SWECKY_SPELL_DELTA_RANGER_DOUSE|ID_SWECKY_SPELL_DELTA_RANGER_EARTH_BLAST|ID_XGTE_SPELL_FROSTBITE|ID_XGTE_SPELL_GUST|ID_XGTE_SPELL_MOLD_EARTH|ID_PHB_SPELL_PRODUCE_FLAME|ID_XGTE_SPELL_SHAPE_WATER|ID_PHB_SPELL_SHOCKING_GRASP|ID_SWECKY_SPELL_DELTA_RANGER_STONEFIST" level="3" spellcasting="Delta Ranger" number="3" />
+            <select type="Spell" name="Primal Powers (5)" supports="ID_PHB_SPELL_ACID_SPLASH|ID_XGTE_SPELL_CONTROL_FLAMES|ID_SWECKY_SPELL_DELTA_RANGER_DOUSE|ID_SWECKY_SPELL_DELTA_RANGER_EARTH_BLAST|ID_XGTE_SPELL_FROSTBITE|ID_XGTE_SPELL_GUST|ID_XGTE_SPELL_MOLD_EARTH|ID_PHB_SPELL_PRODUCE_FLAME|ID_XGTE_SPELL_SHAPE_WATER|ID_PHB_SPELL_SHOCKING_GRASP|ID_SWECKY_SPELL_DELTA_RANGER_STONEFIST" level="5" spellcasting="Delta Ranger" />
+            <select type="Spell" name="Primal Powers (9)" supports="ID_PHB_SPELL_ACID_SPLASH|ID_XGTE_SPELL_CONTROL_FLAMES|ID_SWECKY_SPELL_DELTA_RANGER_DOUSE|ID_SWECKY_SPELL_DELTA_RANGER_EARTH_BLAST|ID_XGTE_SPELL_FROSTBITE|ID_XGTE_SPELL_GUST|ID_XGTE_SPELL_MOLD_EARTH|ID_PHB_SPELL_PRODUCE_FLAME|ID_XGTE_SPELL_SHAPE_WATER|ID_PHB_SPELL_SHOCKING_GRASP|ID_SWECKY_SPELL_DELTA_RANGER_STONEFIST" level="9" spellcasting="Delta Ranger" />
+            <select type="Spell" name="Primal Powers (13)" supports="ID_PHB_SPELL_ACID_SPLASH|ID_XGTE_SPELL_CONTROL_FLAMES|ID_SWECKY_SPELL_DELTA_RANGER_DOUSE|ID_SWECKY_SPELL_DELTA_RANGER_EARTH_BLAST|ID_XGTE_SPELL_FROSTBITE|ID_XGTE_SPELL_GUST|ID_XGTE_SPELL_MOLD_EARTH|ID_PHB_SPELL_PRODUCE_FLAME|ID_XGTE_SPELL_SHAPE_WATER|ID_PHB_SPELL_SHOCKING_GRASP|ID_SWECKY_SPELL_DELTA_RANGER_STONEFIST" level="13" spellcasting="Delta Ranger" />
+            <select type="Spell" name="Primal Powers (17)" supports="ID_PHB_SPELL_ACID_SPLASH|ID_XGTE_SPELL_CONTROL_FLAMES|ID_SWECKY_SPELL_DELTA_RANGER_DOUSE|ID_SWECKY_SPELL_DELTA_RANGER_EARTH_BLAST|ID_XGTE_SPELL_FROSTBITE|ID_XGTE_SPELL_GUST|ID_XGTE_SPELL_MOLD_EARTH|ID_PHB_SPELL_PRODUCE_FLAME|ID_XGTE_SPELL_SHAPE_WATER|ID_PHB_SPELL_SHOCKING_GRASP|ID_SWECKY_SPELL_DELTA_RANGER_STONEFIST" level="17" spellcasting="Delta Ranger" />
+        </rules>
+    </element>
+
+    <element name="Elemental Conduit" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_ELEMENTALIST_CONDUIT">
+        <description>
+            <p>At 3rd level, you have become a direct conduit of the elemental planes, which makes your magic burn with the awesome power of the planes themselves. When you use a spell that deals acid, cold, fire, or lightning you can add your Wisdom modifier to the damage roll.</p>
+            <p class="indent">Additionally, if you deal acid, cold, fire, lightning, or thunder damage to a creature marked by your Hunter's Quarry feature you deal an additional 1d6 damage of the same type.</p>
+        </description>
+        <sheet>
+            <description>When you use a spell that deals acid, cold, fire, or lightning you can add {{wisdom:modifier}} to the damage roll. Additionally, if you deal acid, cold, fire, lightning, or thunder damage to a creature marked by your Hunter's Quarry feature you deal an additional 1d6 damage of the same type.</description>
+        </sheet>
+    </element>
+
+    <element name="Blessing of the Elements" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_ELEMENTALIST_BLESSING_OF_THE_ELEMENTS">
+        <description>
+            <p>At 5th level, you can pull at the limitless powers of the elements. During a short rest, you choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than half your ranger level (rounded up). You can't use this feature again until you finish a long rest.</p>
+            <p class="indent">For example, when you are a 5th-level ranger, you can recover up to three levels worth of spell slots. You can recover either a 2nd-level slot and a 1st-level spell slot or three 1st-level slots.</p>
+        </description>
+        <sheet>
+            <description usage="1/Long Rest">During a short rest, you choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than {{level:delta ranger:half:up}}. You can't use this feature again until you finish a long rest.</description>
+        </sheet>
+    </element>
+
+    <element name="Elemental Flux" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_ELEMENTALIST_FLUX">
+        <description>
+            <p>Starting at 7th level, you are able to manage some control over the chaotic powers of the elements. When you cast a spell and have the creature marked with your Hunter's Quarry feature as target or point of origin, you can change the spell's damage to acid, cold, fire, lightning, or thunder damage.</p>
+        </description>
+        <sheet>
+            <description>When you cast a spell and have the creature marked with your Hunter's Quarry feature as target or point of origin, you can change the spell's damage to acid, cold, fire, lightning, or thunder damage.</description>
+        </sheet>
+    </element>
+
+    <element name="Unbridled Power" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_ELEMENTALIST_UNBRIDLED_POWER">
+        <description>
+            <p>At 11th level, the power of the elemental planes have begun to surge through you. When you use your action to cast a spell you can cast a cantrip gained through the Primal Powers ability as a bonus action.</p>
+            <p class="indent">Additionally, if you miss with a cantrip or the target succeeds on its saving throw against it, the target takes damage equal to your Wisdom modifier.</p>
+        </description>
+        <sheet>
+            <description action="Bonus Action">When you use your action to cast a spell you can cast a cantrip gained through the Primal Powers ability as a bonus action. Additionally, if you miss with a cantrip or the target succeeds on its saving throw against it, the target takes {{wisdom:modifier}} damage.</description>
+        </sheet>
+    </element>
+
+    <element name="Ancient Advisors" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_ELEMENTALIST_ANCIENT_ADVISORS">
+        <description>
+            <p>Starting at 15th level, you've grown strong enough to have powerful elemental beings notice your presence. You can cast commune with nature without expending a spell slot.</p>
+            <p class="indent">You can't use this feature again until you finish a long rest.</p>
+        </description>
+        <sheet>
+            <description usage="1/Long Rest">You can cast commune with nature without expending a spell slot.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_COMMUNE_WITH_NATURE" spellcasting="Delta Ranger" />
+        </rules>
+    </element>
+
+    <element name="Primal Form" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_ELEMENTALIST_PRIMAL_FORM">
+        <description>
+            <p>At 20th level, you can let the chaotic powers of the elemental planes embrace you. As a bonus action you can cast investiture of flame, investiture of ice, investiture of stone, or investiture of wind. When cast in this way, the spell doesn't require concentration and you can swap to another investiture as a bonus action, but the spell still only lasts 10 minutes after using this ability. When using an action granted by the investiture, you can cast a cantrip gained through Primal Power as a bonus action.</p>
+            <p class="indent">You can't use this feature again until you finish a short or long rest.</p>
+        </description>
+        <sheet>
+            <description action="Bonus Action" usage="1/Short Rest">As a bonus action you can cast investiture of flame, investiture of ice, investiture of stone, or investiture of wind. When cast in this way, the spell doesn't require concentration and you can swap to another investiture as a bonus action, but the spell still only lasts 10 minutes after using this ability. When using an action granted by the investiture, you can cast a cantrip gained through Primal Power as a bonus action.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_XGTE_SPELL_INVESTITURE_OF_FLAME" spellcasting="Delta Ranger" />
+            <grant type="Spell" id="ID_XGTE_SPELL_INVESTITURE_OF_ICE" spellcasting="Delta Ranger" />
+            <grant type="Spell" id="ID_XGTE_SPELL_INVESTITURE_OF_STONE" spellcasting="Delta Ranger" />
+            <grant type="Spell" id="ID_XGTE_SPELL_INVESTITURE_OF_WIND" spellcasting="Delta Ranger" />
+        </rules>
+    </element>
+    
+</elements>

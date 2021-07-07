@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name></name>
+        <update version="0.0.1">
+            <file name="ranger-horizon-walker.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-SwEcky/main/ranger-horizon-walker.xml" />
+        </update>
+    </info>
+    
+    <element name="Horizon Walker Conclave" type="Archetype" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_DELTA_RANGER_HORIZON_WALKER">
+        <supports>Delta Ranger Conclave</supports>
+        <description>
+            <p>The horizon walkers protect the extraplanar borders of the Material plane. It is not uncommon for them to travel to other planes to investigate curious happenings. To ensure they can be where they need to be, the rangers learn and master personal teleportation magic, something they use both for offense and defense. Few know of these planar defenders, but angering one will leave you no option but to fight, since no place is safe from the wrath of the planeswalkers.</p>
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_HORIZON_WALKER_SPELLS" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_HORIZON_WALKER_EXTRAPLANAR_KNOWLEDGE" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_HORIZON_WALKER_FOREBODING_DEFENSE" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_HORIZON_WALKER_EXTRA_ATTACK" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_HORIZON_WALKER_PLANAR_ANCHOR" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_HORIZON_WALKER_TRAVELING_STRIKES" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_HORIZON_WALKER_TRACK_TELEPORTATION" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_HORIZON_WALKER_PLANESWALKER" />
+        </description>
+        <sheet display="false">
+            <description>To ensure they can be where they need to be, the rangers learn and master personal teleportation magic, something they use both for offense and defense.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_HORIZON_WALKER_SPELLS" level="3" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_HORIZON_WALKER_EXTRAPLANAR_KNOWLEDGE" level="3" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_HORIZON_WALKER_FOREBODING_DEFENSE" level="3" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_HORIZON_WALKER_EXTRA_ATTACK" level="5" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_HORIZON_WALKER_PLANAR_ANCHOR" level="7" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_HORIZON_WALKER_TRAVELING_STRIKES" level="11" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_HORIZON_WALKER_TRACK_TELEPORTATION" level="15" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_HORIZON_WALKER_PLANESWALKER" level="20" />
+        </rules>
+    </element>
+
+    <element name="Conclave Spells" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_HORIZON_WALKER_SPELLS">
+        <description>
+            <p>You gain conclave spells at the ranger levels listed.</p>
+            <h5>HORIZON WALKER SPELLS</h5>
+            <table>
+                <thead>
+                    <tr><td>Ranger Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>3rd</td><td>bond item</td></tr>
+                <tr><td>5th</td><td>misty step</td></tr>
+                <tr><td>9th</td><td>transposition</td></tr>
+                <tr><td>13th</td><td>banishment</td></tr>
+                <tr><td>17th</td><td>far step</td></tr>
+            </table>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Spell" id="ID_SWECKY_SPELL_DELTA_RANGER_BOND_ITEM" spellcasting="Delta Ranger" prepared="true" level="3" />
+            <grant type="Spell" id="ID_PHB_SPELL_MISTY_STEP" spellcasting="Delta Ranger" prepared="true" level="5" />
+            <grant type="Spell" id="ID_SWECKY_SPELL_DELTA_RANGER_TRANSPOSITION" spellcasting="Delta Ranger" prepared="true" level="9" />
+            <grant type="Spell" id="ID_PHB_SPELL_BANISHMENT" spellcasting="Delta Ranger" prepared="true" level="13" />
+            <grant type="Spell" id="ID_XGTE_SPELL_FAR_STEP" spellcasting="Delta Ranger" prepared="true" level="17" />
+        </rules>
+    </element>
+
+    <element name="Extraplanar Knowledge" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_HORIZON_WALKER_EXTRAPLANAR_KNOWLEDGE">
+        <description>
+            <p>Starting at 3rd level, to be able to hunt and track across planes, you must firstly understand the rules and dangers of them. You have advantage on all Intelligence checks related to planar travel and planes that are not the Material Plane.</p>
+        </description>
+        <sheet>
+            <description>You have advantage on all Intelligence checks related to planar travel and planes that are not the Material Plane.</description>
+        </sheet>
+    </element>
+
+    <element name="Forboding Defense" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_HORIZON_WALKER_FOREBODING_DEFENSE">
+        <description>
+            <p>At 3rd level, teleportation magic has become second nature to you and is your first line of defense. When a creature attacks you, you can use your reaction to teleport to an area within 5 feet granting the creature disadvantage on its attack. You make this choice after you see the roll, but before the DM says whether the attack hits or misses.</p>
+            <p class="indent">You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses of it when you finish a short or long rest.</p>
+        </description>
+        <sheet>
+            <description usage="{{wisdom:modifier}}/Short Rest" action="Reaction">When a creature attacks you, you can use your reaction to teleport to an area within 5 feet granting the creature disadvantage on its attack. You make this choice after you see the roll, but before the DM says whether the attack hits or misses.</description>
+        </sheet>
+    </element>
+
+    <element name="Extra Attack" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_HORIZON_WALKER_EXTRA_ATTACK">
+        <description>
+			<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+		</description>
+		<sheet>
+			<description level="5">You can attack twice, instead of once, whenever you take the Attack action on your turn</description>
+		</sheet>
+		<rules>
+			<stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
+		</rules>
+	</element>
+
+    <element name="Planar Anchor" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_HORIZON_WALKER_PLANAR_ANCHOR">
+        <description>
+            <p>At 7th level, you can force a creature to stay within its current plane. The distance a creature marked by your Hunter's Quarry feature can teleport is halved and if it tries to teleport to another plane it automatically fails to do so.</p>
+        </description>
+        <sheet>
+            <description>The distance a creature marked by your Hunter's Quarry feature can teleport is halved and if it tries to teleport to another plane it automatically fails to do so.</description>
+        </sheet>
+    </element>
+
+    <element name="Traveling Strikes" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_HORIZON_WALKER_TRAVELING_STRIKES">
+        <description>
+            <p>Starting at 11th level, when you use Foreboding Defense or expend a spell slot to teleport yourself, you can make an attack before or after teleporting as part of the action. If you use an action, it deals an additional 1d8 force damage.</p>
+        </description>
+        <sheet>
+            <description>When you use Foreboding Defense or expend a spell slot to teleport yourself, you can make an attack before or after teleporting as part of the action. If you use an action, it deals an additional 1d8 force damage.</description>
+        </sheet>
+    </element>
+
+    <element name="Track Teleportation" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_HORIZON_WALKER_TRACK_TELEPORTATION">
+        <description>
+            <p>At 15th level, due to your knowledge of planar travel, you know how to reliably guess the destination of teleportation. If you see a creature teleporting, you automatically know which plane and where on the plane it teleported to.</p>
+        </description>
+        <sheet>
+            <description>If you see a creature teleporting, you automatically know which plane and where on the plane it teleported to.</description>
+        </sheet>
+    </element>
+
+    <element name="Planeswalker" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_HORIZON_WALKER_PLANESWALKER">
+        <description>
+            <p>At 20th level, your ability to teleport is second to none. You can double the distance you can teleport using a spell or class feature. Also if there's a chance of failure when you teleport, you can ignore that.</p>
+            <p class="indent">Additionally, you can cast plane shift once without expending a spell slot. Once you cast the spell in this way, you cannot do so again until after you finish a short or long rest.</p>
+        </description>
+        <sheet>
+            <description>You can double the distance you can teleport using a spell or class feature. Also if there's a chance of failure when you teleport, you can ignore that. Additionally, you can cast plane shift once without expending a spell slot. Once you cast the spell in this way, you cannot do so again until after you finish a short or long rest.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_PLANE_SHIFT" spellcasting="Delta Ranger" />
+        </rules>
+    </element>
+    
+</elements>

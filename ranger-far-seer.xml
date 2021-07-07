@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name></name>
+        <update version="0.0.1">
+            <file name="ranger-far-seer.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-SwEcky/main/ranger-far-seer.xml" />
+        </update>
+    </info>
+    
+    <element name="Far Seer Conclave" type="Archetype" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_DELTA_RANGER_FAR_SEER">
+        <supports>Delta Ranger Conclave</supports>
+        <description>
+            <p>Historians and guides of their people, rangers of the Far Seer conclave is usually found deep within settlements. They seldom show themselves to outsiders, instead seeing to the personal affairs of their people. They are not leaders, but advisors, showing what has been and what will come to be.</p>
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_FAR_SEER_SPELLS" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_FAR_SEER_PAST_PRESENT" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_FAR_SEER_FORGOTTEN_RITES" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_FAR_SEER_EXTRA_ATTACK" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_FAR_SEER_SPIRIT_ECHO" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_FAR_SEER_GUIDED_STRIKES" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_FAR_SEER_ETERNAL_WATCHER" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_FAR_SEER_BATTLE_TRANCE" />
+        </description>
+        <sheet display="false">
+            <description>They are not leaders, but advisors, showing what has been and what will come to be.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_FAR_SEER_SPELLS" level="3" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_FAR_SEER_PAST_PRESENT" level="3" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_FAR_SEER_FORGOTTEN_RITES" level="3" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_FAR_SEER_EXTRA_ATTACK" level="5" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_FAR_SEER_SPIRIT_ECHO" level="7" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_FAR_SEER_GUIDED_STRIKES" level="11" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_FAR_SEER_ETERNAL_WATCHER" level="15" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_FAR_SEER_BATTLE_TRANCE" level="20" />
+        </rules>
+    </element>
+
+    <element name="Conclave Spells" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_FAR_SEER_SPELLS">
+        <description>
+            <p>You gain conclave spells at the ranger levels listed.</p>
+            <h5>FAR SEER SPELLS</h5>
+            <table>
+                <thead>
+                    <tr><td>Ranger Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>3rd</td><td>shield</td></tr>
+                <tr><td>5th</td><td>locate object</td></tr>
+                <tr><td>9th</td><td>clairvoyance</td></tr>
+                <tr><td>13th</td><td>awareness</td></tr>
+                <tr><td>17th</td><td>scrying</td></tr>
+            </table>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_SHIELD" spellcasting="Delta Ranger" prepared="true" level="3" />
+            <grant type="Spell" id="ID_PHB_SPELL_LOCATE_OBJECT" spellcasting="Delta Ranger" prepared="true" level="5" />
+            <grant type="Spell" id="ID_PHB_SPELL_CLAIRVOYANCE" spellcasting="Delta Ranger" prepared="true" level="9" />
+            <grant type="Spell" id="ID_SWECKY_SPELL_DELTA_RANGER_AWARENESS" spellcasting="Delta Ranger" prepared="true" level="13" />
+            <grant type="Spell" id="ID_PHB_SPELL_SCRYING" spellcasting="Delta Ranger" prepared="true" level="17" />
+        </rules>
+    </element>
+
+    <element name="Past &amp; Present" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_FAR_SEER_PAST_PRESENT">
+        <description>
+            <p>At 3rd level, your path towards guiding others into the future begins. You gain proficiency in History, and learn the guidance and shared sight cantrips. You can cast the guidance cantrip as a bonus action.</p>
+        </description>
+        <sheet>
+            <description action="Bonus Action">You can cast the guidance cantrip as a bonus action.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
+            <grant type="Spell" id="ID_PHB_SPELL_GUIDANCE" spellcasting="Delta Ranger" prepared="true" />
+            <grant type="Spell" id="ID_SWECKY_SPELL_DELTA_RANGER_SHARED_SIGHT" spellcasting="Delta Ranger" prepared="true" />
+        </rules>
+    </element>
+
+    <element name="Forgotten Rites" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_FAR_SEER_FORGOTTEN_RITES">
+        <description>
+            <p>At 3rd level, you've learned the rites which keeps the knowledge of your predecessors. You can cast all ranger spells with the ritual tag as rituals without having them prepared. You can add any 2 ritual spells from any spell list to your spell list, they count as ranger spells and you can only cast them as rituals.</p>
+            <p class="indent">You can add an additional ritual spell in this way when you reach 5th (3), 9th (4), 13th (5), and 17th level (6) in this class.</p>
+        </description>
+        <sheet>
+            <description level="3">You can cast all ranger spells with the ritual tag as rituals without having them prepared. You can add any 2 ritual spells from any spell list to your spell list, they count as ranger spells and you can only cast them as rituals.</description>
+            <description level="5">You can cast all ranger spells with the ritual tag as rituals without having them prepared. You can add any 3 ritual spells from any spell list to your spell list, they count as ranger spells and you can only cast them as rituals.</description>
+            <description level="9">You can cast all ranger spells with the ritual tag as rituals without having them prepared. You can add any 4 ritual spells from any spell list to your spell list, they count as ranger spells and you can only cast them as rituals.</description>
+            <description level="13">You can cast all ranger spells with the ritual tag as rituals without having them prepared. You can add any 5 ritual spells from any spell list to your spell list, they count as ranger spells and you can only cast them as rituals.</description>
+            <description level="17">You can cast all ranger spells with the ritual tag as rituals without having them prepared. You can add any 6 ritual spells from any spell list to your spell list, they count as ranger spells and you can only cast them as rituals.</description>
+        </sheet>
+        <rules>
+            <select type="Spell" name="Forgotten Rites (3)" supports="Ritual,$(spellcasting:slots)" spellcasting="Delta Ranger" level="3" number="2" />
+            <select type="Spell" name="Forgotten Rites (5)" supports="Ritual,$(spellcasting:slots)" spellcasting="Delta Ranger" level="5" />
+            <select type="Spell" name="Forgotten Rites (9)" supports="Ritual,$(spellcasting:slots)" spellcasting="Delta Ranger" level="9" />
+            <select type="Spell" name="Forgotten Rites (13)" supports="Ritual,$(spellcasting:slots)" spellcasting="Delta Ranger" level="13" />
+            <select type="Spell" name="Forgotten Rites (17)" supports="Ritual,$(spellcasting:slots)" spellcasting="Delta Ranger" level="17" />
+        </rules>
+    </element>
+
+    <element name="Extra Attack" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_FAR_SEER_EXTRA_ATTACK">
+        <description>
+			<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+		</description>
+		<sheet>
+			<description level="5">You can attack twice, instead of once, whenever you take the Attack action on your turn</description>
+		</sheet>
+		<rules>
+			<stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
+		</rules>
+	</element>
+
+    <element name="Spirit Echo" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_FAR_SEER_SPIRIT_ECHO">
+        <description>
+            <p>At 7th level, you can make any creature a conduit for your spells. You can cast spells and as if you were standing within 5 feet of the creature marked by your Hunter's Quarry feature.</p>
+        </description>
+        <sheet>
+            <description>You can cast spells and as if you were standing within 5 feet of the creature marked by your Hunter's Quarry feature.</description>
+        </sheet>
+    </element>
+
+    <element name="Guided Strikes" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_FAR_SEER_GUIDED_STRIKES">
+        <description>
+            <p>Starting at 11th level, you are able to see a creatures openings before they appear. You deal an additional 1d6 damage with your weapon attacks.</p>
+            <p class="indent">A target under the effect of your guidance spell deals an additional 1d6 damage with their first attack each turn.</p>
+        </description>
+        <sheet>
+            <description>You deal an additional 1d6 damage with your weapon attacks. A target under the effect of your guidance spell deals an additional 1d6 damage with their first attack each turn.</description>
+        </sheet>
+    </element>
+
+    <element name="Eternal Watcher" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_FAR_SEER_ETERNAL_WATCHER">
+        <description>
+            <p>At 15th level, your ability to watch through the eyes of others are second to none. When you cast shared sight the creature does not know that anyone has been watching and it does not require concentration.</p>
+        </description>
+        <sheet>
+            <description>When you cast shared sight the creature does not know that anyone has been watching and it does not require concentration.</description>
+        </sheet>
+    </element>
+
+    <element name="Battle Trance" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_FAR_SEER_BATTLE_TRANCE">
+        <description>
+            <p>At 20th level, you are able to focus your far sight on the now, seeing all the possible outcomes of your actions. As a bonus action, you can enter a battle trance, when you do so you gain advantage on all attacks, saving throws, and ability checks and all attacks against you have disadvantage for 1 minute.</p>
+            <p class="indent">You can't use this feature again until you finish a short or long rest.</p>
+        </description>
+        <sheet>
+            <description usage="1/Short Rest" action="Bonus Action">As a bonus action, you can enter a battle trance, when you do so you gain advantage on all attacks, saving throws, and ability checks and all attacks against you have disadvantage for 1 minute.</description>
+        </sheet>
+    </element>
+    
+</elements>

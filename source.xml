@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name></name>
-		<update version="1.0.0">
+		<update version="1.0.1">
 			<file name="source.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-SwEcky/main/source.xml" />
 		</update>
 	</info>
@@ -43,9 +43,16 @@
 			<set name="release">20180422</set>
 		</setters>
 	</element>
-	<element name="SwEcky's " type="Source" source="SwEcky's " id="ID_SWECKY_SOURCE_">
+	<element name="Delta Ranger" type="Source" source="Delta Ranger" id="ID_SWECKY_SOURCE_DELTA_RANGER">
 		<description>
-			<![CDATA[<p> details </p>]]>
+			<![CDATA[<p> Took me a while, but I'm finally ready to reveal my Ranger revision, hopefully it stands out amidst the ball pit that is ranger reworks. There's a lot of things wrong with the PHB Ranger, u/Radidactyl put it better here then I ever and could. I released my first attempt almost exactly 2 years ago and it has worked well in campaigns, but it still didn't feel "good enough", it still felt like half the abilities you got were weak or uninteresting. Also, I personally got a heavy dislike for the "auto-success" features which just plains up removes the exploration part of the game. I do think the Ranger should shine there, if they want to, but removing it as an obstacle is the wrong way to go.</p>
+			<p> What Makes a Ranger? The question I'm guessing everyone has a different answer to, and a complicated answer at that. Is it the abilities of old that should venerate and keep sacred? Is it the paladin but nature? To me, who started in 3.5e, the Ranger felt like a specialist/martial/spellcaster combo, a mix of rogue/druid/fighter but still finding its niche. In 5e, having a class focused around a niche is bad for gameplay, but being able to choose your niche is amazing for both gameplay and roleplay. So my short answer is; the Ranger is a specialist who can help the party find & bring down specific threats.</p>
+			<p> Pack Animal. The Ranger has of course gotten the new Companion creator from the Alpha Druid, but the Beastmaster subclass makes it its own.</p>
+			<p> Different Paths. I've moved around abilities, and tried making the power curve feel more natural than it does for the PHB Ranger. Actually having abilities to look forward to after level 7 is crazy, I know. I also moved the capstone from the main class to the subclasses.</p>
+			<p> More Than a Feeling. I've also put more focus into Wisdom, it barely felt like a stat for Ranger before, and as such I've made some abilities key of it. Just like Charisma is a great boon for paladins, it is even worth investing in as a primary stat.</p>
+			<p> Prepared for the Worst. I've chosen to make the Delta Ranger a prepared caster since the ranger got some very situational spells, which is great but can't really be picked when you are so limited due to just having spells known. Moving Hunter's Mark from being a spell to being part of the class, also helps.</p>
+			<p> On the Horizon. Pact of the Unleashed for the warlock is done, but I'm trying to complete 1 or 2 more before I release an update to the Omega Warlock. Not having any plans for a big rework for the time being.</p>
+			<p> Also, stay safe everyone. </p>]]>
 		</description>
 		<setters>
 			<set name="abbreviation">SWECKY</set>

@@ -1,0 +1,807 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name></name>
+        <update version="0.0.1">
+            <file name="class-ranger.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-SwEcky/main/class-ranger.xml" />
+        </update>
+    </info>
+    
+    <element name="Delta Ranger" type="Class" source="Delta Ranger" id="ID_SWECKY_CLASS_DELTA_RANGER">
+        <description>
+    <p>Rough and wild looking, a dwarf stalks alone through the shadows of trees, hunting orcs he knows are planning a raid on a nearby farm. Clutching an axe in each hand he becomes a whirlwind of steel, cutting down one enemy after another, with his trusted boar companion at his side. While together, nothing fazes the two and their resolve only strengthens in face of adversity.</p>
+    <p class="indent">After tumbling away from a cone of fresh air, an elf finds her feet and draw back her bow to loose an arrow at the white dragon. Shrugging off the wave of fear that emanates from the dragon like the cold of its breath, she sends one arrow after another to find the gaps between the dragon's thick scales.</p>
+    <p class="indent">Holding his hand high, a half-elf whistles to the hawk that circles above him, calling the bird back to his side. Whispering instructions in Elvish, he points to the owl bear he's been tracking and sends the hawk to distract the creature while he readies his blade.</p>
+    <p class="indent">Far from the bustle of the cities and towns, past the hedges that shelter the most distant farms from the terrors of the wild, amid the dense-packed trees of tackless forests and across wide and empty plains, rangers keep their unending watch.</p>
+    <h4>DEADLY HUNTERS</h4>
+    <p>Hunters of the world, rangers specialize in tracking and defeating monsters that threatens those who cannot defend themselves - humanoid raiders, rampaging beasts, creeping monstrosities, terrible giants, and deadly dragons. They learn to track their quarry as a predator does, moving stealthily or quickly through the wilds and hiding themselves in brush and rubble. A ranger in combat moves very differently depending on their training, but they will never be found wanting.</p>
+    <p class="indent">Thanks to their familiarity with the wilds, rangers create special bonds with the animals of the world. Their abilities and skills emphasize speed, stealth and the hunt. A ranger's talents and abilities are honed with deadly focus on the grim task of protecting the borderlands.</p>
+    <h4>SOLITARY ADVENTURERS</h4>
+    <p>Though a ranger might make a living as a hunter, a guide, or a tracker, a ranger's true calling is to defend those in need from the ravages of monsters, humanoid hordes, or other dangers which might appear. In some places, rangers gather in secretive orders or join forces with druidic circles. Many rangers, though, are independent almost to a fault, knowing that, when a dragon or a band of orcs attacks, a ranger might be the first -- and possibly last -- line of defense.</p>
+    <p class="indent">This fierce independence makes rangers well suited to adventuring, since they are accustomed to life far from the comforts of a dry bed and a hot bath. Faced with city-bred adventurers whose grouse and whine about the hardships of the wild, rangers respond with some mixture of amusement, frustration, and compassion. But they quickly learn that other adventurers who can carry their own weight in a fight are worth any extra burden. Coddled city folk might not know how to feed themselves or find fresh water in the wild, but they make up for it in other ways.</p>
+    <h4>CREATING A RANGER</h4>
+    <p>As you create your ranger character, consider the nature of the training that gave you your particular capabilities. Did you train with a single mentor, wandering the wilds together until you mastered the ranger's ways? Did you leave your apprenticeship, or was your mentor slain? Or perhaps you learned your skills as part of a band of rangers affiliated with a druidic circle, train in mystic paths as well as wilderness lore. You might be self-taught, a recluse who learned combat skills, tracking even a connection to nature through the necessity of surviving in the wilds.</p>
+    <p class="indent">Is your adventuring career a continuation of your work in protecting the borderlands? What made you join up with a band of adventurers? Do you find it challenging to teach new allies the ways of the wild, or do you welcome the relief from solitude that they offer?</p>
+    <h5 class="caption">QUICK BUILD</h5>
+    <p>You can make a ranger quickly by following these suggestions. First, make Dexterity your highest ability score, followed by Wisdom. (Some rangers who focus on two-weapon fighting make Strength higher than Dexterity.) Second, choose the outlander background.</p>
+    <h2>CLASS FEATURES</h2>
+    <p>As an Ranger, you gain the following class features.</p>
+    <h5 class="caption">HIT POINTS</h5>
+    <ul class="unstyled">
+        <li><strong>Hit Dice:</strong> 1d10 per Ranger level</li>
+        <li><strong>Hit Points at 1st Level:</strong> 10 + your Constitution modifier</li>
+        <li><strong>Hit Points at Higher Levels:</strong> 1d10 (or 6) + your Constitution modifier per Ranger level after 1st</li>
+    </ul>
+    <h5 class="caption">PROFICIENCIES</h5>
+    <ul class="unstyled mb">
+        <li><strong>Armor:</strong> Light armour, medium armour, shield</li>
+        <li><strong>Weapons:</strong> Simple weapons, martial weapons</li>
+        <li><strong>Tools:</strong> None</li>
+    </ul>
+    <ul class="unstyled">
+        <li><strong>Saving Throws:</strong> Strength, Dexterity</li>
+        <li><strong>Skills:</strong> Choose three from Acrobatics, Animal Handling, Athletics, History, Insight, Investigation, Medicine, Nature, Perception, Stealth, and Survival</li>
+    </ul>
+    <h5 class="caption">EQUIPMENT</h5>
+    <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+    <ul>
+        <li>a) scale mail or b) leather armour</li>
+        <li>a) two shortswords or b) two simple melee weapons</li>
+        <li>a) a dungeoneer’s pack or b) an explorer’s pack</li>
+        <li>a) A longbow and a quiver of 20 arrows or b) a heavy crossbow and a quiver of 20 bolts</li>
+    </ul>
+        <h5 class="caption">THE DELTA RANGER</h5>
+        <table class="class-features">
+            <thead>
+                <tr><td class="col-5">Level</td><td class="left">Features</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td><td>5th</td></tr>
+            </thead>
+            <tr><td> 1st</td><td class="left">Ambuscade, Surefooted</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td> 2nd</td><td class="left">Fighting Style, Spellcasting, Hunter's Quarry</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td> 3rd</td><td class="left">Ranger Conclave, Vanish</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td> 4th</td><td class="left">Ability Score Improvement</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td> 5th</td><td class="left">Ranger Conclave Feature</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td> 6th</td><td class="left">Expertise</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td> 7th</td><td class="left">Ranger Conclave Feature</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td> 8th</td><td class="left">Ability Score Improvement</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td> 9th</td><td class="left">—</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td></tr>
+            <tr><td>10th</td><td class="left">Rugged Endurance</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td></tr>
+            <tr><td>11th</td><td class="left">Ranger Conclave Feature</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td></tr>
+            <tr><td>12th</td><td class="left">Ability Score Improvement</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td></tr>
+            <tr><td>13th</td><td class="left">—</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td></tr>
+            <tr><td>14th</td><td class="left">Survivalist</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td></tr>
+            <tr><td>15th</td><td class="left">Ranger Conclave Feature</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td></tr>
+            <tr><td>16th</td><td class="left">Ability Score Improvement</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td></tr>
+            <tr><td>17th</td><td class="left">—</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>
+            <tr><td>18th</td><td class="left">Bane of the Hunted</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>
+            <tr><td>19th</td><td class="left">Ability Score Improvement</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
+            <tr><td>20th</td><td class="left">Ranger Conclave feature</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
+        </table>
+            <div element="ID_SWECKY_CLASS_FEATURE_DELTA_RANGER_AMBUSCADE" />
+            <div element="ID_SWECKY_CLASS_FEATURE_DELTA_RANGER_SUREFOOTED" />
+            <div element="ID_SWECKY_CLASS_FEATURE_DELTA_RANGER_FIGHTING_STYLE" />
+            <div element="ID_SWECKY_CLASS_FEATURE_DELTA_RANGER_SPELLCASTING" />
+            <div element="ID_SWECKY_CLASS_FEATURE_DELTA_RANGER_HUNTERS_QUARRY" />
+            <div element="ID_SWECKY_CLASS_FEATURE_DELTA_RANGER_RANGER_CONCLAVE" />
+            <div element="ID_SWECKY_CLASS_FEATURE_DELTA_RANGER_VANISH" />
+            <div element="ID_SWECKY_CLASS_FEATURE_DELTA_RANGER_ASI" />
+            <div element="ID_SWECKY_CLASS_FEATURE_DELTA_RANGER_EXPERTISE" />
+            <div element="ID_SWECKY_CLASS_FEATURE_DELTA_RANGER_RUGGED_ENDURANCE" />
+            <div element="ID_SWECKY_CLASS_FEATURE_DELTA_RANGER_SURVIVALIST" />
+            <div element="ID_SWECKY_CLASS_FEATURE_DELTA_RANGER_BANE_OF_THE_HUNTED" />
+        </description>
+        <setters>
+            <set name="hd">d10</set>
+            <set name="short">A specialist who can help the party find and bring down specific threats.</set>
+        </setters>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+            <select type="Proficiency" name="Skill Proficiency, Ranger" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PRECEPTION|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_SURVIVAL" />
+
+            <select type="Proficiency" name="Skill Proficiency, Ranger" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PRECEPTION|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_SURVIVAL" number="2" requirements="!ID_SWECKY_MULTICLASS_DELTA_RANGER" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" requirements="!ID_SWECKY_MULTICLASS_DELTA_RANGER" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" requirements="!ID_SWECKY_MULTICLASS_DELTA_RANGER" />
+            <grant type="Class Feature" id="ID_SWECKY_CLASS_FEATURE_DELTA_RANGER_AMBUSCADE" level="1" />
+            <grant type="Class Feature" id="ID_SWECKY_CLASS_FEATURE_DELTA_RANGER_SUREFOOTED" level="1" />
+            <grant type="Class Feature" id="ID_SWECKY_CLASS_FEATURE_DELTA_RANGER_FIGHTING_STYLE" level="2" />
+            <grant type="Class Feature" id="ID_SWECKY_CLASS_FEATURE_DELTA_RANGER_SPELLCASTING" level="2" />
+            <grant type="Class Feature" id="ID_SWECKY_CLASS_FEATURE_DELTA_RANGER_HUNTERS_QUARRY" level="2" />
+            <grant type="Class Feature" id="ID_SWECKY_CLASS_FEATURE_DELTA_RANGER_RANGER_CONCLAVE" level="3" />
+            <grant type="Class Feature" id="ID_SWECKY_CLASS_FEATURE_DELTA_RANGER_VANISH" level="3" />
+            <grant type="Class Feature" id="ID_SWECKY_CLASS_FEATURE_DELTA_RANGER_ASI" level="4" />
+            <grant type="Class Feature" id="ID_SWECKY_CLASS_FEATURE_DELTA_RANGER_EXPERTISE" level="6" />
+            <grant type="Class Feature" id="ID_SWECKY_CLASS_FEATURE_DELTA_RANGER_RUGGED_ENDURANCE" level="10" />
+            <grant type="Class Feature" id="ID_SWECKY_CLASS_FEATURE_DELTA_RANGER_SURVIVALIST" level="14" />
+            <grant type="Class Feature" id="ID_SWECKY_CLASS_FEATURE_DELTA_RANGER_BANE_OF_THE_HUNTED" level="18" />
+        </rules>
+        <multiclass id="ID_SWECKY_MULTICLASS_DELTA_RANGER">
+            <prerequisite>Dexterity 13 and Wisdom 13</prerequisite>
+            <requirements>[dex:13],[wis:13]</requirements>
+            <setters>
+                <set name="multiclass proficiencies">Light and medium armor, shields, simple and martial weapons, one skill (restricted to Ranger list)</set>
+            </setters>
+            <rules>
+                <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+            </rules>
+        </multiclass>
+    </element>
+
+    <element name="Ambuscade" type="Class Feature" source="Delta Ranger" id="ID_SWECKY_CLASS_FEATURE_DELTA_RANGER_AMBUSCADE">
+        <description>
+            <p>At 1st level, you have sworn to never let your enemy get the best of you, gaining you the following benefits:</p>
+            <ul>
+                <li>You gain a bonus to initiative rolls equal to your Wisdom modifier.</li>
+                <li>On your first turn during combat, you have advantage on attack rolls against creatures that have not yet acted.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>On your first turn during combat, you have advantage on attack rolls against creatures that have not yet acted.</description>
+        </sheet>
+        <rules>
+            <stat name="initiative:misc" value="wisdom:modifier" />
+        </rules>
+    </element>
+
+    <element name="Surefooted" type="Class Feature" source="Delta Ranger" id="ID_SWECKY_CLASS_FEATURE_DELTA_RANGER_SUREFOOTED">
+        <description>
+            <p>Beginning at 1st level, you traverse the world with pure purpose. You ignore nonmagical difficult terrain.</p>
+        </description>
+        <sheet>
+            <description>You ignore nonmagical difficult terrain.</description>
+        </sheet>
+    </element>
+
+    <element name="Fighting Style" type="Class Feature" source="Delta Ranger" id="ID_SWECKY_CLASS_FEATURE_DELTA_RANGER_FIGHTING_STYLE">
+        <description>
+            <p>At 2nd level, you adopt a particular style of fighting as your specialty. Choose one of the following options. You can’t take a Fighting Style option more than once, even if you later get to choose again.</p>
+            <h5>ARCHERY</h5>
+            <p>You gain a +2 bonus to attack rolls you make with a ranged weapons which are not firearms. Also, you can reload a crossbow as a bonus action.</p>
+            <h5>DUELING</h5>
+            <p>When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.</p>
+            <h5>FLEXIBLE</h5>
+            <p>The damage dice for versatile weapons increase by one step, for example; d8(d10) becomes d10(d12).</p>
+            <h5>FLINGING</h5>
+            <p>When throwing a weapon with the thrown property, you can ignore half and three-quarters cover.</p>
+            <h5>GREAT WEAPON FIGHTING</h5>
+            <p>When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.</p>
+            <h5>RIFLING</h5>
+            <p>You gain a +1 bonus to attack rolls and damage rolls you make using firearms.</p>
+            <h5>TWO-WEAPON-FIGHTING</h5>
+            <p>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the extra attack.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Fighting Style, Ranger" supports="Fighting Style, Ranger" />
+        </rules>
+    </element>
+    <element name="Flexible" type="Class Feature" source="Delta Ranger" id="ID_SWECKY_CLASS_FEATURE_DELTA_RANGER_FIGHTING_STYLE_FLEXIBLE">
+        <supports>Fighting Style, Ranger</supports>
+        <description>
+            <p>The damage dice for versatile weapons increase by one step, for example; d8(d10) becomes d10(d12).</p>
+        </description>
+        <sheet>
+            <description>The damage dice for versatile weapons increase by one step.</description>
+        </sheet>
+    </element>
+    <append id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_GREAT_WEAPON_FIGHTING">
+        <supports>Ranger</supports>
+    </append>
+
+    <element name="Spellcasting" type="Class Feature" source="Delta Ranger" id="ID_SWECKY_CLASS_FEATURE_DELTA_RANGER_SPELLCASTING">
+        <description>
+            <p>Starting at 2nd level, you begin to learn to emulate the magical abilities of the creatures of the wild, and to enhance your tools with magic. See Spellcasting for the rules for casting spells and the Ranger Spells list.</p>
+            <h5>PREPARING AND CASTING SPELLS</h5>
+            <p>The Ranger table shows how many spell slots you have to cast your spells. To cast one of your ranger spells you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.</p>
+            <p class="indent">You prepare the list of ranger spells that are available for you to cast, choosing from the ranger spells list. When you do so, choose a number of ranger spells equal to your Wisdom modifier + half your ranger level, rounded down (minimum of one spell). The spells must be of a level for which you have spell slots.</p>
+            <p class="indent">For example, if you are a 5th-level ranger, you have four 1st-level and two 2nd-level spell slots. With a Wisdom of 14, your list of prepared spells can include four spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell cure wounds, you can cast it using a 1st-level or a 2nd-level slot. Casting the spell doesn’t remove it from your list of prepared spells.</p>
+            <p class="indent">You can change your list of prepared spells when you finish a long rest. Preparing a new list of ranger spells requires time spent in study and meditation: at least 1 minute per spell level for each spell on your list.</p>
+            <h5>SPELLCASTING ABILITY</h5>
+            <p>Wisdom is your spellcasting ability for your ranger spells, since your magic draws on your attunement to the natural world. You use your Wisdom whenever a spell refers to your spellcasting ability. You also use your Wisdom modifier when setting the saving throw DC for a ranger spell you cast and when making an attack roll with one.</p>
+            <center>
+                <p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Wisdom modifier</p>
+                <p><strong>Spell attack modifier</strong> = your proficiency bonus + your Wisdom modifier</p>
+            </center>
+        </description>
+        <sheet>
+            <description>You cannot learn the hunter's mark spell through this class.</description>
+        </sheet>
+        <spellcasting name="Delta Ranger" ability="Wisdom" prepare="true">
+            <list known="true">Ranger</list>
+        </spellcasting>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_HALF" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+			<stat name="delta ranger:spellcasting:slots:1" value="2" level="2" />
+			<stat name="delta ranger:spellcasting:slots:1" value="1" level="3" />
+			<stat name="delta ranger:spellcasting:slots:1" value="1" level="5" />
+			<stat name="delta ranger:spellcasting:slots:2" value="2" level="5" />
+			<stat name="delta ranger:spellcasting:slots:2" value="1" level="7" />
+			<stat name="delta ranger:spellcasting:slots:3" value="2" level="9" />
+			<stat name="delta ranger:spellcasting:slots:3" value="1" level="11" />
+			<stat name="delta ranger:spellcasting:slots:4" value="1" level="13" />
+			<stat name="delta ranger:spellcasting:slots:4" value="1" level="15" />
+			<stat name="delta ranger:spellcasting:slots:4" value="1" level="17" />
+			<stat name="delta ranger:spellcasting:slots:5" value="1" level="17" />
+			<stat name="delta ranger:spellcasting:slots:5" value="1" level="19" />
+			<stat name="delta ranger:spellcasting:prepare" value="wisdom:modifier" />
+			<stat name="delta ranger:spellcasting:prepare" value="level:delta ranger:half" />
+            <grant type="Class Feature" id="ID_SWECKY_CLASS_FEATURE_DELTA_RANGER_HUNTERS_MARK_SPELL" />
+		</rules>
+    </element>
+    <element name="Unavailable Spells" type="Class Feature" source="Delta Ranger" id="ID_SWECKY_CLASS_FEATURE_DELTA_RANGER_HUNTERS_MARK_SPELL">
+        <compendium display="false" />
+        <description>
+            <p>You cannot learn the <em>hunter's mark</em> spell.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_HUNTERS_MARK" />
+        </rules>
+    </element>
+
+    <element name="Hunter's Quarry" type="Class Feature" source="Delta Ranger" id="ID_SWECKY_CLASS_FEATURE_DELTA_RANGER_HUNTERS_QUARRY">
+        <description>
+            <p>At 2nd level, you’ve learned to focus your senses towards a creature. As a bonus action, you can expend one spell slot and choose a creature you can see within 90 feet and mark it as your quarry. The creature doesn't know it is marked. You can have one creature marked at a time and it lasts up to 1 hour or until the creature dies.</p>
+            <p class="indent">Until the mark ends, you deal an 1d6 extra weapon damage to the target whenever you hit it with a weapon attack, and you have advantage on any Wisdom (Perception) or Wisdom (Survival) check you make to find it.</p>
+            <p class="indent">For each spell level above 1st, you can choose an allied creature that you can see when you mark the creature to deal an additional 1d6 weapon damage towards the marked target on its first hit with a weapon attack each turn.</p>
+        </description>
+        <sheet>
+            <description action="Bonus Action">As a bonus action, you can expend one spell slot and choose a creature you can see within 90 feet and mark it as your quarry. The creature doesn't know it is marked. You can have one creature marked at a time and it lasts up to 1 hour or until the creature dies.
+            Until the mark ends, you deal an 1d6 extra weapon damage to the target whenever you hit it with a weapon attack, and you have advantage on any Wisdom (Perception) or Wisdom (Survival) check you make to find it.
+            For each spell level above 1st, you can choose an allied creature that you can see when you mark the creature to deal an additional 1d6 weapon damage towards the marked target on its first hit with a weapon attack each turn.</description>
+        </sheet>
+    </element>
+
+    <element name="Ranger Conclave" type="Class Feature" source="Delta Ranger" id="ID_SWECKY_CLASS_FEATURE_DELTA_RANGER_RANGER_CONCLAVE">
+        <description>
+            <p>At 3rd level, you choose to emulate the ideals and training of a ranger conclave, all detailed at the end of the class description. Your choice grants you features at 3rd level and again at 5th, 7th, 11th, 15th, and 20th level.</p>
+            <h5>CONCLAVE SPELLS</h5>
+            <p>Each conclave has a list of associated spells. You gain access to these spells at the levels specified in the conclave description. Once you gain access to a conclave spell, you always have it prepared. Conclave spells don’t count against the number of spells you can prepare each day.</p>
+            <p class="indent">If you gain a spell that doesn’t appear on the ranger spell list, the spell is nonetheless a ranger spell for you.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Archetype" name="Ranger Conclave" supports="Delta Ranger Conclave" />
+        </rules>
+    </element>
+
+    <element name="Vanish" type="Class Feature" source="Delta Ranger" id="ID_SWECKY_CLASS_FEATURE_DELTA_RANGER_VANISH">
+        <description>
+            <p>Beginning at 3rd level, your enemies dreads your ability to move around the battlefield. You can use the Dash or Hide action as a bonus action.</p>
+        </description>
+        <sheet>
+            <description action="Bonus Action">You can use the Dash or Hide action as a bonus action.</description>
+        </sheet>
+    </element>
+
+    <element name="Ability Score Improvement" type="Class Feature" source="Delta Ranger" id="ID_SWECKY_CLASS_FEATURE_DELTA_RANGER_ASI">
+        <compendium display="false" />
+		<description>
+			<p>When you reach 4th level, and again at 8th, 12th, 14th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Ranger 4)" supports="Improvement Option,Ranger,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Ranger 8)" supports="Improvement Option,Ranger,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Ranger 12)" supports="Improvement Option,Ranger,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Ranger 14)" supports="Improvement Option,Ranger,14" level="14" />
+			<select type="Class Feature" name="Improvement Option (Ranger 16)" supports="Improvement Option,Ranger,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Ranger 19)" supports="Improvement Option,Ranger,19" level="19" />
+		</rules>
+	</element>
+
+    <element name="Expertise" type="Class Feature" source="Delta Ranger" id="ID_SWECKY_CLASS_FEATURE_DELTA_RANGER_EXPERTISE">
+        <description>
+            <p>At 6th level, choose two of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses the chosen proficiency.</p>
+            <p class="indent">At 14th level, you can choose two more of your proficiencies gain this benefit.</p>
+        </description>
+        <sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Expertise (Ranger)" level="6" number="2" supports="ID_INTERNAL_SUPPORT_EXPERTISE"/>
+			<select type="Class Feature" name="Expertise (Ranger)" level="14" number="2" supports="ID_INTERNAL_SUPPORT_EXPERTISE"/>
+		</rules>
+    </element>
+
+    <element name="Rugged Endurance" type="Class Feature" source="Delta Ranger" id="ID_SWECKY_CLASS_FEATURE_DELTA_RANGER_RUGGED_ENDURANCE">
+        <description>
+            <p>Starting at 10th level, you have gained increased durability from surviving in the the harshness of the world. You gain proficiency in Constitution saving throws.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
+        </rules>
+    </element>
+
+    <element name="Survivalist" type="Class Feature" source="Delta Ranger" id="ID_SWECKY_CLASS_FEATURE_DELTA_RANGER_SURVIVALIST">
+        <description>
+            <p>At 14th level, your mere presence makes everyone around you feel safer in dangerous territory. If you are within 5 feet of an allied creature that makes an Animal Handling, Medicine, Perception, Stealth, or Survival check, you can use allow them to reroll the result. They must do so before they know the outcome of the check and they must use the new result.</p>
+            <p class="indent">You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain expended uses when you finish a long rest.</p>
+        </description>
+        <sheet>
+            <description usage="{{wisdom:modifier}}/Long Rest">If you are within 5 feet of an allied creature that makes an Animal Handling, Medicine, Perception, Stealth, or Survival check, you can use allow them to reroll the result. They must do so before they know the outcome of the check and they must use the new result.</description>
+        </sheet>
+    </element>
+
+    <element name="Bane of the Hunted" type="Class Feature" source="Delta Ranger" id="ID_SWECKY_CLASS_FEATURE_DELTA_RANGER_BANE_OF_THE_HUNTED">
+        <description>
+            <p>At 18th level, you hunt with the certainty that your prey will be the one to meet its end. You gain the following benefits:</p>
+            <ul>
+                <li>When you roll for initiative, you can have a creature be marked by Hunter's Quarry as you've expended a 1st-level spell slot, without expending a spell slot.</li>
+                <li>A target marked by Hunter's Quarry have disadvantage on saving throws versus your spells.</li>
+                <li>You have advantage on saving throws against spells and abilities used by a creature you've marked with Hunter's Quarry.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>When you roll for initiative, you can have a creature be marked by Hunter's Quarry as you've expended a 1st-level spell slot, without expending a spell slot. A target marked by Hunter's Quarry have disadvantage on saving throws versus your spells. You have advantage on saving throws against spells and abilities used by a creature you've marked with Hunter's Quarry.</description>
+        </sheet>
+    </element>
+
+    
+
+    <element name="Douse" type="Spell" source="Delta Ranger" id="ID_SWECKY_SPELL_DELTA_RANGER_DOUSE">
+        <supports>Druid, Sorcerer, Wizard</supports>
+        <description>
+            <p>You gesture, summoning a splash of saltwater to fall upon a creature or object within range. Flames are instantly quenched, and objects targeted by this spell cannot be ignited for at least one minute. If you target a creature, you can choose to have the saltwater be bone-chillingly cold. The target must make a Constitution saving throw. If they fail, they take 1d10 cold damage.</p>
+            <p class="indent">This spell’s damage increases by 1d8 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">0</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Earth Blast" type="Spell" source="Delta Ranger" id="ID_SWECKY_SPELL_DELTA_RANGER_EARTH_BLAST">
+        <supports>Druid, Sorcerer</supports>
+        <description>
+            <p>You summon a small boulder and send it streaking toward a point you choose within range. Once boulder reaches its destination or impacts a solid surface, it explodes. Each creature within 5 feet of the point where the boulder explodes must make a Dexterity saving throw. A creature takes 1d4 bludgeoning damage on a failed saving throw.</p>
+            <p class="indent">This spell's damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4).</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">0</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Shared Sight" type="Spell" source="Delta Ranger" id="ID_SWECKY_SPELL_DELTA_RANGER_SHARED_SIGHT">
+        <supports>Bard, Druid, Warlock, Wizard, Occultist</supports>
+        <description>
+            <p>The caster ceases to see through their own eyes and instead sees through the eyes of the last person or creature they touched in the last 24 hours before casting the spell. The other senses are unaffected, and you experience the same vision that the target creature has (tremorsense is not considered vision). You cannot choose which direction the target looks or whether their eyes are open or closed.</p>
+            <p class="indent">Once the caster dismisses the effect, that creature’s eyes cannot be looked through again for another 24 hours and the creature knows that someone or something has been watching through its eyes.</p>
+            <p class="indent">At 5th level, the duration increases to 10 minutes. At 11th level, you can choose if a creature you touch is eligible for the spell, though you can only have one saved at a time. At 17th level, you can choose for the target to watch through your eyes instead and you can stop or swap between as an action. Lastly, the spell lasts until you end it or it is dispelled.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">0</set>
+            <set name="school">Divination</set>
+            <set name="time">1 action</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a bowl or pool of liquid</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Stonefist" type="Spell" source="Delta Ranger" id="ID_SWECKY_SPELL_DELTA_RANGER_STONEFIST">
+        <supports>Druid, Sorcerer</supports>
+        <description>
+            <p>You magically transform one of your hands into solid stone and strike your foe with it. Make a melee spell attack. On a hit, the target takes 1d12 bludgeoning damage. This spell deals double damage against objects.</p>
+            <p class="indent">This spell's damage increases by 1d12 when you reach 5th level (2d12), 11th level (3d12), and 17th level (4d12).</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">0</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">Touch</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Bond Item" type="Spell" source="Delta Ranger" id="ID_SWECKY_SPELL_DELTA_RANGER_BOND_ITEM">
+        <supports>Artificer, Bard, Wizard, Inventor</supports>
+        <description>
+            <p>You touch a item weighing no more than 100 pounds and form a link between you and it. Until the spell ends, you can recall it to your hand as a bonus action as long as it is on the same plane of existence.</p>
+            <p class="indent">If another creature is holding or wearing the item when you try to recall it, they make a Charisma saving throw, and if they succeed, the spell fails. They make this save with advantage if they have had possession of the item for more than 1 minute.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">Touch</set>
+            <set name="duration">8 hours</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Dark Pounce" type="Spell" source="Delta Ranger" id="ID_SWECKY_SPELL_DELTA_RANGER_DARK_POUNCE">
+        <supports>Ranger, Warlock</supports>
+        <description>
+            <p>The first time before the end of your next turn you make a running jump, you instead teleport to your landing location. If this jump would take you into a Large or smaller creature's space you appear in an unoccupied space in front of the creature (if there is none, the spell fails). The target must make a Strength saving throw. On a failure, the target falls prone and if you have a free hand, is grappled by you.</p>
+            <p class="indent">When you cast this spell using a 3rd level slot or higher, you can cast it with a bonus action.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">Self</set>
+            <set name="duration">1 round</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Unburden" type="Spell" source="Delta Ranger" id="ID_SWECKY_SPELL_DELTA_RANGER_UNBURDEN">
+        <supports>Artificer, Wizard, Inventor</supports>
+        <description>
+            <p>A creature you touch no longer suffers the penalties to movement speed or to their Dexterity (Stealth) check while wearing armor, and is no long encumbered from carry weight unless they are carrying more than twice the weight that would encumber them.</p>
+            <p class="indent">When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">Touch</set>
+            <set name="duration">1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    
+    <element name="Arm of the Wild" type="Spell" source="Delta Ranger" id="ID_SWECKY_SPELL_DELTA_RANGER_ARM_OF_THE_WILD">
+        <supports>Bard, Druid, Ranger, Sorcerer, Wizard</supports>
+        <description>
+            <p>You transform one of your arms into an extendable vine whose end sticks to any surface that it touches. The arm cannot be used to wield any objects or weapons. On every turn within the duration, including the turn that you cast the spell, you can make either of the following actions:</p>
+            <p class="indent"><b><i>Grab Creature.</i></b> As a bonus action, you extend your vine arm forward, attempting to pull one creature you choose within 20 feet of you. The target must succeed on a Dexterity saving throw or be pulled 10 feet directly towards you.</p>
+            <p class="indent"><b><i>Grab Surface.</i></b> As a bonus action, you extend your vine arm forward, pulling yourself to a hard surface such as a wall or ceiling within 20 feet of you. If this movement would cause you to be suspended off the ground, you remain so until you take an action or the concentration ends.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">Self</set>
+            <set name="duration"> Concentration, up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent" />
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    
+    <element name="Penance" type="Spell" source="Delta Ranger" id="ID_SWECKY_SPELL_DELTA_RANGER_PENANCE">
+        <supports>Paladin</supports>
+        <description>
+            <p>After an ally have been damaged you can use your reaction to force the attacker to make a Charisma saving throw. The target takes 3d6 psychic damage on a failed save, or half as much damage on a successful one.</p>
+            <p class="indent">Additionally, your ally regains hit points equal to half the damage dealt if they are within 10 feet of the enemy.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each slot level above 2nd.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Enchantment</set>
+            <set name="time">1 reaction, that you take after a creature damages an ally</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent" />
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Elemental Rift" type="Spell" source="Delta Ranger" id="ID_SWECKY_SPELL_DELTA_RANGER_ELEMENTAL_RIFT">
+        <supports>Druid, Wizard</supports>
+        <description>
+            <p>You pull an elemental from one of the elemental planes for a moment before it disappears back to its native plane. You summon an air, earth, fire, or water elemental, which follows your commands (no action required by you). It acts immediately on the current turn. Once your turn ends, the elemental returns to its native plane.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a pinch of sand from an elemental plane</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Pincushion" type="Spell" source="Delta Ranger" id="ID_SWECKY_SPELL_DELTA_RANGER_PINCUSHION">
+        <supports>Artificer, Bard, Ranger, Wizard, Inventor</supports>
+        <description>
+            <p>You change one object or creature of Small or larger size to magically attract physical projectiles that pass near it. If the target is a creature, you must make a melee spell attack to touch the creature. Any ranged attack that fires a physical projectile towards another creature or point within 15 feet of the affected creature or object is made with disadvantage. If the attack misses it automatically hits the affected creature or object. Any ranged weapon attack aimed at the target is made with advantage.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">Touch</set>
+            <set name="duration">Concentration, up to 10 minutes</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    
+    <element name="Spray of Thorns" type="Spell" source="Delta Ranger" id="ID_SWECKY_SPELL_DELTA_RANGER_SPRAY_OF_THORNS">
+        <supports>Bard, Cleric, Druid, Ranger, Warlock, Wizard</supports>
+        <description>
+            <p>You shoot forth a burst of thorns from your hands which pierce through your enemy’s defenses, making them vulnerable to attacks. Each creature in a 20-foot cone must make a Dexterity saving throw. On a failed save, a creature takes 6d6 piercing damage, and until the start of your next turn they take an additional 1d6 piercing damage whenever they are hit by a weapon attack. On a successful save, a creature takes half damage and suffers no other effect.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 4th level or higher, the initial damage increases by 1d6 for each slot level above 3rd.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">20-foot cone</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a rose thorn</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    
+    <element name="Transposition" type="Spell" source="Delta Ranger" id="ID_SWECKY_SPELL_DELTA_RANGER_TRANSPOSITION">
+        <supports>Bard, Sorcerer, Warlock, Wizard</supports>
+        <description>
+            <p>You swap the positions of two creatures of the same size (Medium and Small counts as the same) that you can see within range. If a creature is unwilling, it can make a Charisma saving throw to resist being teleported. If either creature succeeds, the spell is lost.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 4th level or higher, you can target an additional creature for each slot level above 3rd. As long as two creatures fail their save, the spell succeeds.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    
+    <element name="Umbral Form" type="Spell" source="Delta Ranger" id="ID_SWECKY_SPELL_DELTA_RANGER_UMBRAL_FORM">
+        <supports>Sorcerer, Wizard</supports>
+        <description>
+            <p>You transform a willing creature you touch, along with everything it’s wearing and carrying, into an animated shadow for the duration. The spell ends if the creature drops to 0 hit points.</p>
+            <p class="indent">While in this form, the target's only method of movement is a walking and climbing speed of 30 feet. The target can enter and occupy the space of another creature. The target has resistance to nonmagical damage, and it has advantage on Strength, Dexterity, and Constitution saving throws, and it has advantage on Dexterity (Stealth) checks. The target can pass through small holes, narrow openings, and even mere cracks, though it treats liquids as though they were solid surfaces. The target can't fall and remains stuck to the ground even when stunned or otherwise incapacitated.</p>
+            <p class="indent">While in the shadowy form, the target can't talk or manipulate objects, and any objects it was carrying or holding can't be dropped, used, or otherwise interacted with. The target can't attack or cast spells.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">Touch</set>
+            <set name="duration">Concentration, up to 1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a wisp of smoke</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Awareness" type="Spell" source="Delta Ranger" id="ID_SWECKY_SPELL_DELTA_RANGER_AWARENESS">
+        <supports>Artificer, Druid, Ranger, Warlock, Wizard, Occultist, Inventor, Psion_KTH</supports>
+        <description>
+            <p>You create an invisible magical sensor that floats just above your head and shares your space. You can see through the sensor in all directions. For the duration, no melee attack roll can have advantage against you, and you have advantage on Wisdom (Perception) and Intelligence (Investigation) checks that rely on sight.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Divination</set>
+            <set name="time">1 action</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration, up to 1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a glass eye</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Delay Agony" type="Spell" source="Delta Ranger" id="ID_SWECKY_SPELL_DELTA_RANGER_DELAY_AGONY">
+        <supports>Cleric, Paladin, Wizard</supports>
+        <description>
+            <p>You react to incoming damage and warp reality around a creature you can see within range. The triggering spell or attack leaves the target undamaged, although they are still subject to any additional effects. If you cast the spell with yourself as the target, you do not need to make a concentration check against the damage from the triggering attack.</p>
+            <p class="indent">Record the amount and type of damage the target of the triggering attack would have taken. They sustain this damage immediately after the spell ends.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Abjuration</set>
+            <set name="time">1 reaction, which you take in response to a creature getting hit</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Concentration, up to 1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a sliver of lead</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Glitterbomb" type="Spell" source="Delta Ranger" id="ID_SWECKY_SPELL_DELTA_RANGER_GLITTERBOMB">
+        <supports>Bard, Druid</supports>
+        <description>
+            <p>A blinding flash of glittering faerie dust explodes in 20-foot radius sphere centered on you, coating everything within range except yourself for 1 minute. Creatures coated in glitter have disadvantage on Dexterity (Stealth) checks they make, and cannot benefit from being invisible. For the duration, objects and affected creatures shed dim light in a 5-foot radius. A creatures within range that can see you when you cast the spell must make a Dexterity saving throw. On a failure, it is blinded for the duration.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 6th level or higher, the radius increases by 5 feet for every two slot levels above 4th.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">Self (20-foot radius)</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">faerie dust</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Shadow Refuge" type="Spell" source="Delta Ranger" id="ID_SWECKY_SPELL_DELTA_RANGER_SHADOW_REFUGE">
+        <supports>Bard, Warlock</supports>
+        <description>
+            <p>You step into a shrouded space outside reality for a brief moment, gathering your power and waiting for a chance to strike. Until the start of your next turn, you cannot be targeted by spells and you are heavily obscured by magical darkness.</p>
+            <p class="indent">Your first successful attack during your next turn inflicts an additional 4d6 psychic damage and knocks your target prone.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d6 for each slot level above 4th.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Illusion</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">Self</set>
+            <set name="duration">1 round</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Normalize" type="Spell" source="Delta Ranger" id="ID_SWECKY_SPELL_DELTA_RANGER_NORMALIZE">
+        <supports>Bard, Cleric, Druid, Wizard, Occultist</supports>
+        <description>
+            <p>You end any effect that changes the form a creatures inside a 20-foot radius sphere centered on a point you can see within range. Any creature in the area that has had its physical form changed by magic, including shapeshifting, spells, and afflictions such as lycanthropy, is reverted to its original, natural form. If the form change is caused by a creature's natural abilities and the creature is CR 6 or higher, it can make a Charisma saving throw to retain its current form. If the changes are a result of a spell of 6th level or higher (such as flesh to stone, animal shapes, or shapechange), you can make an ability check with your spellcasting modifier (DC equal to 10+the spell's level), ending the spell on a success. If the creature has been changed against its will, no check or save is required.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell with a spell slot of 6th level or higher, the CR threshold for the saving throw increases by 1 for every slot level above 5th. You also automatically end any form-changing spell of a level equal to that of the slot you use.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">Abjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Shadow Stride" type="Spell" source="Delta Ranger" id="ID_SWECKY_SPELL_DELTA_RANGER_SHADOW_STRIDE">
+        <supports>Druid, Ranger, Sorcerer, Warlock, Occultist</supports>
+        <description>
+            <p>You gain the ability to blink from one shadow to another. When you are in dim light or darkness, you can use 5 feet of movement to teleport up to 30 feet to an unoccupied space you can see that is also in dim light or darkness.</p>
+            <p class="indent">You can use this teleportation ability twice per round for the duration.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration, up to 1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Survival Instincts" type="Spell" source="Delta Ranger" id="ID_SWECKY_SPELL_DELTA_RANGER_SURVIVAL_INSTINCTS">
+        <supports>Druid, Ranger</supports>
+        <description>
+            <p>You imbue yourself and up to 6 allies within range with improved reflexes. Affected creatures gain a bonus to Dexterity saves equal to your spellcasting ability modifier, and when they are subjected to an effect that allows them to make a Dexterity save for half damage, they instead take no damage on a success. On a failure, they only take half damage.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Concentration, up to 10 minutes</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a pinch of powdered emerald worth 100 gold, which the spell consumes</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    
+</elements>

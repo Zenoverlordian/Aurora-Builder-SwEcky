@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name></name>
+        <update version="0.0.1">
+            <file name="ranger-gardener.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-SwEcky/main/ranger-gardener.xml" />
+        </update>
+    </info>
+    
+    <element name="Gardener Conclave" type="Archetype" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_DELTA_RANGER_GARDENER">
+        <supports>Delta Ranger Conclave</supports>
+        <description>
+            <p>As much part of nature, as nature are part of them, these rangers spend their lives tending to nature. Covered in vines, some of them protect sacred groves, while others track down and hunt creatures who seek to despoil nature. A few of them have spent so many years in the wild, they barely remember what lives they lived or what friends they had a lifetime ago.</p>
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_GARDENER_SPELLS" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_GARDENER_TOOLS" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_GARDENER_SYMBIOTIC_DEFENSE" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_GARDENER_NATURES_FURY" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_GARDENER_IMPEDING_ROOTS" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_GARDENER_FORCE_NATURE" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_GARDENER_VENERABLE_KEEPERS" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_GARDENER_RETURN_TO_EARTH" />
+        </description>
+        <sheet display="false">
+            <description>Covered in vines, some of them protect sacred groves, while others track down and hunt creatures who seek to despoil nature.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_GARDENER_SPELLS" level="3" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_GARDENER_TOOLS" level="3" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_GARDENER_SYMBIOTIC_DEFENSE" level="3" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_GARDENER_NATURES_FURY" level="5" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_GARDENER_IMPEDING_ROOTS" level="7" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_GARDENER_FORCE_NATURE" level="11" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_GARDENER_VENERABLE_KEEPERS" level="15" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_GARDENER_RETURN_TO_EARTH" level="20" />
+        </rules>
+    </element>
+
+    <element name="Conclave Spells" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_GARDENER_SPELLS">
+        <description>
+            <p>You gain conclave spells at the ranger levels listed.</p>
+            <h5>GARDENER SPELLS</h5>
+            <table>
+                <thead>
+                    <tr><td>Ranger Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>3rd</td><td>entangle</td></tr>
+                <tr><td>5th</td><td>arm of the wild</td></tr>
+                <tr><td>9th</td><td>spray of thorns</td></tr>
+                <tr><td>13th</td><td>grasping vine</td></tr>
+                <tr><td>17th</td><td>commune with nature</td></tr>
+            </table>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_ENTANGLE" spellcasting="Delta Ranger" prepared="true" level="3" />
+            <grant type="Spell" id="ID_SWECKY_SPELL_DELTA_RANGER_ARM_OF_THE_WILD" spellcasting="Delta Ranger" prepared="true" level="5" />
+            <grant type="Spell" id="ID_SWECKY_SPELL_DELTA_RANGER_SPRAY_OF_THORNS" spellcasting="Delta Ranger" prepared="true" level="9" />
+            <grant type="Spell" id="ID_PHB_SPELL_GRASPING_VINE" spellcasting="Delta Ranger" prepared="true" level="13" />
+            <grant type="Spell" id="ID_PHB_SPELL_COMMUNE_WITH_NATURE" spellcasting="Delta Ranger" prepared="true" level="17" />
+        </rules>
+    </element>
+
+    <element name="Tender's Tools" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_GARDENER_TOOLS">
+        <description>
+            <p>Starting at 3rd level, you've given yourself fully to nature. You gain the druidcraft and thorn whip cantrip. When you deal damage to a target marked with Hunter's Quarry with thorn whip, you deal an additional 1d6 damage.</p>
+        </description>
+        <sheet>
+            <description>When you deal damage to a target marked with Hunter's Quarry with thorn whip, you deal an additional 1d6 damage.</description>
+        </sheet>
+        <rules>
+             <grant type="Spell" id="ID_PHB_SPELL_DRUIDCRAFT" spellcasting="Delta Ranger" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_THORN_WHIP" spellcasting="Delta Ranger" prepared="true" />
+        </rules>
+    </element>
+
+    <element name="Symbiotic Defense" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_GARDENER_SYMBIOTIC_DEFENSE">
+        <description>
+            <p>Starting at 3rd level, as you safeguard nature, nature gives you its protection. After finish a long rest, vines has grown to cover your body. While they cover your body you gain an AC equal to 14 + your Wisdom modifier.</p>
+            <p class="indent">As an action, you can have the vines fall off, where they fall the ground within 5 feet is well nourished for a week.</p>
+        </description>
+        <sheet>
+            <description usage="1/Long Rest" action="Action">After finish a long rest, vines has grown to cover your body. While they cover your body you gain an AC of {{symbiotic:defense}}. As an action, you can have the vines fall off, where they fall the ground within 5 feet is well nourished for a week.</description>
+        </sheet>
+        <rules>
+            <stat name="symbiotic:defense" value="14" />
+            <stat name="symbiotic:defense" value="wisdom:modifier" />
+        </rules>
+    </element>
+
+    <element name="Nature's Fury" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_GARDENER_NATURES_FURY">
+        <description>
+            <p>At 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+            <p class="indent">Additionally, when taking the Attack action, you can replace one attack with casting the thorn whip cantrip.</p>
+        </description>
+        <sheet>
+            <description>You can attack twice, instead of once, whenever you take the Attack action on your turn. Additionally, when taking the Attack action, you can replace one attack with casting the thorn whip cantrip.</description>
+        </sheet>
+		<rules>
+			<stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
+		</rules>
+    </element>
+
+    <element name="Impeding Roots" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_GARDENER_IMPEDING_ROOTS">
+        <description>
+            <p>At 7th level, nature does its best to protect you and your allies. While you have a creature marked with Hunter's Quarry, the area within 5 feet of you counts as difficult terrain. You can choose for a creature to be unaffected.</p>
+        </description>
+        <sheet>
+            <description>While you have a creature marked with Hunter's Quarry, the area within 5 feet of you counts as difficult terrain. You can choose for a creature to be unaffected.</description>
+        </sheet>
+    </element>
+
+    <element name="Force of Nature" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_GARDENER_FORCE_NATURE">
+        <description>
+            <p>At 11th level, your attacks land with the full force of nature. You can add your Wisdom modifier to weapon damage rolls.</p>
+            <p class="indent">Additionally, when casting thorn whip or a conclave spell, you can choose to deal bludgeoning damage equal to your Wisdom modifier to each creature affected by the spell.</p>
+        </description>
+        <sheet>
+            <description>You can add {{wisdom:modifier}} to weapon damage rolls. Additionally, when casting thorn whip or a conclave spell, you can choose to deal {{widsom:modifier}} bludgeoning damage to each creature affected by the spell.</description>
+        </sheet>
+    </element>
+
+    <element name="Venerable Keepers" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_GARDENER_VENERABLE_KEEPERS">
+        <description>
+            <p>At 15th level, your body doesn't tear and grow old as other's do. For every 10 years that pass, your body ages only 1 year.</p>
+        </description>
+        <sheet>
+            <description>For every 10 years that pass, your body ages only 1 year.</description>
+        </sheet>
+    </element>
+
+    <element name="Return to Earth" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_GARDENER_RETURN_TO_EARTH">
+        <description>
+            <p>At 20th level, you can forcefully return a creature to nature. As an action, choose a creature within 30 feet that you can see. The creature takes 8d8 bludgeoning damage as vines and roots spew forth from the ground and grabs a hold of the creature. The creature must then roll a Strength or Dexterity saving throw (its choice) versus your range spell save DC. On a failure, the creature is restrained and is pulled up to 30 feet to the ground, taking 2d8 bludgeoning on the start of each of its turns for 1 minute or until it is no longer restrained.</p>
+            <p class="indent">You can't use this feature again until you finish a short or long rest.</p>
+        </description>
+        <sheet>
+            <description action="Action" usage="1/Short Rest">As an action, choose a creature within 30 feet that you can see. The creature takes 8d8 bludgeoning damage as vines and roots spew forth from the ground and grabs a hold of the creature. The creature must then roll a Strength or Dexterity saving throw (its choice) versus your range spell save DC. On a failure, the creature is restrained and is pulled up to 30 feet to the ground, taking 2d8 bludgeoning on the start of each of its turns for 1 minute or until it is no longer restrained.</description>
+        </sheet>
+    </element>
+    
+</elements>

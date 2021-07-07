@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name></name>
+        <update version="0.0.1">
+            <file name="ranger-monster-hunter.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-SwEcky/main/ranger-monster-hunter.xml" />
+        </update>
+    </info>
+    
+    <element name="Monster Hunter Conclave" type="Archetype" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_DELTA_RANGER_MONSTER_HUNTER">
+        <supports>Delta Ranger Conclave</supports>
+        <description>
+            <p>A lot of adventurers who seek glory, try to hunt monsters to earn money and renown. The large majority never return and will be forever unknown, out of those few that survive, not many last longer than a year. But the few that survive becomes well known and get paid handsomely to help remove a dangers monster. These Monster Hunter's are second to none when it comes to fighting, if they were any less, they wouldn't be breathing.</p>
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_MONSTER_HUNTER_SPELLS" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_MONSTER_HUNTER_KNOWLEDGE_TO_SURVIVE" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_MONSTER_HUNTER_TENACITY" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_MONSTER_HUNTER_EXTRA_ATTACK" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_MONSTER_HUNTER_GLORY_HUNT" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_MONSTER_HUNTER_GIANT_SLAYER" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_MONSTER_HUNTER_DETERMINATION" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_MONSTER_HUNTER_FOE_SLAYER" />
+        </description>
+        <sheet display="false">
+            <description>These Monster Hunter's are second to none when it comes to fighting, if they were any less, they wouldn't be breathing.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_MONSTER_HUNTER_SPELLS" level="3" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_MONSTER_HUNTER_KNOWLEDGE_TO_SURVIVE" level="3" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_MONSTER_HUNTER_TENACITY" level="3" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_MONSTER_HUNTER_EXTRA_ATTACK" level="5" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_MONSTER_HUNTER_GLORY_HUNT" level="7" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_MONSTER_HUNTER_GIANT_SLAYER" level="11" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_MONSTER_HUNTER_DETERMINATION" level="15" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_MONSTER_HUNTER_FOE_SLAYER" level="20" />
+        </rules>
+    </element>
+
+    <element name="Conclave Spells" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_MONSTER_HUNTER_SPELLS">
+        <description>
+            <p>You gain conclave spells at the ranger levels listed.</p>
+            <h5>MONSTER HUNTER SPELLS</h5>
+            <table>
+                <thead>
+                    <tr><td>Ranger Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>3rd</td><td>jump</td></tr>
+                <tr><td>5th</td><td>earthbind</td></tr>
+                <tr><td>9th</td><td>pincushion</td></tr>
+                <tr><td>13th</td><td>delay agony</td></tr>
+                <tr><td>17th</td><td>normalize</td></tr>
+            </table>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_JUMP" spellcasting="Delta Ranger" prepared="true" level="3" />
+            <grant type="Spell" id="ID_XGTE_SPELL_EARTHBIND" spellcasting="Delta Ranger" prepared="true" level="5" />
+            <grant type="Spell" id="ID_SWECKY_SPELL_DELTA_RANGER_PINCUSHION" spellcasting="Delta Ranger" prepared="true" level="9" />
+            <grant type="Spell" id="ID_SWECKY_SPELL_DELTA_RANGER_DELAY_AGONY" spellcasting="Delta Ranger" prepared="true" level="13" />
+            <grant type="Spell" id="ID_SWECKY_SPELL_DELTA_RANGER_NORMALIZE" spellcasting="Delta Ranger" prepared="true" level="17" />
+        </rules>
+    </element>
+
+    <element name="The Knowledge to Survive" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_MONSTER_HUNTER_KNOWLEDGE_TO_SURVIVE">
+        <description>
+            <p>The first lesson you have to learn to become a successful monster hunter is how to prepare. Beginning at 3rd level, your have advantage on all Intelligence checks made to gather information on aberrations, beasts, dragons, giants, monstrosities, or undead.</p>
+        </description>
+        <sheet>
+            <description>You have advantage on all Intelligence checks made to gather information on aberrations, beasts, dragons, giants, monstrosities, or undead.</description>
+        </sheet>
+    </element>
+
+    <element name="Hunter's Tenacity" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_MONSTER_HUNTER_TENACITY">
+        <description>
+            <p>At 3rd level, no matter the odds, you come out on top. For every different creature that makes an attack against you, you gain +1 AC (up to a maximum of +5) until the start of your next turn.</p>
+        </description>
+        <sheet>
+            <description>For every different creature that makes an attack against you, you gain +1 AC (up to a maximum of +5) until the start of your next turn.</description>
+        </sheet>
+    </element>
+
+    <element name="Extra Attack" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_MONSTER_HUNTER_EXTRA_ATTACK">
+        <description>
+			<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+		</description>
+		<sheet>
+			<description level="5">You can attack twice, instead of once, whenever you take the Attack action on your turn</description>
+		</sheet>
+		<rules>
+			<stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
+		</rules>
+	</element>
+
+    <element name="Glory of the Hunt" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_MONSTER_HUNTER_GLORY_HUNT">
+        <description>
+            <p>At 7th level, you've learned to disarm one of the most dangerous weapons of your enemy. You and any allies under the effect of your Hunter's Quarry feature have advantage against being frightened by the marked creature.</p>
+        </description>
+        <sheet>
+            <description>You and any allies under the effect of your Hunter's Quarry feature have advantage against being frightened by the marked creature.</description>
+        </sheet>
+    </element>
+
+    <element name="Giant Slayer" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_MONSTER_HUNTER_GIANT_SLAYER">
+        <description>
+            <p>At 11th level, your tenacity can wear down the most potent foes. When you hit a creature with a weapon attack, the creature takes an extra 1d8 damage if it’s below its hit point maximum.</p>
+        </description>
+        <sheet>
+            <description>When you hit a creature with a weapon attack, the creature takes an extra 1d8 damage if it’s below its hit point maximum.</description>
+        </sheet>
+    </element>
+
+    <element name="Hunter's Determination" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_MONSTER_HUNTER_DETERMINATION">
+        <description>
+            <p>At 15th level, nothing will stop you as long as you have your eyes on your target. While you can see the creature marked by your Hunter's Quarry feature, you can't be charmed or frightened. If you are charmed or frightened when you mark a creature, the effect is suspended for the duration of the mark.</p>
+        </description>
+        <sheet>
+            <description>While you can see the creature marked by your Hunter's Quarry feature, you can't be charmed or frightened. If you are charmed or frightened when you mark a creature, the effect is suspended for the duration of the mark.</description>
+        </sheet>
+    </element>
+
+    <element name="Foe Slayer" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_MONSTER_HUNTER_FOE_SLAYER">
+        <description>
+            <p>At 20th level you become an unparalleled hunter of your enemies. When you hit an enemy with an attack, you can choose to deal an additional 8d8 damage and have them make a Constitution saving throw against your spell save DC. If the target fails, you can choose one of the following conditions to inflict upon them: blinded, deafened, or frightened. The creature suffers from this effect for 1 minute.</p>
+            <p class="indent">Once you use this feature, you cannot use it again until after you finish a short or long rest.</p>
+        </description>
+        <sheet>
+            <description usage="1/Short Rest">When you hit an enemy with an attack, you can choose to deal an additional 8d8 damage and have them make a Constitution saving throw against your spell save DC. If the target fails, you can choose one of the following conditions to inflict upon them: blinded, deafened, or frightened. The creature suffers from this effect for 1 minute.</description>
+        </sheet>
+    </element>
+    
+</elements>

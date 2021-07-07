@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name></name>
+        <update version="0.0.1">
+            <file name="ranger-strider.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-SwEcky/main/ranger-ranger-strider.xml" />
+        </update>
+    </info>
+    
+    <element name="Strider Conclave" type="Archetype" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_DELTA_RANGER_STRIDER">
+        <supports>Delta Ranger Conclave</supports>
+        <description>
+            <p>Often called the vanguard of the world, a ranger who is part of the Strider conclave wanders the world, often without a destination, but always ready to lend their aid to those in need. A Strider is usually the first to react to new dangers, and also the first to decide whether they need support or if they can handle it on their own with their superior speed.</p>
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_STRIDER_SPELLS" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_STRIDER_SHIFTING_STEPS" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_STRIDER_TEND_THE_WEARY" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_STRIDER_EXTRA_ATTACK" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_STRIDER_ASSESS_THREAT" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_STRIDER_FEINTING_MOVEMENT" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_STRIDER_TRICKS_OF_THE_WELL_TRAVELED" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_STRIDER_IMMOBILIZING_BLOW" />
+        </description>
+        <sheet display="false">
+            <description>Often called the vanguard of the world, a ranger who is part of the Strider conclave wanders the world, often without a destination, but always ready to lend their aid to those in need.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_STRIDER_SPELLS" level="3" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_STRIDER_SHIFTING_STEPS" level="3" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_STRIDER_TEND_THE_WEARY" level="3" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_STRIDER_EXTRA_ATTACK" level="5" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_STRIDER_ASSESS_THREAT" level="7" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_STRIDER_FEINTING_MOVEMENT" level="11" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_STRIDER_TRICKS_OF_THE_WELL_TRAVELED" level="15" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_STRIDER_IMMOBILIZING_BLOW" level="20" />
+        </rules>
+    </element>
+
+    <element name="Conclave Spells" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_STRIDER_SPELLS">
+        <description>
+            <p>You gain conclave spells at the ranger levels listed.</p>
+            <h5>STRIDER SPELLS</h5>
+            <table>
+                <thead>
+                    <tr><td>Ranger Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>3rd</td><td>unburden</td></tr>
+                <tr><td>5th</td><td>pass without trace</td></tr>
+                <tr><td>9th</td><td>tongues</td></tr>
+                <tr><td>13th</td><td>freedom of movement</td></tr>
+                <tr><td>17th</td><td>survival instincts</td></tr>
+            </table>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Spell" id="ID_SWECKY_SPELL_DELTA_RANGER_UNBURDEN" spellcasting="Delta Ranger" prepared="true" level="3" />
+            <grant type="Spell" id="ID_PHB_SPELL_PASS_WITHOUT_TRACE" spellcasting="Delta Ranger" prepared="true" level="5" />
+            <grant type="Spell" id="ID_PHB_SPELL_TONGUES" spellcasting="Delta Ranger" prepared="true" level="9" />
+            <grant type="Spell" id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" spellcasting="Delta Ranger" prepared="true" level="13" />
+            <grant type="Spell" id="ID_SWECKY_SPELL_DELTA_RANGER_SURVIVAL_INSTINCTS" spellcasting="Delta Ranger" prepared="true" level="17" />
+        </rules>
+    </element>
+
+    <element name="Shifting Steps" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_STRIDER_SHIFTING_STEPS">
+        <description>
+            <p>At 3rd level, your movement makes it hard to pin you down. Your speed increases by 5 feet and if you move 15 feet or more on your turn, you gain +1 AC until the start of your next turn. You lose both benefits if you are wearing heavy armor.</p>
+        </description>
+        <sheet>
+            <description>If you move 15 feet or more on your turn, you gain +1 AC until the start of your next turn. You lose this benefit if you are wearing heavy armor.</description>
+        </sheet>
+        <rules>
+            <stat name="speed" value="5" equipped="![armor:heavy]" />
+        </rules>
+    </element>
+
+    <element name="Tend the Weary" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_STRIDER_TEND_THE_WEARY">
+        <description>
+            <p>At 3rd level, in the wild you must be able to tend to your own and the wounds of others. When you finish a long rest, you can have a number of creatures equal to your Wisdom modifier regain an additional Hit Die.</p>
+        </description>
+        <sheet>
+            <description>When you finish a long rest, you can have {{wisdom:modifier}} creatures regain an additional Hit Die.</description>
+        </sheet>
+    </element>
+
+    <element name="Extra Attack" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_STRIDER_EXTRA_ATTACK">
+        <description>
+			<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+		</description>
+		<sheet>
+			<description level="5">You can attack twice, instead of once, whenever you take the Attack action on your turn</description>
+		</sheet>
+		<rules>
+			<stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
+		</rules>
+	</element>
+
+    <element name="Assess Threat" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_STRIDER_ASSESS_THREAT">
+        <description>
+            <p>At 7th level, you've learned that to survive, you must be able to quickly assess the situation. Any Wisdom (Perception) you make against a creature marked by your Hunter's Quarry feature ignores natural phenomenon which would cause you to have disadvantage on your check.</p>
+        </description>
+        <sheet>
+            <description>Any Wisdom (Perception) you make against a creature marked by your Hunter's Quarry feature ignores natural phenomenon which would cause you to have disadvantage on your check.</description>
+        </sheet>
+    </element>
+
+    <element name="Feinting Movement" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_STRIDER_FEINTING_MOVEMENT">
+        <description>
+            <p>At 11th level, your every move is made to outmaneuver your enemies. If you have moved 15 feet or more on your turn, your weapon attacks deal an additional 1d10 damage. If your movement causes a creature to make an opportunity attack against you, you have advantage on your first attack against that creature before the start of your next turn.</p>
+        </description>
+        <sheet>
+            <description>If you have moved 15 feet or more on your turn, your weapon attacks deal an additional 1d10 damage. If your movement causes a creature to make an opportunity attack against you, you have advantage on your first attack against that creature before the start of your next turn.</description>
+        </sheet>
+    </element>
+
+    <element name="Tricks of the Well Traveled" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_STRIDER_TRICKS_OF_THE_WELL_TRAVELED">
+        <description>
+            <p>At 15th level, you are able to make any travel more efficient. While traveling, you are able to stealth while keeping a normal pace and can keep a fast pace without gaining a penalty to your Perception score. You can give up to 6 additional creatures this benefit if they travel with you.</p>
+        </description>
+        <sheet>
+            <description>While traveling, you are able to stealth while keeping a normal pace and can keep a fast pace without gaining a penalty to your Perception score. You can give up to 6 additional creatures this benefit if they travel with you.</description>
+        </sheet>
+    </element>
+
+    <element name="Immobilizing Blow" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_STRIDER_IMMOBILIZING_BLOW">
+        <description>
+            <p>At 20th level, your ability to cripple a target on the field of battle is unparalleled. When you hit an enemy with an attack, you can choose to deal an additional 4d8 damage and have them make a Constitution saving throw against your spell save DC. If the target fails, all of its speeds are reduced to 0 for 1 minute. Once you use this feature, you cannot use it again until after you finish a short or long rest.</p>
+        </description>
+        <sheet>
+            <description usage="1/Short Rest">When you hit an enemy with an attack, you can choose to deal an additional 4d8 damage and have them make a Constitution saving throw against your spell save DC. If the target fails, all of its speeds are reduced to 0 for 1 minute.</description>
+        </sheet>
+    </element>
+    
+</elements>

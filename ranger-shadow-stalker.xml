@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name></name>
+        <update version="0.0.1">
+            <file name="ranger-shadow-stalker.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-SwEcky/main/ranger-shadow-stalker.xml" />
+        </update>
+    </info>
+    
+    <element name="Shadow Stalker Conclave" type="Archetype" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_DELTA_RANGER_SHADOW_STALKER">
+        <supports>Delta Ranger Conclave</supports>
+        <description>
+            <p>When a job require the utmost discretion, the Shadow Stalker conclave is your safest bet. They take pride in their ability to fulfill their mission quickly and without leaving any sign of who did it. They relish in going after a target that think it is safe, and getting to it without arousing any suspicion.</p>
+            <p class="indent">Some members even take jobs as unseen guards who strike down those who want their target ill without anyone being the wiser.</p>
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_SHADOW_STALKER_SPELLS" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_SHADOW_STALKER_FADE_AWAY" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_SHADOW_STALKER_SHADOW_DODGE" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_SHADOW_STALKER_SHADOW_STRIKE" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_SHADOW_STALKER_VOID_MARK" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_SHADOW_STALKER_UMBRAL_FLURRY" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_SHADOW_STALKER_NURTURED_BY_THE_DARK" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_SHADOW_STALKER_PERFECT_DARK" />
+        </description>
+        <sheet display="false">
+            <description>They take pride in their ability to fulfill their mission quickly and without leaving any sign of who did it. They relish in going after a target that think it is safe, and getting to it without arousing any suspicion.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_SHADOW_STALKER_SPELLS" level="3" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_SHADOW_STALKER_FADE_AWAY" level="3" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_SHADOW_STALKER_SHADOW_DODGE" level="3" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_SHADOW_STALKER_SHADOW_STRIKE" level="5" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_SHADOW_STALKER_VOID_MARK" level="7" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_SHADOW_STALKER_UMBRAL_FLURRY" level="11" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_SHADOW_STALKER_NURTURED_BY_THE_DARK" level="15" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_SHADOW_STALKER_PERFECT_DARK" level="20" />
+        </rules>
+    </element>
+
+    <element name="Conclave Spells" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_SHADOW_STALKER_SPELLS">
+        <description>
+            <p>You gain conclave spells at the ranger levels listed.</p>
+            <h5>SHADOW STALKER SPELLS</h5>
+            <table>
+                <thead>
+                    <tr><td>Ranger Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>3rd</td><td>dark pounce</td></tr>
+                <tr><td>5th</td><td>darkness</td></tr>
+                <tr><td>9th</td><td>umbral form</td></tr>
+                <tr><td>13th</td><td>shadow refuge</td></tr>
+                <tr><td>17th</td><td>shadow stride</td></tr>
+            </table>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Spell" id="ID_SWECKY_SPELL_DELTA_RANGER_DARK_POUNCE" spellcasting="Delta Ranger" prepared="true" level="3" />
+            <grant type="Spell" id="ID_PHB_SPELL_DARKNESS" spellcasting="Delta Ranger" prepared="true" level="5" />
+            <grant type="Spell" id="ID_SWECKY_SPELL_DELTA_RANGER_UMBRAL_FORM" spellcasting="Delta Ranger" prepared="true" level="9" />
+            <grant type="Spell" id="ID_SWECKY_SPELL_DELTA_RANGER_SHADOW_REFUGE" spellcasting="Delta Ranger" prepared="true" level="13" />
+            <grant type="Spell" id="ID_SWECKY_SPELL_DELTA_RANGER_SHADOW_STRIDE" spellcasting="Delta Ranger" prepared="true" level="17" />
+        </rules>
+    </element>
+
+    <element name="Fade Away" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_SHADOW_STALKER_FADE_AWAY">
+        <description>
+            <p>Starting at 3rd level, you have mastered the ability to disappear into the shadows at a moment's notice. When rolling initiative you can teleport up to 15 feet and take the Hide action.</p>
+        </description>
+        <sheet>
+            <description>When rolling initiative you can teleport up to 15 feet and take the Hide action.</description>
+        </sheet>
+    </element>
+
+    <element name="Shadow Dodge" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_SHADOW_STALKER_SHADOW_DODGE">
+        <description>
+            <p>Starting at 3rd level, you can dodge in unforeseen ways, with wisps of supernatural shadow around you. Whenever a creature makes an attack roll against you and doesn’t have advantage on the roll, you can use your reaction to impose disadvantage on it. You must use this feature before you know the outcome of the attack roll.</p>
+        </description>
+        <sheet>
+            <description action="Reaction">Whenever a creature makes an attack roll against you and doesn’t have advantage on the roll, you can use your reaction to impose disadvantage on it. You must use this feature before you know the outcome of the attack roll.</description>
+        </sheet>
+    </element>
+
+    <element name="Shadow Strike" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_SHADOW_STALKER_SHADOW_STRIKE">
+        <description>
+            <p>Starting at 5th level, each of your attacks are made to appear out of nowhere. Once per turn, you can deal an extra 1d12 damage to one creature you hit with an attack if you have advantage on the attack roll.</p>
+            <p class="indent">You don’t need advantage on the attack roll if the creature is marked by your Hunter's Quarry feature or you have used your Shadow Dodge feature in the previous round.</p>
+        </description>
+        <sheet>
+            <description>Once per turn, you can deal an extra 1d12 damage to one creature you hit with an attack if you have advantage on the attack roll. You don’t need advantage on the attack roll if the creature is marked by your Hunter's Quarry feature or you have used your Shadow Dodge feature in the previous round.</description>
+        </sheet>
+    </element>
+
+    <element name="Void Mark" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_SHADOW_STALKER_VOID_MARK">
+        <description>
+            <p>At 7th level, you know how to blur the vision of your target with a mere gesture. A creature marked by your Hunter's Quarry feature has disadvantage on Perception checks.</p>
+        </description>
+        <sheet>
+            <description>A creature marked by your Hunter's Quarry feature has disadvantage on Perception checks.</description>
+        </sheet>
+    </element>
+
+    <element name="Umbral Flurry" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_SHADOW_STALKER_UMBRAL_FLURRY">
+        <description>
+            <p>Beginning at 11th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+            <p class="indent">Additionally, if you deal your Shadow Strike damage on your first attack, the second attack deals it as well.</p>
+        </description>
+        <sheet>
+            <description>You can attack twice, instead of once, whenever you take the Attack action on your turn. Additionally, if you deal your Shadow Strike damage on your first attack, the second attack deals it as well.</description>
+        </sheet>
+		<rules>
+			<stat name="extra attack:count" value="2" level="11" bonus="extra attack" />
+		</rules>
+    </element>
+
+    <element name="Nurtured by the Dark" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_SHADOW_STALKER_NURTURED_BY_THE_DARK">
+        <description>
+            <p>At 15th level, you have become a part of the darkness you spend your life in. If you spend a long rest in dim light or darker, you don't need to sleep to gain the benefits of a long rest. You still need to spend the 8 hours doing a light activity.</p>
+        </description>
+        <sheet>
+            <description>If you spend a long rest in dim light or darker, you don't need to sleep to gain the benefits of a long rest. You still need to spend the 8 hours doing a light activity.</description>
+        </sheet>
+    </element>
+
+    <element name="Perfect Dark" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_SHADOW_STALKER_PERFECT_DARK">
+        <description>
+            <p>At 20th level, you can turn any area into your hunting ground. As a bonus action, you can choose a point that you can see within 90 feet. Magical darkness spreads from that point in a 60-foot radius sphere for 1 minute. The darkness spreads around corners. A creature with darkvision can't see through this darkness, and nonmagical or magical light can't illuminate it. While within the darkness you are invisible, can see normally, and can attack from any point within the darkness as if you were standing there.</p>
+            <p class="indent">As a bonus action you can move the darkness up to 30 feet.</p>
+            <p class="indent">Once you use this feature, you cannot use it again until after you finish a short or long rest.</p>
+        </description>
+        <sheet>
+            <description action="Bonus Action" usage="1/Short Rest">As a bonus action, you can choose a point that you can see within 90 feet. Magical darkness spreads from that point in a 60-foot radius sphere for 1 minute. The darkness spreads around corners. A creature with darkvision can't see through this darkness, and nonmagical or magical light can't illuminate it. While within the darkness you are invisible, can see normally, and can attack from any point within the darkness as if you were standing there. As a bonus action you can move the darkness up to 30 feet.</description>
+        </sheet>
+    </element>
+    
+</elements>

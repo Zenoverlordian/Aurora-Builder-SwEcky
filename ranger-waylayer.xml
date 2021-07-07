@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name></name>
+        <update version="0.0.1">
+            <file name="ranger-waylayer.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-SwEcky/main/ranger-waylayer.xml" />
+        </update>
+    </info>
+    
+    <element name="Waylayer Conclave" type="Archetype" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_DELTA_RANGER_WAYLAYER">
+        <supports>Delta Ranger Conclave</supports>
+        <description>
+            <p>Knowing that a ranger of the Waylayer conclave is after you is one of the worst feelings imaginable. Everything around you can be another trap or trick to get you where they need you. A few targets even turn themselves in, as soon as the rumor starts spreading. Others do their best to trap their hunter, though more often than not find themselves being the one without a way out. The few who get past the traps, often believe they can best them in martial combat, where they swiftly realize their final mistake.</p>
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_WAYLAYER_SPELLS" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_WAYLAYER_TRAPPERS_CRAFT" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_WAYLAYER_COMBAT_TRAPSMITH" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_WAYLAYER_EXTRA_ATTACK" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_WAYLAYER_PERSONALIZED_GIFTS" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_WAYLAYER_EXPERT_SETTER" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_WAYLAYER_DANGER_SOUNDS" />
+            <div element="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_WAYLAYER_REVERSAL_OF_FORTUNE" />
+        </description>
+        <sheet display="false">
+            <description>Knowing that a ranger of the Waylayer conclave is after you is one of the worst feelings imaginable. Everything around you can be another trap or trick to get you where they need you.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_WAYLAYER_SPELLS" level="3" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_WAYLAYER_TRAPPERS_CRAFT" level="3" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_WAYLAYER_COMBAT_TRAPSMITH" level="3" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_WAYLAYER_EXTRA_ATTACK" level="5" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_WAYLAYER_PERSONALIZED_GIFTS" level="7" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_WAYLAYER_EXPERT_SETTER" level="11" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_WAYLAYER_DANGER_SOUNDS" level="15" />
+            <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_WAYLAYER_REVERSAL_OF_FORTUNE" level="20" />
+        </rules>
+    </element>
+
+    <element name="Conclave Spells" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_WAYLAYER_SPELLS">
+        <description>
+            <p>You gain conclave spells at the ranger levels listed.</p>
+            <h5>WAYLAYER SPELLS</h5>
+            <table>
+                <thead>
+                    <tr><td>Ranger Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>3rd</td><td>earth tremor</td></tr>
+                <tr><td>5th</td><td>blindness/deafness</td></tr>
+                <tr><td>9th</td><td>fireball</td></tr>
+                <tr><td>13th</td><td>glitterbomb</td></tr>
+                <tr><td>17th</td><td>hold monster</td></tr>
+            </table>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Spell" id="ID_XGTE_SPELL_EARTH_TREMOR" spellcasting="Delta Ranger" prepared="true" level="3" />
+            <grant type="Spell" id="ID_PHB_SPELL_BLINDNESS_DEAFNESS" spellcasting="Delta Ranger" prepared="true" level="5" />
+            <grant type="Spell" id="ID_PHB_SPELL_FIREBALL" spellcasting="Delta Ranger" prepared="true" level="9" />
+            <grant type="Spell" id="ID_SWECKY_SPELL_DELTA_RANGER_GLITTERBOMB" spellcasting="Delta Ranger" prepared="true" level="13" />
+            <grant type="Spell" id="ID_PHB_SPELL_HOLD_MONSTER" spellcasting="Delta Ranger" prepared="true" level="17" />
+        </rules>
+    </element>
+
+    <element name="Trapper's Craft" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_WAYLAYER_TRAPPERS_CRAFT">
+        <description>
+            <p>Starting at 3rd level, you can create deadly traps as long as you have your tools available. You gain proficiency in Thieves' Tools and Tinker's tools. When you gain Expertise in this class, you can choose either tool instead of a skill.</p>
+        </description>
+        <sheet>
+            <description>You gain proficiency in Thieves' Tools and Tinker's tools. When you gain Expertise in this class, you can choose either tool instead of a skill.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" />
+        </rules>
+    </element>
+
+    <element name="Combat Trapsmith" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_WAYLAYER_COMBAT_TRAPSMITH">
+        <description>
+            <p>At 3rd level, you've learned how to quickly craft temporary traps to hinder your foes. When you cast a spell that is from your Conclave spell list, you don't cast it as normal, you instead make it a trap. When you do so, the spell slot is expended, but the spell is not activated as you plant the trap at a point within 5 feet of you. You must have your Tinker's tools on you to be able to use this ability. You can use an action to remove a trap, while within 10 feet of it.</p>
+            <p class="indent">The spell activates when a Small or larger creature other than you moves within 5 feet of it. If the spell got an area of effect, it is centered upon the trap. If it targets a creature, it targets the creature who triggered it. If it targets multiple creatures, they must all be within 10 feet of the creature who triggered it.</p>
+            <p class="indent">You can have one active trap at a time and it lasts for 1 hour. You can have an additional trap active when you reach 5th (2), 9th (3), 13th (4), and 17th level (5) in this class. If a spell requires concentration, you can ignore it, but you can only have one such trap active at a time. If you plant an additional trap when you have the max amount active, the oldest trap is destroyed. You cannot plant a trap within 10 feet of a creature or another trap.</p>
+            <p class="indent">A trap is hidden but can be found with a successful Intelligence (Investigation) check versus the ranger's spell save DC made within 10 feet of the trap and disarmed with a successful Dexterity (Thieves' tools) checks versus the ranger's spell save DC) made within 10 feet of the trap. On a failed disarm check, the trap triggers. If you create a trap in front of someone, they know that it is dangerous.</p>
+        </description>
+        <sheet>
+            <description level="3" action="Action">When you cast a spell that is from your Conclave spell list, you don't cast it as normal, you instead make it a trap. When you do so, the spell slot is expended, but the spell is not activated as you plant the trap at a point within 5 feet of you. You must have your Tinker's tools on you to be able to use this ability. You can use an action to remove a trap, while within 10 feet of it.
+            The spell activates when a Small or larger creature other than you moves within 5 feet of it. If the spell got an area of effect, it is centered upon the trap. If it targets a creature, it targets the creature who triggered it. If it targets multiple creatures, they must all be within 10 feet of the creature who triggered it.
+            You can have one active trap at a time and it lasts for 1 hour. If a spell requires concentration, you can ignore it, but you can only have one such trap active at a time. If you plant an additional trap when you have the max amount active, the oldest trap is destroyed. You cannot plant a trap within 10 feet of a creature or another trap.
+            A trap is hidden but can be found with a successful Intelligence (Investigation) check (DC {{trapsmith:dc}}) made within 10 feet of the trap and disarmed with a successful Dexterity (Thieves' tools) checks (DC {{trapsmith:dc}}) made within 10 feet of the trap. On a failed disarm check, the trap triggers. If you create a trap in front of someone, they know that it is dangerous.</description>
+            <description level="5" action="Action">When you cast a spell that is from your Conclave spell list, you don't cast it as normal, you instead make it a trap. When you do so, the spell slot is expended, but the spell is not activated as you plant the trap at a point within 5 feet of you. You must have your Tinker's tools on you to be able to use this ability. You can use an action to remove a trap, while within 10 feet of it.
+            The spell activates when a Small or larger creature other than you moves within 5 feet of it. If the spell got an area of effect, it is centered upon the trap. If it targets a creature, it targets the creature who triggered it. If it targets multiple creatures, they must all be within 10 feet of the creature who triggered it.
+            You can have two active traps at a time and they last for 1 hour. If a spell requires concentration, you can ignore it, but you can only have one such trap active at a time. If you plant an additional trap when you have the max amount active, the oldest trap is destroyed. You cannot plant a trap within 10 feet of a creature or another trap.
+            A trap is hidden but can be found with a successful Intelligence (Investigation) check (DC {{trapsmith:dc}}) made within 10 feet of the trap and disarmed with a successful Dexterity (Thieves' tools) checks (DC {{trapsmith:dc}}) made within 10 feet of the trap. On a failed disarm check, the trap triggers. If you create a trap in front of someone, they know that it is dangerous.</description>
+            <description level="9" action="Action">When you cast a spell that is from your Conclave spell list, you don't cast it as normal, you instead make it a trap. When you do so, the spell slot is expended, but the spell is not activated as you plant the trap at a point within 5 feet of you. You must have your Tinker's tools on you to be able to use this ability. You can use an action to remove a trap, while within 10 feet of it.
+            The spell activates when a Small or larger creature other than you moves within 5 feet of it. If the spell got an area of effect, it is centered upon the trap. If it targets a creature, it targets the creature who triggered it. If it targets multiple creatures, they must all be within 10 feet of the creature who triggered it.
+            You can have three active traps at a time and they last for 1 hour. If a spell requires concentration, you can ignore it, but you can only have one such trap active at a time. If you plant an additional trap when you have the max amount active, the oldest trap is destroyed. You cannot plant a trap within 10 feet of a creature or another trap.
+            A trap is hidden but can be found with a successful Intelligence (Investigation) check (DC {{trapsmith:dc}}) made within 10 feet of the trap and disarmed with a successful Dexterity (Thieves' tools) checks (DC {{trapsmith:dc}}) made within 10 feet of the trap. On a failed disarm check, the trap triggers. If you create a trap in front of someone, they know that it is dangerous.</description>
+            <description level="13" action="Action">When you cast a spell that is from your Conclave spell list, you don't cast it as normal, you instead make it a trap. When you do so, the spell slot is expended, but the spell is not activated as you plant the trap at a point within 5 feet of you. You must have your Tinker's tools on you to be able to use this ability. You can use an action to remove a trap, while within 10 feet of it.
+            The spell activates when a Small or larger creature other than you moves within 5 feet of it. If the spell got an area of effect, it is centered upon the trap. If it targets a creature, it targets the creature who triggered it. If it targets multiple creatures, they must all be within 10 feet of the creature who triggered it.
+            You can have four active traps at a time and they last for 1 hour. If a spell requires concentration, you can ignore it, but you can only have one such trap active at a time. If you plant an additional trap when you have the max amount active, the oldest trap is destroyed. You cannot plant a trap within 10 feet of a creature or another trap.
+            A trap is hidden but can be found with a successful Intelligence (Investigation) check (DC {{trapsmith:dc}}) made within 10 feet of the trap and disarmed with a successful Dexterity (Thieves' tools) checks (DC {{trapsmith:dc}}) made within 10 feet of the trap. On a failed disarm check, the trap triggers. If you create a trap in front of someone, they know that it is dangerous.</description>
+            <description level="17" action="Action">When you cast a spell that is from your Conclave spell list, you don't cast it as normal, you instead make it a trap. When you do so, the spell slot is expended, but the spell is not activated as you plant the trap at a point within 5 feet of you. You must have your Tinker's tools on you to be able to use this ability. You can use an action to remove a trap, while within 10 feet of it.
+            The spell activates when a Small or larger creature other than you moves within 5 feet of it. If the spell got an area of effect, it is centered upon the trap. If it targets a creature, it targets the creature who triggered it. If it targets multiple creatures, they must all be within 10 feet of the creature who triggered it.
+            You can have five active traps at a time and they last for 1 hour. If a spell requires concentration, you can ignore it, but you can only have one such trap active at a time. If you plant an additional trap when you have the max amount active, the oldest trap is destroyed. You cannot plant a trap within 10 feet of a creature or another trap.
+            A trap is hidden but can be found with a successful Intelligence (Investigation) check (DC {{trapsmith:dc}}) made within 10 feet of the trap and disarmed with a successful Dexterity (Thieves' tools) checks (DC {{trapsmith:dc}}) made within 10 feet of the trap. On a failed disarm check, the trap triggers. If you create a trap in front of someone, they know that it is dangerous.</description>
+        </sheet>
+        <rules>
+            <stat name="trapsmith:dc" value="8" />
+            <stat name="trapsmith:dc" value="proficiency" />
+            <stat name="trapsmith:dc" value="wisdom:modifier" />
+        </rules>
+    </element>
+
+    <element name="Extra Attack" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_WAYLAYER_EXTRA_ATTACK">
+        <description>
+			<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+		</description>
+		<sheet>
+			<description level="5">You can attack twice, instead of once, whenever you take the Attack action on your turn</description>
+		</sheet>
+		<rules>
+			<stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
+		</rules>
+	</element>
+
+    <element name="Personalized Gifts" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_WAYLAYER_PERSONALIZED_GIFTS">
+        <description>
+            <p>At 7th level, you are now able to make your traps activate for specific individuals. When you create a trap, you can choose for the trap to only trigger for the creature marked by your Hunter's Quarry feature.</p>
+        </description>
+        <sheet>
+            <description>When you create a trap, you can choose for the trap to only trigger for the creature marked by your Hunter's Quarry feature.</description>
+        </sheet>
+    </element>
+
+    <element name="Expert Setter" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_WAYLAYER_EXPERT_SETTER">
+        <description>
+            <p>Starting at 11th level, you've learned how to prepare traps in a fraction of the normal time. When you make a trap, you can cast the spell and make it a trap as a bonus action.</p>
+            <p class="indent">Additionally, the DC's for your traps are increased by 2.</p>
+        </description>
+        <sheet>
+            <description action="Bonus Action">When you make a trap, you can cast the spell and make it a trap as a bonus action. Additionally, the DC's for your traps are increased by 2.</description>
+        </sheet>
+        <rules>
+            <stat name="trapsmith:dc" value="2" />
+        </rules>
+    </element>
+
+    <element name="Danger Sounds" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_WAYLAYER_DANGER_SOUNDS">
+        <description>
+            <p>At 15th level, your trap can now lure their prey. You can cast the minor illusion cantrip with a range of 100 feet, but you can only create sound and it must be centered on a trap.</p>
+        </description>
+        <sheet>
+            <description>You can cast the minor illusion cantrip with a range of 100 feet, but you can only create sound and it must be centered on a trap.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_MINOR_ILLUSION" spellcasting="Delta Ranger" />
+        </rules>
+    </element>
+
+    <element name="Reversal of Fortune" type="Archetype Feature" source="Delta Ranger" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_WAYLAYER_REVERSAL_OF_FORTUNE">
+        <description>
+            <p>At 20th level, seconds after entering an area, you have already readied it for the worst case scenario. As an action, you can cause five traps to appear within 30 feet of you. They can't activate until the end of your turn. These traps does not count against your maximum number of active traps.</p>
+            <p class="indent">Once you use this feature, you can’t use it again until you finish a short or long rest.</p>
+        </description>
+        <sheet>
+            <description usage="1/Short Rest" action="Action">As an action, you can cause five traps to appear within 30 feet of you. They can't activate until the end of your turn. These traps does not count against your maximum number of active traps.</description>
+        </sheet>
+    </element>
+    
+</elements>
