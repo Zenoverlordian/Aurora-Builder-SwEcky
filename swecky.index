@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
 	<info>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="swecky.index" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-SwEcky/main/swecky.index" />
 		</update>
 	</info>
@@ -19,5 +19,15 @@
       <file name="druid-courts.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-SwEcky/main/druid-courts.xml" />
       <file name="druid-constellations.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-SwEcky/main/druid-constellations.xml" />
       <file name="class-warlock.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-SwEcky/main/class-warlock.xml" />
+      <file name="class-ranger.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-SwEcky/main/class-ranger.xml" />
+      <file name="ranger-elementalist.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-SwEcky/main/ranger-elementalist.xml" />
+      <file name="ranger-far-seer.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-SwEcky/main/ranger-far-seer.xml" />
+      <file name="ranger-gardener.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-SwEcky/main/ranger-gardener.xml" />
+      <file name="ranger-guardian.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-SwEcky/main/ranger-guardian.xml" />
+      <file name="ranger-horizon-walker.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-SwEcky/main/ranger-horizon-walker.xml" />
+      <file name="ranger-monster-hunter.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-SwEcky/main/ranger-monster-hunter.xml" />
+      <file name="ranger-shadow-stalker.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-SwEcky/main/ranger-shadow-stalker.xml" />
+      <file name="ranger-strider.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-SwEcky/main/ranger-strider.xml" />
+      <file name="ranger-waylayer.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-SwEcky/main/ranger-waylayer.xml" />
 	</files>
 </index>
