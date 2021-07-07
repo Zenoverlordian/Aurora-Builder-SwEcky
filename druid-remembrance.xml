@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name></name>
-		<update version="1.0.2">
+		<update version="1.0.3">
 			<file name="druid-remembrance.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-SwEcky/main/druid-remembrance.xml" />
 		</update>
 	</info>
@@ -81,11 +81,16 @@
         </description>
         <sheet>
             <description usage="2/Short Rest" action="Action">As an action you can choose; anguish, despair, or hope, and an unoccupied 5-foot square within 15 feet of you. A totem of the chosen memory appears within the area and you gain access to its memory spells. As past of manifesting the memory, you can cast one of the spells related to that particular memory. When casting a memory spell, you can only cast it through the totem, as if you stood in its area. You can do so as long as you are within 15 feet of the it. If a spell has range of Touch, you can target any creature within 15 feet of the totem.
-            A totem is an object that fills a 5-foot square, it has an AC equal to 14 + your proficiency bonus, and hit points equal to 10 + twice your druid level, but it can't be affected by spells and abilities which targets an area of effect. If the totem is destroyed, any spell being cast through it immediately ends. It blocks the area but it cannot be climbed upon, since any creature which tries to enter its area are overwhelmed by emotions. After 1 minute, or if it is destroyed, it disappears into nothingness.
+            A totem is an object that fills a 5-foot square, it has an AC of {{reservoir:ac}} and {{reservoir:hp}} hit points, but it can't be affected by spells and abilities which targets an area of effect. If the totem is destroyed, any spell being cast through it immediately ends. It blocks the area but it cannot be climbed upon, since any creature which tries to enter its area are overwhelmed by emotions. After 1 minute, or if it is destroyed, it disappears into nothingness.
             You can use this feature twice and regain expended uses when you finish a short or long rest but you can only have one memory manifested at any one time.</description>
         </sheet>
         <rules>
             <select type="Archetype Feature" name="Reservoir of Memories Reference" supports="Reservoir of Memories Ref" optional="true" />
+            <stat name="reservoir:ac" value="14" />
+            <stat name="reservoir:ac" value="proficiency" />
+            <stat name="reservoir:hp" value="10" />
+            <stat name="reservoir:hp" value="level:alpha druid" />
+            <stat name="reservoir:hp" value="level:alpha druid" />
         </rules>
     </element>
     <element name="Anguish" type="Archetype Feature" source="Alpha Druid" id="ID_SWECKY_ARCHETYPE_FEATURE_ALPHA_DRUID_REMEMBRANCE_RESERVOIR_OF_MEMORIES_ANGUISH">
