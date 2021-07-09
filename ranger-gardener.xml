@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name></name>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="ranger-gardener.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-SwEcky/main/ranger-gardener.xml" />
         </update>
     </info>
@@ -32,6 +32,7 @@
             <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_GARDENER_FORCE_NATURE" level="11" />
             <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_GARDENER_VENERABLE_KEEPERS" level="15" />
             <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_GARDENER_RETURN_TO_EARTH" level="20" />
+            <stat name="swecky:ranger" value="1" />
         </rules>
     </element>
 

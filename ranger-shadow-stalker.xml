@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name></name>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="ranger-shadow-stalker.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-SwEcky/main/ranger-shadow-stalker.xml" />
         </update>
     </info>
@@ -33,6 +33,7 @@
             <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_SHADOW_STALKER_UMBRAL_FLURRY" level="11" />
             <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_SHADOW_STALKER_NURTURED_BY_THE_DARK" level="15" />
             <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_SHADOW_STALKER_PERFECT_DARK" level="20" />
+            <stat name="swecky:ranger" value="1" />
         </rules>
     </element>
 

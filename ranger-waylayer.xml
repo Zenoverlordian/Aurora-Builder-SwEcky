@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name></name>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="ranger-waylayer.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-SwEcky/main/ranger-waylayer.xml" />
         </update>
     </info>
@@ -32,6 +32,7 @@
             <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_WAYLAYER_EXPERT_SETTER" level="11" />
             <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_WAYLAYER_DANGER_SOUNDS" level="15" />
             <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_WAYLAYER_REVERSAL_OF_FORTUNE" level="20" />
+            <stat name="swecky:ranger" value="1" />
         </rules>
     </element>
 

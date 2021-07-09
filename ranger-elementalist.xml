@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name></name>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="ranger-elementalist.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-SwEcky/main/ranger-elementalist.xml" />
         </update>
     </info>
@@ -32,6 +32,7 @@
             <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_ELEMENTALIST_UNBRIDLED_POWER" level="11" />
             <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_ELEMENTALIST_ANCIENT_ADVISORS" level="15" />
             <grant type="Archetype Feature" id="ID_SWECKY_ARCHETYPE_FEATURE_DELTA_RANGER_ELEMENTALIST_PRIMAL_FORM" level="20" />
+            <stat name="swecky:ranger" value="1" />
         </rules>
     </element>
 
